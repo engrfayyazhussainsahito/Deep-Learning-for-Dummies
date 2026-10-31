@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 360"><defs><marker id="a10g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="390" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Truncation rules on one next-token distribution (illustrative logits, T = 1)</text>
+<rect x="60" y="115.18182297872968" width="56" height="174.81817702127032" rx="6" class="box-blue"/>
+<text x="88.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">the</text>
+<text x="88.0" y="106.18182297872968" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.45</text>
+<text x="88.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.45</text>
+<rect x="130" y="194.0577502499815" width="56" height="95.94224975001849" rx="6" class="box-blue"/>
+<text x="158.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">a</text>
+<text x="158.0" y="185.0577502499815" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.25</text>
+<text x="158.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.69</text>
+<rect x="200" y="231.80808396480705" width="56" height="58.19191603519296" rx="6" class="box-blue"/>
+<text x="228.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">one</text>
+<text x="228.0" y="222.80808396480705" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.15</text>
+<text x="228.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.84</text>
+<rect x="270" y="261.1027496974595" width="56" height="28.897250302540492" rx="6" class="box-green"/>
+<text x="298.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">this</text>
+<text x="298.0" y="252.1027496974595" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.07</text>
+<text x="298.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.92</text>
+<rect x="340" y="275.65005017977654" width="56" height="14.349949820223468" rx="6" class="box"/>
+<text x="368.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">his</text>
+<text x="368.0" y="266.65005017977654" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.04</text>
+<text x="368.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.95</text>
+<rect x="410" y="281.29631546869666" width="56" height="8.703684531303326" rx="6" class="box"/>
+<text x="438.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">some</text>
+<text x="438.0" y="272.29631546869666" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.02</text>
+<text x="438.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.98</text>
+<rect x="480" y="285.67787817291816" width="56" height="4.322121827081854" rx="6" class="box"/>
+<text x="508.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">that</text>
+<text x="508.0" y="276.67787817291816" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.01</text>
+<text x="508.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.99</text>
+<rect x="550" y="287.37850059686167" width="56" height="2.6214994031383294" rx="6" class="box"/>
+<text x="578.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">my</text>
+<text x="578.0" y="278.37850059686167" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.01</text>
+<text x="578.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.99</text>
+<rect x="620" y="288.56129062354415" width="56" height="1.4387093764558603" rx="6" class="box"/>
+<text x="648.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">its</text>
+<text x="648.0" y="279.56129062354415" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.00</text>
+<text x="648.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">1.00</text>
+<rect x="690" y="289.2855580672251" width="56" height="0.7144419327748828" rx="6" class="box"/>
+<text x="718.0" y="304" class="t-mono" text-anchor="middle" dominant-baseline="middle">our</text>
+<text x="718.0" y="280.2855580672251" class="t-sm" text-anchor="middle" dominant-baseline="middle">0.00</text>
+<text x="718.0" y="324" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">1.00</text>
+<text x="30" y="324" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">cum.</text>
+<text x="390" y="52" class="t-sm" text-anchor="middle" dominant-baseline="middle">top-k (k=3): keep 3 tokens.  top-p (p=0.9): keep the smallest prefix with mass &gt;= 0.9, here 4 tokens.</text>
+<text x="390" y="72" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Blue: kept by both. Green: top-p only. Amber: top-k only. Gray: removed by both.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 780 330" xmlns="http://www.w3.org/2000/svg">
+<text class="t-bold" x="390" y="22" text-anchor="middle">Four message-passing layers, one picture each</text>
+<rect class="box-blue" x="15" y="40" width="180" height="250" rx="10"/><rect class="box-green" x="205" y="40" width="180" height="250" rx="10"/><rect class="box-purple" x="395" y="40" width="180" height="250" rx="10"/><rect class="box-amber" x="585" y="40" width="180" height="250" rx="10"/>
+<text class="t-bold" x="105" y="62" text-anchor="middle">GCN</text><text class="t-bold" x="295" y="62" text-anchor="middle">GraphSAGE</text><text class="t-bold" x="485" y="62" text-anchor="middle">GAT</text><text class="t-bold" x="675" y="62" text-anchor="middle">GIN</text>
+<text class="t-sm" x="105" y="92" text-anchor="middle">degree-normalized sum</text>
+<text class="t-mono" x="105" y="122" text-anchor="middle">Σ_u h_u / √(d_u d_v)</text>
+<text class="t-sm" x="105" y="152" text-anchor="middle">then one shared W,</text><text class="t-sm" x="105" y="170" text-anchor="middle">nonlinearity</text>
+<text class="t-sm t-muted" x="105" y="215" text-anchor="middle">fixed weights from</text><text class="t-sm t-muted" x="105" y="233" text-anchor="middle">the graph structure</text><text class="t-sm t-muted" x="105" y="262" text-anchor="middle">transductive-friendly</text>
+<text class="t-sm" x="295" y="92" text-anchor="middle">separate self / neighbor</text>
+<text class="t-mono" x="295" y="122" text-anchor="middle">W₁h_v ‖ W₂ AGG(h_u)</text>
+<text class="t-sm" x="295" y="152" text-anchor="middle">mean, LSTM, or pool</text><text class="t-sm" x="295" y="170" text-anchor="middle">aggregator</text>
+<text class="t-sm t-muted" x="295" y="215" text-anchor="middle">neighbor sampling:</text><text class="t-sm t-muted" x="295" y="233" text-anchor="middle">scales to huge graphs</text><text class="t-sm t-muted" x="295" y="262" text-anchor="middle">inductive</text>
+<text class="t-sm" x="485" y="92" text-anchor="middle">learned attention weights</text>
+<text class="t-mono" x="485" y="122" text-anchor="middle">Σ_u α_vu W h_u</text>
+<text class="t-sm" x="485" y="152" text-anchor="middle">α = softmax over N(v)</text><text class="t-sm" x="485" y="170" text-anchor="middle">of LeakyReLU(aᵀ[Wh_v‖Wh_u])</text>
+<text class="t-sm t-muted" x="485" y="215" text-anchor="middle">data-dependent</text><text class="t-sm t-muted" x="485" y="233" text-anchor="middle">edge weights, multi-head</text><text class="t-sm t-muted" x="485" y="262" text-anchor="middle">still a convex combination</text>
+<text class="t-sm" x="675" y="92" text-anchor="middle">injective sum + MLP</text>
+<text class="t-mono" x="675" y="122" text-anchor="middle">MLP((1+ε)h_v + Σ_u h_u)</text>
+<text class="t-sm" x="675" y="152" text-anchor="middle">sum, not mean/max,</text><text class="t-sm" x="675" y="170" text-anchor="middle">to keep multiset info</text>
+<text class="t-sm t-muted" x="675" y="215" text-anchor="middle">as powerful as</text><text class="t-sm t-muted" x="675" y="233" text-anchor="middle">1-WL</text><text class="t-sm t-muted" x="675" y="262" text-anchor="middle">best for graph tasks</text>
+<text class="t-sm t-muted" x="390" y="318" text-anchor="middle">All four are permutation-equivariant layers: they differ in how the neighbor messages are weighted and combined.</text>
+</svg>

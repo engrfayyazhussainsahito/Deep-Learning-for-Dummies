@@ -1,0 +1,19 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="20" y="22">Standard: keep every layer's activation (n = 12 layers)</text>
+<g>
+<rect class="box-blue" x="20" y="35" width="48" height="30"/><rect class="box-blue" x="68" y="35" width="48" height="30"/><rect class="box-blue" x="116" y="35" width="48" height="30"/><rect class="box-blue" x="164" y="35" width="48" height="30"/><rect class="box-blue" x="212" y="35" width="48" height="30"/><rect class="box-blue" x="260" y="35" width="48" height="30"/><rect class="box-blue" x="308" y="35" width="48" height="30"/><rect class="box-blue" x="356" y="35" width="48" height="30"/><rect class="box-blue" x="404" y="35" width="48" height="30"/><rect class="box-blue" x="452" y="35" width="48" height="30"/><rect class="box-blue" x="500" y="35" width="48" height="30"/><rect class="box-blue" x="548" y="35" width="48" height="30"/>
+</g>
+<text class="t-sm" x="610" y="54">12 stored</text>
+<text class="t-bold" x="20" y="105">Checkpointed: k = 3 segments of 4 layers; store only the segment inputs (green)</text>
+<rect class="box-green" x="20" y="118" width="48" height="30"/><rect class="box-teal" x="68" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="116" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="164" y="118" width="48" height="30" style="opacity:.4"/>
+<rect class="box-green" x="212" y="118" width="48" height="30"/><rect class="box-teal" x="260" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="308" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="356" y="118" width="48" height="30" style="opacity:.4"/>
+<rect class="box-green" x="404" y="118" width="48" height="30"/><rect class="box-teal" x="452" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="500" y="118" width="48" height="30" style="opacity:.4"/><rect class="box-teal" x="548" y="118" width="48" height="30" style="opacity:.4"/>
+<text class="t-sm" x="610" y="137">3 stored</text>
+<path class="ln-dash" d="M212,160 L212,175 M404,160 L404,175" fill="none"/>
+<text class="t" x="20" y="200">Backward, segment by segment: reload the checkpoint, re-run the segment's forward</text>
+<text class="t" x="20" y="220">(faded blocks are recomputed, held only while that segment is being differentiated),</text>
+<text class="t" x="20" y="240">then backpropagate through it and free it.</text>
+<text class="t-sm t-muted" x="20" y="268">Memory: k checkpoints + n/k live layers, minimized at k = √n (about 2√n). Extra compute: one more forward pass (~33% more time).</text>
+<text class="t-sm t-muted" x="20" y="286">For n = 12: k = 3 or 4 gives about 7 layer-activations instead of 12; for n = 64: 16 instead of 64.</text>
+</svg>

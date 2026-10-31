@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syllabus | Deep Learning</title>
+<meta name="description" content="The complete 18-week plan, from perceptrons to diffusion models, with grading, projects and policies.">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:title" content="Syllabus | Deep Learning">
+<meta property="og:description" content="The complete 18-week plan, from perceptrons to diffusion models, with grading, projects and policies.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('dl-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="syllabus">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+<button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+<a class="brand" href="index.html"><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="9" r="3"/><circle cx="6" cy="23" r="3"/><circle cx="16" cy="16" r="3"/><circle cx="26" cy="9" r="3" fill="currentColor"/><circle cx="26" cy="23" r="3"/><path d="M9 10l4.5 4.2M9 22l4.5-4.2M19 14.5L23 10.5M19 17.5L23 21.5" stroke-width="1.5"/></g></svg><span>Deep Learning</span></a>
+<div class="top-spacer"></div>
+<button class="search-btn" id="search-btn" type="button" aria-label="Search the course"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Search</span><kbd>/</kbd></button>
+<button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle dark mode"><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+</header>
+<div class="progress-bar" id="read-progress" aria-hidden="true"></div>
+<div class="layout">
+<nav class="side" id="sidebar" aria-label="Course navigation"><div class="side-inner"><ul class="side-top"><li><a href="index.html">Home</a></li><li><a href="syllabus.html" class="active">Syllabus</a></li><li><a href="glossary.html">Glossary</a></li></ul><div class="side-phase"><div class="side-phase-title"><span class="phase-num">1</span>Foundations</div><ul><li><a href="week-01.html" data-week="1"><span class="wk">01</span><span class="wt">Introduction, Mathematical Foundations, and Tooling</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-02.html" data-week="2"><span class="wk">02</span><span class="wt">Neural Networks and Backpropagation</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-03.html" data-week="3"><span class="wk">03</span><span class="wt">Optimization for Deep Learning</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-04.html" data-week="4"><span class="wk">04</span><span class="wt">Regularization, Generalization, and Training Practice</span><span class="done" aria-hidden="true"></span></a></li></ul></div><div class="side-phase"><div class="side-phase-title"><span class="phase-num">2</span>Core Architectures</div><ul><li><a href="week-05.html" data-week="5"><span class="wk">05</span><span class="wt">Convolutional Neural Networks</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-06.html" data-week="6"><span class="wk">06</span><span class="wt">Modern Vision Architectures, Transfer Learning, Detection and Segmentation</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-07.html" data-week="7"><span class="wk">07</span><span class="wt">Sequence Models: RNNs, LSTMs, and the Road to Attention</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-08.html" data-week="8"><span class="wk">08</span><span class="wt">Representation Learning, Embeddings, and Midterm</span><span class="done" aria-hidden="true"></span></a></li></ul></div><div class="side-phase"><div class="side-phase-title"><span class="phase-num">3</span>Attention &amp; Pretrained Models</div><ul><li><a href="week-09.html" data-week="9"><span class="wk">09</span><span class="wt">The Transformer Architecture</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-10.html" data-week="10"><span class="wk">10</span><span class="wt">Large Language Models and Pretrained NLP</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-11.html" data-week="11"><span class="wk">11</span><span class="wt">Vision Transformers, Multimodal Models, and Self-Supervised Learning</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-12.html" data-week="12"><span class="wk">12</span><span class="wt">Generative Models I: Autoencoders, VAEs, and GANs</span><span class="done" aria-hidden="true"></span></a></li></ul></div><div class="side-phase"><div class="side-phase-title"><span class="phase-num">4</span>Advanced Topics</div><ul><li><a href="week-13.html" data-week="13"><span class="wk">13</span><span class="wt">Generative Models II: Diffusion, Flows, and Autoregressive Models</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-14.html" data-week="14"><span class="wk">14</span><span class="wt">Graph Neural Networks and Geometric Deep Learning</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-15.html" data-week="15"><span class="wk">15</span><span class="wt">Deep Reinforcement Learning</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-16.html" data-week="16"><span class="wk">16</span><span class="wt">Efficient and Scalable Deep Learning</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-17.html" data-week="17"><span class="wk">17</span><span class="wt">Trustworthy Deep Learning and Theory</span><span class="done" aria-hidden="true"></span></a></li><li><a href="week-18.html" data-week="18"><span class="wk">18</span><span class="wt">Final Projects, Course Review, and Final Exam</span><span class="done" aria-hidden="true"></span></a></li></ul></div><div class="side-foot"><a href="about.html">About &amp; contributing</a><button type="button" class="linkbtn" id="reset-progress">Reset progress</button></div></div></nav>
+<div class="scrim" id="scrim" hidden></div>
+<main id="main" class="main"><article class="article">
+<header class="article-head"><div class="eyebrow">Course</div><h1>Syllabus</h1><p class="lede">The complete 18-week plan, from perceptrons to diffusion models, with grading, projects and policies.</p></header>
+<div class="prose"><p><strong>Level:</strong> Master's (graduate) · <strong>Duration:</strong> 18 weeks · <strong>Format:</strong> 2 lectures (75 min each) + 1 lab/tutorial (2 hrs) per week · <strong>Credit hours:</strong> 3 (3+0) with lab component</p>
+<h2 id="course-description">Course description</h2>
+<p>This course takes students from the mathematical and algorithmic foundations of neural networks to the architectures and techniques that define modern deep learning: convolutional networks, sequence models, Transformers, large pretrained models, generative models (VAEs, GANs, diffusion), graph networks, and deep reinforcement learning. It also covers the practical side of training and deploying models at scale, along with robustness, interpretability, and responsible use. Students implement core ideas from scratch, reproduce results from research papers, and complete a capstone research-style project.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Linear algebra (matrices, eigendecomposition, SVD), multivariate calculus, probability and statistics</li>
+<li>Programming in Python; familiarity with NumPy</li>
+<li>An introductory machine learning course (regression, classification, overfitting, cross-validation)</li>
+</ul>
+<p>A short math refresher is built into Week 1 for students who need it.</p>
+<h2 id="learning-outcomes">Learning outcomes</h2>
+<p>By the end of the course, students will be able to:</p>
+<ol>
+<li>Derive and implement forward and backward passes for feed-forward networks, and explain how automatic differentiation works.</li>
+<li>Select and tune optimizers, initializations, normalization layers, and regularizers to train deep models reliably.</li>
+<li>Design, train, and evaluate CNNs, RNNs, and Transformer models using PyTorch.</li>
+<li>Apply transfer learning, fine-tuning, and parameter-efficient methods to pretrained models.</li>
+<li>Explain and implement major generative frameworks (autoencoders, VAEs, GANs, diffusion models).</li>
+<li>Apply graph neural networks and deep reinforcement learning to appropriate problems.</li>
+<li>Scale and optimize models using mixed precision, distributed training, quantization, pruning, and distillation.</li>
+<li>Critically read, reproduce, and present deep learning research papers.</li>
+<li>Assess robustness, fairness, interpretability, and ethical risks of deep learning systems.</li>
+</ol>
+<h2 id="tools-and-software">Tools and software</h2>
+<ul>
+<li>Python 3.10+, PyTorch (primary), NumPy, Matplotlib, scikit-learn</li>
+<li>Hugging Face Transformers, Datasets, and PEFT libraries</li>
+<li>PyTorch Geometric (graphs), Gymnasium and Stable-Baselines3 (RL)</li>
+<li>Weights &amp; Biases or TensorBoard for experiment tracking</li>
+<li>Git/GitHub; Google Colab or a university GPU cluster</li>
+</ul>
+<h2 id="textbooks-and-references">Textbooks and references</h2>
+<p><strong>Primary:</strong></p>
+<ul>
+<li>Goodfellow, Bengio, Courville. <em>Deep Learning</em> (MIT Press)</li>
+<li>Zhang, Lipton, Li, Smola. <em>Dive into Deep Learning</em> (free online, d2l.ai)</li>
+</ul>
+<p><strong>Supplementary:</strong></p>
+<ul>
+<li>Prince. <em>Understanding Deep Learning</em> (free online)</li>
+<li>Bishop &amp; Bishop. <em>Deep Learning: Foundations and Concepts</em></li>
+<li>Murphy. <em>Probabilistic Machine Learning: Advanced Topics</em></li>
+<li>Sutton &amp; Barto. <em>Reinforcement Learning: An Introduction</em> (Week 15)</li>
+<li>Stanford CS231n and CS224n lecture notes; selected research papers listed per week</li>
+</ul>
+<h2 id="assessment-and-grading">Assessment and grading</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Weight</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Programming assignments (4)</td>
+<td>25%</td>
+<td>Weeks 4, 8, 12, 16; implementation + short report</td>
+</tr>
+<tr>
+<td>Midterm exam</td>
+<td>15%</td>
+<td>Week 8; theory, derivations, and short coding questions</td>
+</tr>
+<tr>
+<td>Paper presentation</td>
+<td>10%</td>
+<td>Present and critique one research paper (Weeks 10 to 17)</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td>30%</td>
+<td>Proposal (5%), progress report (5%), final report and code (15%), presentation (5%)</td>
+</tr>
+<tr>
+<td>Final exam</td>
+<td>15%</td>
+<td>Week 18; cumulative with emphasis on Weeks 9 to 17</td>
+</tr>
+<tr>
+<td>Participation and quizzes</td>
+<td>5%</td>
+<td>Short weekly quizzes and in-class discussion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="course-roadmap-at-a-glance">Course roadmap at a glance</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Weeks</th>
+<th>Theme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I. Foundations</td>
+<td>1 to 4</td>
+<td>Math, neural networks, backpropagation, optimization, regularization</td>
+</tr>
+<tr>
+<td>II. Core Architectures</td>
+<td>5 to 8</td>
+<td>CNNs, modern vision models, sequence models, representation learning, midterm</td>
+</tr>
+<tr>
+<td>III. Attention and Pretrained Models</td>
+<td>9 to 12</td>
+<td>Transformers, LLMs, vision and multimodal models, self-supervised learning, VAEs and GANs</td>
+</tr>
+<tr>
+<td>IV. Advanced Topics</td>
+<td>13 to 18</td>
+<td>Diffusion, graph networks, deep RL, efficiency and scale, trustworthy DL and theory, final project</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="weekly-schedule">Weekly Schedule</h2>
+<h3 id="phase-i-foundations">Phase I: Foundations</h3>
+<h4 id="week-1-introduction-mathematical-foundations-and-tooling">Week 1: Introduction, Mathematical Foundations, and Tooling</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>What deep learning is; history from the perceptron to modern foundation models; why depth matters</li>
+<li>Machine learning recap: supervised, unsupervised, self-supervised learning; loss, risk, generalization</li>
+<li>Math refresher: linear algebra for tensors, matrix calculus, chain rule, probability, maximum likelihood, information theory (entropy, KL divergence, cross-entropy)</li>
+<li>Tensors, GPUs, and the PyTorch programming model; reproducibility and random seeds</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 1 to 5 (skim); d2l.ai preliminaries</p>
+<p><strong>Lab:</strong> PyTorch tensor operations, autograd basics, linear regression with gradient descent in PyTorch</p>
+<h4 id="week-2-neural-networks-and-backpropagation">Week 2: Neural Networks and Backpropagation</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>The perceptron, multilayer perceptrons, and the universal approximation theorem</li>
+<li>Activation functions: sigmoid, tanh, ReLU, Leaky ReLU, GELU, SiLU/Swish; properties and trade-offs</li>
+<li>Output layers and loss functions: softmax with cross-entropy, MSE, hinge, focal loss</li>
+<li>Computational graphs; forward and backward pass; full derivation of backpropagation</li>
+<li>Automatic differentiation: forward mode vs reverse mode; how PyTorch autograd works</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 6; Rumelhart, Hinton, Williams (1986) on backpropagation</p>
+<p><strong>Lab:</strong> Implement an MLP and backpropagation from scratch in NumPy; verify gradients numerically (gradient checking); train on MNIST</p>
+<h4 id="week-3-optimization-for-deep-learning">Week 3: Optimization for Deep Learning</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Non-convex loss landscapes, saddle points, local minima, and flat vs sharp minima</li>
+<li>Gradient descent variants: batch, mini-batch, stochastic; effect of batch size</li>
+<li>Momentum, Nesterov accelerated gradient; adaptive methods: AdaGrad, RMSProp, Adam, AdamW</li>
+<li>Learning rate schedules: step decay, cosine annealing, warmup, cyclical rates, one-cycle policy</li>
+<li>Weight initialization: Xavier/Glorot and He initialization; vanishing and exploding gradients; gradient clipping</li>
+<li>Normalization: batch normalization, layer normalization, group normalization, and why they help optimization</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 8; Kingma &amp; Ba (Adam, 2015); Ioffe &amp; Szegedy (BatchNorm, 2015); Loshchilov &amp; Hutter (AdamW, 2019)</p>
+<p><strong>Lab:</strong> Compare SGD, momentum, and Adam on the same model; visualize loss curves; study the effect of initialization and learning rate</p>
+<h4 id="week-4-regularization-generalization-and-training-practice">Week 4: Regularization, Generalization, and Training Practice</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Bias-variance trade-off, underfitting and overfitting, double descent</li>
+<li>Regularization: L1/L2 weight decay, dropout, DropConnect, label smoothing, early stopping, data augmentation (including mixup and CutMix)</li>
+<li>Hyperparameter search: grid, random, Bayesian optimization; learning rate range tests</li>
+<li>Debugging neural networks: overfit-a-single-batch test, sanity checks, common bugs, loss curve diagnosis</li>
+<li>Experiment management: logging, checkpointing, reproducibility, train/validation/test discipline</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 7; Srivastava et al. (Dropout, 2014); Karpathy, &quot;A Recipe for Training Neural Networks&quot;</p>
+<p><strong>Lab:</strong> Build a full training pipeline with logging and checkpointing; run a regularization ablation study</p>
+<p><strong>Due:</strong> Assignment 1 (MLP from scratch, optimizers, and regularization experiments)</p>
+<h3 id="phase-ii-core-architectures">Phase II: Core Architectures</h3>
+<h4 id="week-5-convolutional-neural-networks">Week 5: Convolutional Neural Networks</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Motivation: locality, weight sharing, translation equivariance</li>
+<li>Convolution and cross-correlation; stride, padding, dilation, channels; 1x1 convolutions; depthwise-separable convolutions</li>
+<li>Pooling layers; receptive field computation; output-size arithmetic</li>
+<li>Classic architectures: LeNet-5, AlexNet, VGG; what each contributed</li>
+<li>Training image classifiers: data pipelines, augmentation, ImageNet and CIFAR benchmarks</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 9; Krizhevsky et al. (AlexNet, 2012); Simonyan &amp; Zisserman (VGG, 2015); CS231n notes on CNNs</p>
+<p><strong>Lab:</strong> Implement a CNN in PyTorch and train on CIFAR-10; experiment with depth, kernel size, and batch normalization</p>
+<h4 id="week-6-modern-vision-architectures-transfer-learning-detection-and-segmentation">Week 6: Modern Vision Architectures, Transfer Learning, Detection and Segmentation</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Residual learning: ResNet, skip connections, why they ease optimization; ResNeXt, DenseNet</li>
+<li>Efficient and scalable designs: Inception, MobileNet, EfficientNet and compound scaling, ConvNeXt</li>
+<li>Transfer learning and fine-tuning: feature extraction vs full fine-tuning, domain shift, layer freezing</li>
+<li>Object detection: R-CNN family, SSD, YOLO, anchor-based vs anchor-free, IoU, NMS, mAP</li>
+<li>Semantic and instance segmentation: FCN, U-Net, Mask R-CNN, DeepLab</li>
+</ul>
+<p><strong>Readings:</strong> He et al. (ResNet, 2016); Tan &amp; Le (EfficientNet, 2019); Ronneberger et al. (U-Net, 2015); Redmon et al. (YOLO, 2016)</p>
+<p><strong>Lab:</strong> Fine-tune a pretrained ResNet on a custom small dataset; run and evaluate a pretrained detector or train a small U-Net</p>
+<h4 id="week-7-sequence-models-rnns-lstms-and-the-road-to-attention">Week 7: Sequence Models: RNNs, LSTMs, and the Road to Attention</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Sequential data and language modeling; one-to-many, many-to-one, many-to-many settings</li>
+<li>Recurrent neural networks; backpropagation through time (BPTT); vanishing/exploding gradients in time</li>
+<li>LSTM and GRU: gating mechanisms in detail; bidirectional and stacked RNNs</li>
+<li>Sequence-to-sequence models: encoder-decoder, teacher forcing, beam search</li>
+<li>Attention mechanism (Bahdanau and Luong): motivation, alignment, and soft attention</li>
+<li>Applications: machine translation, speech recognition, time-series forecasting; 1D CNNs and temporal convolutional networks as alternatives</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al., Ch. 10; Hochreiter &amp; Schmidhuber (LSTM, 1997); Sutskever et al. (Seq2Seq, 2014); Bahdanau et al. (2015); Olah, &quot;Understanding LSTM Networks&quot;</p>
+<p><strong>Lab:</strong> Character-level language model with LSTM/GRU; seq2seq with attention for a toy translation task</p>
+<h4 id="week-8-representation-learning-embeddings-and-midterm">Week 8: Representation Learning, Embeddings, and Midterm</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Distributed representations; word embeddings: word2vec (skip-gram, CBOW, negative sampling), GloVe, fastText</li>
+<li>Embedding geometry, analogies, and bias in embeddings</li>
+<li>Subword tokenization (BPE, WordPiece, SentencePiece) and character-level models</li>
+<li>Embeddings beyond text: users, items, entities, and metric learning (contrastive and triplet loss)</li>
+<li>Review of Weeks 1 to 8; midterm exam in the second session</li>
+</ul>
+<p><strong>Readings:</strong> Mikolov et al. (word2vec, 2013); Pennington et al. (GloVe, 2014); Sennrich et al. (BPE, 2016)</p>
+<p><strong>Lab:</strong> Train skip-gram embeddings; explore nearest neighbors and bias probes; use embeddings in a downstream classifier</p>
+<p><strong>Due:</strong> Assignment 2 (CNN image classification with transfer learning and an RNN sequence task); final project proposal (1 page: problem, dataset, baseline, plan)</p>
+<p><strong>Exam:</strong> Midterm covering Weeks 1 to 7</p>
+<h3 id="phase-iii-attention-transformers-and-pretrained-models">Phase III: Attention, Transformers, and Pretrained Models</h3>
+<h4 id="week-9-the-transformer-architecture">Week 9: The Transformer Architecture</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Self-attention: queries, keys, values; scaled dot-product attention; why scaling matters</li>
+<li>Multi-head attention, position-wise feed-forward layers, residual connections, layer norm (pre-norm vs post-norm)</li>
+<li>Positional information: sinusoidal, learned, relative positions, rotary embeddings (RoPE), ALiBi</li>
+<li>Encoder-only, decoder-only, and encoder-decoder variants; causal masking</li>
+<li>Computational complexity of attention (quadratic cost) and efficient attention variants: sparse, linear, sliding-window</li>
+<li>Training Transformers: warmup, label smoothing, mixed precision</li>
+</ul>
+<p><strong>Readings:</strong> Vaswani et al., &quot;Attention Is All You Need&quot; (2017); Alammar, &quot;The Illustrated Transformer&quot;; Karpathy, nanoGPT walkthrough</p>
+<p><strong>Lab:</strong> Implement a Transformer block and a small GPT-style decoder from scratch in PyTorch; train on a small text corpus</p>
+<h4 id="week-10-large-language-models-and-pretrained-nlp">Week 10: Large Language Models and Pretrained NLP</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Pretraining paradigms: masked language modeling (BERT), autoregressive modeling (GPT), span corruption (T5)</li>
+<li>Scaling laws, compute-optimal training, emergent abilities and their limits</li>
+<li>Fine-tuning strategies: full fine-tuning, adapters, LoRA and QLoRA, prefix and prompt tuning</li>
+<li>Instruction tuning, in-context learning, prompting and chain-of-thought</li>
+<li>Alignment: supervised fine-tuning, RLHF, DPO and preference optimization (overview)</li>
+<li>Retrieval-augmented generation; evaluation of language models; hallucination and failure modes</li>
+</ul>
+<p><strong>Readings:</strong> Devlin et al. (BERT, 2019); Brown et al. (GPT-3, 2020); Kaplan et al. (Scaling Laws, 2020); Hoffmann et al. (Chinchilla, 2022); Hu et al. (LoRA, 2022); Ouyang et al. (InstructGPT, 2022)</p>
+<p><strong>Lab:</strong> Fine-tune a pretrained BERT or small LLM with Hugging Face for classification; apply LoRA to a small generative model</p>
+<p><strong>Paper presentations begin</strong></p>
+<h4 id="week-11-vision-transformers-multimodal-models-and-self-supervised-learning">Week 11: Vision Transformers, Multimodal Models, and Self-Supervised Learning</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Vision Transformer (ViT), patch embeddings, DeiT, Swin Transformer; CNN vs ViT inductive biases</li>
+<li>Transformers for detection and segmentation: DETR, SAM (overview)</li>
+<li>Self-supervised learning: contrastive methods (SimCLR, MoCo), non-contrastive methods (BYOL, DINO), masked image modeling (MAE)</li>
+<li>Vision-language models: CLIP, zero-shot transfer, image captioning, visual question answering</li>
+<li>Multimodal large models (overview): connecting vision encoders to language models</li>
+</ul>
+<p><strong>Readings:</strong> Dosovitskiy et al. (ViT, 2021); Chen et al. (SimCLR, 2020); He et al. (MAE, 2022); Radford et al. (CLIP, 2021)</p>
+<p><strong>Lab:</strong> Fine-tune a ViT; zero-shot classification and image-text retrieval with CLIP; linear probe of self-supervised features</p>
+<h4 id="week-12-generative-models-i-autoencoders-vaes-and-gans">Week 12: Generative Models I: Autoencoders, VAEs, and GANs</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Taxonomy of generative models; density estimation vs sampling</li>
+<li>Autoencoders: undercomplete, denoising, sparse; latent representations</li>
+<li>Variational autoencoders: ELBO derivation, reparameterization trick, KL regularization, beta-VAE, VQ-VAE</li>
+<li>Generative adversarial networks: minimax objective, training instability, mode collapse</li>
+<li>GAN variants: DCGAN, WGAN and WGAN-GP, conditional GANs, CycleGAN, StyleGAN</li>
+<li>Evaluating generative models: Inception Score, FID, precision and recall</li>
+</ul>
+<p><strong>Readings:</strong> Kingma &amp; Welling (VAE, 2014); Goodfellow et al. (GAN, 2014); Arjovsky et al. (WGAN, 2017); Karras et al. (StyleGAN, 2019)</p>
+<p><strong>Lab:</strong> Implement a VAE and a DCGAN on MNIST or CelebA; visualize latent space interpolation</p>
+<p><strong>Due:</strong> Assignment 3 (Transformer from scratch and fine-tuning a pretrained model)</p>
+<h3 id="phase-iv-advanced-topics">Phase IV: Advanced Topics</h3>
+<h4 id="week-13-generative-models-ii-diffusion-flows-and-autoregressive-models">Week 13: Generative Models II: Diffusion, Flows, and Autoregressive Models</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Denoising diffusion probabilistic models (DDPM): forward and reverse processes, noise schedules, training objective</li>
+<li>Score-based models and the SDE view; DDIM and fast sampling; connection to VAEs</li>
+<li>Conditioning and guidance: classifier guidance, classifier-free guidance, text-to-image conditioning</li>
+<li>Latent diffusion (Stable Diffusion-style pipelines); U-Net and DiT (diffusion Transformer) backbones</li>
+<li>Normalizing flows and autoregressive image/audio models (overview); comparison of all generative families</li>
+<li>Applications and risks: image, audio, and video generation; deepfakes, provenance, and watermarking</li>
+</ul>
+<p><strong>Readings:</strong> Ho et al. (DDPM, 2020); Song et al. (Score SDE, 2021); Rombach et al. (Latent Diffusion, 2022); Ho &amp; Salimans (Classifier-Free Guidance, 2022)</p>
+<p><strong>Lab:</strong> Train a small DDPM on MNIST/CIFAR; experiment with sampling steps and guidance</p>
+<h4 id="week-14-graph-neural-networks-and-geometric-deep-learning">Week 14: Graph Neural Networks and Geometric Deep Learning</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Graph-structured data: molecules, social networks, knowledge graphs, recommender systems</li>
+<li>Message passing framework; GCN, GraphSAGE, GAT, GIN; expressive power and the Weisfeiler-Lehman test</li>
+<li>Over-smoothing, over-squashing, and deeper GNNs; graph pooling and readout</li>
+<li>Tasks: node classification, link prediction, graph classification; graph Transformers</li>
+<li>Geometric deep learning: symmetry, equivariance, invariance; point clouds and 3D data; equivariant networks (overview)</li>
+</ul>
+<p><strong>Readings:</strong> Kipf &amp; Welling (GCN, 2017); Hamilton et al. (GraphSAGE, 2017); Velickovic et al. (GAT, 2018); Bronstein et al., &quot;Geometric Deep Learning&quot; (2021)</p>
+<p><strong>Lab:</strong> Node classification on Cora and graph classification on a molecular dataset with PyTorch Geometric</p>
+<h4 id="week-15-deep-reinforcement-learning">Week 15: Deep Reinforcement Learning</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>MDPs, returns, value functions, Bellman equations; Monte Carlo and temporal-difference learning</li>
+<li>Value-based deep RL: DQN, experience replay, target networks, Double DQN, Dueling DQN, prioritized replay</li>
+<li>Policy-gradient methods: REINFORCE, actor-critic, A2C/A3C, PPO, TRPO</li>
+<li>Continuous control: DDPG, TD3, SAC; exploration strategies</li>
+<li>Model-based RL and world models (overview); offline RL</li>
+<li>Connection to language models: RLHF, reward models, and policy optimization for LLMs</li>
+</ul>
+<p><strong>Readings:</strong> Sutton &amp; Barto, Ch. 3, 6, 13; Mnih et al. (DQN, 2015); Schulman et al. (PPO, 2017); Haarnoja et al. (SAC, 2018)</p>
+<p><strong>Lab:</strong> Train DQN on CartPole/LunarLander; train a PPO agent with Stable-Baselines3 and compare</p>
+<h4 id="week-16-efficient-and-scalable-deep-learning">Week 16: Efficient and Scalable Deep Learning</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Hardware and systems: GPUs/TPUs, memory hierarchy, profiling, bottleneck analysis</li>
+<li>Mixed precision (FP16/BF16), gradient accumulation, gradient checkpointing</li>
+<li>Distributed training: data parallelism, model/tensor parallelism, pipeline parallelism, ZeRO and FSDP</li>
+<li>Efficient attention and kernels: FlashAttention, KV caching, speculative decoding (overview)</li>
+<li>Model compression: pruning, quantization (PTQ and QAT, 8-bit and 4-bit), knowledge distillation, low-rank factorization</li>
+<li>Mixture-of-Experts models; neural architecture search (overview)</li>
+<li>Deployment: ONNX, TorchScript and torch.compile, inference serving, edge and mobile considerations</li>
+</ul>
+<p><strong>Readings:</strong> Micikevicius et al. (Mixed Precision, 2018); Rajbhandari et al. (ZeRO, 2020); Dao et al. (FlashAttention, 2022); Hinton et al. (Distillation, 2015); Han et al. (Deep Compression, 2016)</p>
+<p><strong>Lab:</strong> Profile a training loop; apply mixed precision, quantization, and distillation to a model and report the accuracy/latency trade-off</p>
+<p><strong>Due:</strong> Assignment 4 (generative modeling, efficiency, or graph/RL task chosen from a menu); project progress report (preliminary results and baseline comparison)</p>
+<h4 id="week-17-trustworthy-deep-learning-and-theory">Week 17: Trustworthy Deep Learning and Theory</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Robustness: adversarial examples (FGSM, PGD), adversarial training, distribution shift, out-of-distribution detection</li>
+<li>Uncertainty estimation: deep ensembles, MC dropout, calibration, conformal prediction (overview)</li>
+<li>Interpretability and explainability: saliency maps, Grad-CAM, integrated gradients, attention analysis, probing, mechanistic interpretability (overview)</li>
+<li>Fairness, bias, privacy (differential privacy, membership inference), safety, and responsible release</li>
+<li>Deep learning theory highlights: generalization in overparameterized models, implicit regularization, neural tangent kernel, lottery ticket hypothesis, grokking</li>
+<li>Open problems and research directions: reasoning, agents, data efficiency, continual learning, world models</li>
+</ul>
+<p><strong>Readings:</strong> Goodfellow et al. (Explaining and Harnessing Adversarial Examples, 2015); Selvaraju et al. (Grad-CAM, 2017); Guo et al. (Calibration, 2017); Zhang et al. (Rethinking Generalization, 2017); Frankle &amp; Carbin (Lottery Ticket, 2019)</p>
+<p><strong>Lab:</strong> Craft adversarial examples and evaluate defenses; produce Grad-CAM explanations; measure model calibration</p>
+<h4 id="week-18-final-project-presentations-review-and-final-exam">Week 18: Final Project Presentations, Review, and Final Exam</h4>
+<p><strong>Topics</strong></p>
+<ul>
+<li>Session 1: Final project presentations and demos (12 minutes plus Q&amp;A per team)</li>
+<li>Session 2: Cumulative review of the course, emphasizing Weeks 9 to 17; discussion of next steps (reading groups, research directions, career paths)</li>
+<li>Final exam</li>
+</ul>
+<p><strong>Due:</strong> Final project report (6 to 8 pages in conference format) and code repository with a reproducibility README</p>
+<p><strong>Exam:</strong> Final exam (cumulative)</p>
+<h2 id="programming-assignments-summary">Programming assignments summary</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Due</th>
+<th>Topic</th>
+<th>Core skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Week 4</td>
+<td>MLPs from scratch, optimizers, regularization</td>
+<td>Backpropagation, gradient checking, training diagnostics</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Week 8</td>
+<td>CNNs with transfer learning; RNN/LSTM sequence task</td>
+<td>PyTorch workflow, fine-tuning, sequence modeling</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Week 12</td>
+<td>Transformer from scratch; fine-tuning a pretrained model with LoRA</td>
+<td>Attention, Hugging Face, PEFT</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Week 16</td>
+<td>Choice of generative modeling (VAE/GAN/diffusion), efficiency study, or GNN/RL task</td>
+<td>Advanced architectures, benchmarking, trade-off analysis</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each assignment includes a code component (auto-checked where possible) and a 2 to 4 page report with experiments, ablations, and discussion.</p>
+<h2 id="final-project-guidelines">Final project guidelines</h2>
+<p><strong>Team size:</strong> 1 to 3 students</p>
+<p><strong>Project types (choose one):</strong></p>
+<ul>
+<li>Applied project: solve a real problem with deep learning on a new or non-trivial dataset</li>
+<li>Reproduction project: reproduce a recent paper's key results and extend it with new experiments</li>
+<li>Research project: propose and test a novel idea, with ablations and analysis</li>
+</ul>
+<p><strong>Milestones</strong></p>
+<ul>
+<li>Week 8: Proposal (1 page)</li>
+<li>Week 12: Instructor feedback meetings (10 minutes per team)</li>
+<li>Week 16: Progress report (2 pages, with baseline results)</li>
+<li>Week 18: Presentation and final report</li>
+</ul>
+<p><strong>Evaluation criteria:</strong> problem significance, technical correctness, experimental rigor (baselines, ablations, multiple seeds), clarity of writing, reproducibility, and insight in analysis.</p>
+<h2 id="paper-presentation-guidelines">Paper presentation guidelines</h2>
+<p>Starting Week 10, one or two students present a paper per week from a curated list (aligned with that week's topic). Presenters give a 15-minute talk covering motivation, method, experiments, and limitations, followed by a critical discussion. Presenters submit slides 24 hours before class, and all students submit a one-paragraph reaction note.</p>
+<h2 id="course-policies">Course policies</h2>
+<ul>
+<li><strong>Attendance and participation:</strong> Regular attendance is expected; weekly quizzes are short and low-stakes.</li>
+<li><strong>Late submissions:</strong> 10% penalty per day, up to 3 days; no credit afterwards unless arranged in advance.</li>
+<li><strong>Academic integrity:</strong> Discussion of ideas is encouraged, but all submitted code and writing must be your own. Use of AI coding assistants and external code must be disclosed and cited; unattributed copying is a violation of the academic integrity policy.</li>
+<li><strong>Compute:</strong> Students receive access to GPU resources (cloud credits or cluster accounts); heavy jobs should be planned early.</li>
+<li><strong>Accessibility:</strong> Students requiring accommodations should contact the instructor in the first two weeks.</li>
+</ul>
+<h2 id="suggested-additional-reading-and-resources">Suggested additional reading and resources</h2>
+<ul>
+<li>Stanford CS231n (vision), CS224n (NLP with deep learning), and CS236 (deep generative models)</li>
+<li>MIT 6.S191 and fast.ai Practical Deep Learning</li>
+<li>Andrej Karpathy, &quot;Neural Networks: Zero to Hero&quot; video series</li>
+<li>Papers With Code and arXiv (cs.LG, cs.CV, cs.CL) for staying current</li>
+<li>Distill.pub articles for intuition and visualization</li>
+</ul>
+</div></article><footer class="site-foot"><div>Open educational resource. Text and figures licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, code under the MIT license.</div><div><a href="about.html">About &amp; contributing</a> · <a href="syllabus.html">Syllabus</a> · <a href="glossary.html">Glossary</a></div></footer></main>
+<aside class="toc" aria-label="On this page"><div class="toc-inner"><div class="toc-title">On this page</div><ul><li class="l2"><a href="#course-description">Course description</a></li><li class="l2"><a href="#prerequisites">Prerequisites</a></li><li class="l2"><a href="#learning-outcomes">Learning outcomes</a></li><li class="l2"><a href="#tools-and-software">Tools and software</a></li><li class="l2"><a href="#textbooks-and-references">Textbooks and references</a></li><li class="l2"><a href="#assessment-and-grading">Assessment and grading</a></li><li class="l2"><a href="#course-roadmap-at-a-glance">Course roadmap at a glance</a></li><li class="l2"><a href="#weekly-schedule">Weekly Schedule</a></li><li class="l2"><a href="#programming-assignments-summary">Programming assignments summary</a></li><li class="l2"><a href="#final-project-guidelines">Final project guidelines</a></li><li class="l2"><a href="#paper-presentation-guidelines">Paper presentation guidelines</a></li><li class="l2"><a href="#course-policies">Course policies</a></li><li class="l2"><a href="#suggested-additional-reading-and-resources">Suggested additional reading and resources</a></li></ul></div></aside>
+</div>
+<div class="search-modal" id="search-modal" hidden role="dialog" aria-modal="true" aria-label="Search">
+<div class="search-box"><input id="search-input" type="search" placeholder="Search topics, formulas, papers..." autocomplete="off" spellcheck="false" aria-label="Search query"><ul id="search-results" role="listbox"></ul><div class="search-hint"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div></div></div>
+<script src="assets/search-index.js" defer></script>
+<script src="assets/dl-lib.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

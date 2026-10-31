@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img"><defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">BPE: start from characters, repeatedly merge the most frequent adjacent pair</text>
+<text x="70" y="66" class="t-bold" text-anchor="middle" dominant-baseline="middle">start</text>
+<rect x="140" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="157.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">l</text>
+<rect x="180" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="197.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">o</text>
+<rect x="220" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="237.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">w</text>
+<rect x="260" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="277.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">e</text>
+<rect x="300" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="317.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">s</text>
+<rect x="340" y="50" width="34" height="32" rx="6" class="box"/>
+<text x="357.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">t</text>
+<rect x="380" y="50" width="60" height="32" rx="6" class="box"/>
+<text x="410.0" y="66" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;/w&gt;</text>
+<text x="470" y="66" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">count every adjacent pair over the whole corpus</text>
+<line x1="200" y1="84" x2="200" y2="100" class="ln" marker-end="url(#a4)"/>
+<text x="70" y="118" class="t-bold" text-anchor="middle" dominant-baseline="middle">merge 1</text>
+<rect x="140" y="102" width="34" height="32" rx="6" class="box-amber"/>
+<text x="157.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">l</text>
+<rect x="180" y="102" width="34" height="32" rx="6" class="box-amber"/>
+<text x="197.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">o</text>
+<rect x="220" y="102" width="38" height="32" rx="6" class="box-amber"/>
+<text x="239.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">we</text>
+<rect x="264" y="102" width="34" height="32" rx="6" class="box-amber"/>
+<text x="281.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">s</text>
+<rect x="304" y="102" width="34" height="32" rx="6" class="box-amber"/>
+<text x="321.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">t</text>
+<rect x="344" y="102" width="60" height="32" rx="6" class="box-amber"/>
+<text x="374.0" y="118" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;/w&gt;</text>
+<text x="470" y="118" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">(w,e) -> we   (corpus-wide)</text>
+<line x1="200" y1="136" x2="200" y2="152" class="ln" marker-end="url(#a4)"/>
+<text x="70" y="170" class="t-bold" text-anchor="middle" dominant-baseline="middle">merge 2</text>
+<rect x="140" y="154" width="34" height="32" rx="6" class="box-amber"/>
+<text x="157.0" y="170" class="t-mono" text-anchor="middle" dominant-baseline="middle">l</text>
+<rect x="180" y="154" width="34" height="32" rx="6" class="box-amber"/>
+<text x="197.0" y="170" class="t-mono" text-anchor="middle" dominant-baseline="middle">o</text>
+<rect x="220" y="154" width="38" height="32" rx="6" class="box-amber"/>
+<text x="239.0" y="170" class="t-mono" text-anchor="middle" dominant-baseline="middle">we</text>
+<rect x="264" y="154" width="38" height="32" rx="6" class="box-amber"/>
+<text x="283.0" y="170" class="t-mono" text-anchor="middle" dominant-baseline="middle">st</text>
+<rect x="308" y="154" width="60" height="32" rx="6" class="box-amber"/>
+<text x="338.0" y="170" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;/w&gt;</text>
+<text x="470" y="170" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">(s,t) -> st</text>
+<line x1="200" y1="188" x2="200" y2="204" class="ln" marker-end="url(#a4)"/>
+<text x="70" y="222" class="t-bold" text-anchor="middle" dominant-baseline="middle">merge 3</text>
+<rect x="140" y="206" width="34" height="32" rx="6" class="box-amber"/>
+<text x="157.0" y="222" class="t-mono" text-anchor="middle" dominant-baseline="middle">l</text>
+<rect x="180" y="206" width="34" height="32" rx="6" class="box-amber"/>
+<text x="197.0" y="222" class="t-mono" text-anchor="middle" dominant-baseline="middle">o</text>
+<rect x="220" y="206" width="38" height="32" rx="6" class="box-amber"/>
+<text x="239.0" y="222" class="t-mono" text-anchor="middle" dominant-baseline="middle">we</text>
+<rect x="264" y="206" width="82" height="32" rx="6" class="box-amber"/>
+<text x="305.0" y="222" class="t-mono" text-anchor="middle" dominant-baseline="middle">st&lt;/w&gt;</text>
+<text x="470" y="222" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">(st,&lt;/w&gt;) -> st&lt;/w&gt;</text>
+<line x1="200" y1="240" x2="200" y2="256" class="ln" marker-end="url(#a4)"/>
+<text x="70" y="274" class="t-bold" text-anchor="middle" dominant-baseline="middle">...</text>
+<rect x="140" y="258" width="38" height="32" rx="6" class="box-amber"/>
+<text x="159.0" y="274" class="t-mono" text-anchor="middle" dominant-baseline="middle">lo</text>
+<rect x="184" y="258" width="104" height="32" rx="6" class="box-amber"/>
+<text x="236.0" y="274" class="t-mono" text-anchor="middle" dominant-baseline="middle">west&lt;/w&gt;</text>
+<text x="470" y="274" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">later merges build "lo", "west&lt;/w&gt;", ...</text>
+<line x1="200" y1="292" x2="200" y2="308" class="ln" marker-end="url(#a4)"/>
+<text x="70" y="326" class="t-bold" text-anchor="middle" dominant-baseline="middle">final</text>
+<rect x="140" y="310" width="126" height="32" rx="6" class="box-amber"/>
+<text x="203.0" y="326" class="t-mono" text-anchor="middle" dominant-baseline="middle">lowest&lt;/w&gt;</text>
+<text x="470" y="326" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">a frequent word becomes one token; a rare one stays in pieces</text>
+
+</svg>

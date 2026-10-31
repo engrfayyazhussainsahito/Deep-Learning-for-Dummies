@@ -1,0 +1,14 @@
+<svg viewBox="0 0 780 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">Over-squashing: exponentially many messages, one fixed-size vector</text>
+<g class="ln-thin"><line x1="390" y1="70" x2="250" y2="130"/><line x1="390" y1="70" x2="530" y2="130"/><line x1="250" y1="130" x2="170" y2="190"/><line x1="250" y1="130" x2="320" y2="190"/><line x1="530" y1="130" x2="460" y2="190"/><line x1="530" y1="130" x2="610" y2="190"/></g>
+<g class="ln-thin"><line x1="170" y1="190" x2="130" y2="250"/><line x1="170" y1="190" x2="210" y2="250"/><line x1="320" y1="190" x2="290" y2="250"/><line x1="320" y1="190" x2="350" y2="250"/><line x1="460" y1="190" x2="430" y2="250"/><line x1="460" y1="190" x2="490" y2="250"/><line x1="610" y1="190" x2="570" y2="250"/><line x1="610" y1="190" x2="650" y2="250"/></g>
+<circle class="box-red" cx="390" cy="70" r="18"/><text class="t-sm" x="390" y="70" text-anchor="middle" dominant-baseline="middle">v</text>
+<g class="box-blue"><circle cx="250" cy="130" r="14"/><circle cx="530" cy="130" r="14"/></g>
+<g class="box-blue"><circle cx="170" cy="190" r="14"/><circle cx="320" cy="190" r="14"/><circle cx="460" cy="190" r="14"/><circle cx="610" cy="190" r="14"/></g>
+<g class="box-green"><circle cx="130" cy="250" r="12"/><circle cx="210" cy="250" r="12"/><circle cx="290" cy="250" r="12"/><circle cx="350" cy="250" r="12"/><circle cx="430" cy="250" r="12"/><circle cx="490" cy="250" r="12"/><circle cx="570" cy="250" r="12"/><circle cx="650" cy="250" r="12"/></g>
+<line class="ln-accent" x1="130" y1="236" x2="165" y2="205" marker-end="url(#w14o)"/>
+<text class="t-sm" x="40" y="130">depth 1: 2 nodes</text><text class="t-sm" x="40" y="190">depth 2: 4 nodes</text><text class="t-sm" x="40" y="250">depth 3: 8 nodes</text>
+<text class="t-sm t-accent" x="700" y="70" text-anchor="end">hop r: 2^r nodes → h_v ∈ R^d</text>
+<text class="t-sm t-muted" x="390" y="296" text-anchor="middle">In a tree with branching 2, the r-hop neighbourhood has 2^r nodes but h_v has fixed width d. Information from far leaves must be compressed through narrow edges.</text>
+</svg>

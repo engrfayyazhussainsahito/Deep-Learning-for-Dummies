@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470"><defs><marker id="w9s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="130" y="24" class="t-bold" text-anchor="middle" dominant-baseline="middle">Decoder-only (GPT-style)</text>
+<rect x="20" y="60" width="300" height="36" rx="6" class="box"/>
+<text x="170" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">token ids (B, T)</text>
+<line x1="170" y1="96" x2="170" y2="116" class="ln" marker-end="url(#w9s)"/>
+<rect x="20" y="116" width="300" height="36" rx="6" class="box-accent"/>
+<text x="170" y="134" class="t-sm" text-anchor="middle" dominant-baseline="middle">Embedding + position (B,T,d)</text>
+<line x1="170" y1="152" x2="170" y2="172" class="ln" marker-end="url(#w9s)"/>
+<rect x="20" y="172" width="300" height="36" rx="6" class="box-green"/>
+<text x="170" y="190" class="t-sm" text-anchor="middle" dominant-baseline="middle">N x  [ LN, causal MHA, +  |  LN, FFN, + ]</text>
+<line x1="170" y1="208" x2="170" y2="228" class="ln" marker-end="url(#w9s)"/>
+<rect x="20" y="228" width="300" height="36" rx="6" class="box-amber"/>
+<text x="170" y="246" class="t-sm" text-anchor="middle" dominant-baseline="middle">final LN (B, T, d)</text>
+<line x1="170" y1="264" x2="170" y2="284" class="ln" marker-end="url(#w9s)"/>
+<rect x="20" y="284" width="300" height="36" rx="6" class="box-blue"/>
+<text x="170" y="302" class="t-sm" text-anchor="middle" dominant-baseline="middle">LM head: x W_E^T  (B, T, V)</text>
+<line x1="170" y1="320" x2="170" y2="340" class="ln" marker-end="url(#w9s)"/>
+<rect x="20" y="340" width="300" height="36" rx="6" class="box"/>
+<text x="170" y="358" class="t-sm" text-anchor="middle" dominant-baseline="middle">softmax -> next-token probs</text>
+<text x="170" y="400" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">weights tied: LM head reuses the embedding matrix</text>
+<text x="570" y="24" class="t-bold" text-anchor="middle" dominant-baseline="middle">Encoder-decoder (original Transformer)</text>
+<rect x="400" y="50" width="150" height="230" rx="8" class="box-blue"/>
+<text x="475" y="66" class="t-bold" text-anchor="middle" dominant-baseline="middle">Encoder x N</text>
+<rect x="415" y="90" width="120" height="44" rx="6" class="box"/>
+<text x="475" y="112" class="t-sm" text-anchor="middle" dominant-baseline="middle">self-attn (full)</text>
+<rect x="415" y="160" width="120" height="44" rx="6" class="box"/>
+<text x="475" y="182" class="t-sm" text-anchor="middle" dominant-baseline="middle">FFN</text>
+<line x1="475" y1="134" x2="475" y2="160" class="ln" marker-end="url(#w9s)"/>
+<text x="475" y="255" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">memory (B, S, d)</text>
+<rect x="600" y="50" width="160" height="330" rx="8" class="box-green"/>
+<text x="680" y="66" class="t-bold" text-anchor="middle" dominant-baseline="middle">Decoder x N</text>
+<rect x="615" y="90" width="130" height="50" rx="6" class="box"/>
+<text x="680" y="115" class="t-sm" text-anchor="middle" dominant-baseline="middle">causal self-attn</text>
+<line x1="680" y1="140" x2="680" y2="170" class="ln" marker-end="url(#w9s)"/>
+<rect x="615" y="170" width="130" height="50" rx="6" class="box-purple"/>
+<text x="680" y="195" class="t-sm" text-anchor="middle" dominant-baseline="middle">cross-attn</text>
+<line x1="680" y1="220" x2="680" y2="250" class="ln" marker-end="url(#w9s)"/>
+<rect x="615" y="250" width="130" height="50" rx="6" class="box"/>
+<text x="680" y="275" class="t-sm" text-anchor="middle" dominant-baseline="middle">FFN</text>
+<path d="M 550 190 C 575 190 585 195 615 195" class="ln-accent" fill="none" marker-end="url(#w9s)"/>
+<text x="570" y="176" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">K, V</text>
+<text x="475" y="300" class="t-sm" text-anchor="middle" dominant-baseline="middle">source tokens</text>
+<text x="680" y="400" class="t-sm" text-anchor="middle" dominant-baseline="middle">target tokens (shifted right)</text>
+<text x="570" y="430" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">decoder queries come from the target side;</text>
+<text x="570" y="448" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">keys and values come from encoder output</text>
+</svg>

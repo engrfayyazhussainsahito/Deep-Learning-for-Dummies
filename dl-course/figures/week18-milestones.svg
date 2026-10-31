@@ -1,0 +1,9 @@
+<svg viewBox="0 0 740 200" xmlns="http://www.w3.org/2000/svg">
+<text class="t-lg t-bold" x="370" y="22" text-anchor="middle">Final project milestones across the semester</text>
+<line class="ln-bold" x1="40" y1="100" x2="700" y2="100"/>
+<circle class="fill-blue" cx="120" cy="100" r="8"/><text class="t-bold" x="120" y="76" text-anchor="middle">Week 8</text><text class="t-sm" x="120" y="128" text-anchor="middle">Proposal</text><text class="t-sm t-muted" x="120" y="146" text-anchor="middle">5%</text>
+<circle class="fill-green" cx="280" cy="100" r="8"/><text class="t-bold" x="280" y="76" text-anchor="middle">Week 12</text><text class="t-sm" x="280" y="128" text-anchor="middle">Feedback meeting</text><text class="t-sm t-muted" x="280" y="146" text-anchor="middle">10 min per team</text>
+<circle class="fill-purple" cx="440" cy="100" r="8"/><text class="t-bold" x="440" y="76" text-anchor="middle">Week 16</text><text class="t-sm" x="440" y="128" text-anchor="middle">Progress report</text><text class="t-sm t-muted" x="440" y="146" text-anchor="middle">2 pages, baselines, 5%</text>
+<circle class="fill-accent" cx="620" cy="100" r="8"/><text class="t-bold" x="620" y="76" text-anchor="middle">Week 18</text><text class="t-sm" x="620" y="128" text-anchor="middle">Talk + report + code</text><text class="t-sm t-muted" x="620" y="146" text-anchor="middle">15% + 5%</text>
+<text class="t-sm t-muted" x="370" y="182" text-anchor="middle">Weights from the syllabus grading table; the project is 30% of the course grade</text>
+</svg>

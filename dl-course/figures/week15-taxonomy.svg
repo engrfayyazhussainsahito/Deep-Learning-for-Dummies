@@ -1,0 +1,20 @@
+<svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg">
+<text class="t-bold" x="390" y="24" text-anchor="middle">Reinforcement learning algorithms at a glance</text>
+<rect class="box-teal" x="30" y="44" width="720" height="86" rx="10"/>
+<text class="t-bold" x="390" y="66" text-anchor="middle">Model-based: learn or use p(s'|s,a), then plan or imagine</text>
+<text class="t-sm" x="390" y="90" text-anchor="middle">Dyna · MBPO · PETS · MuZero (planning with a learnt model) · Dreamer / world models</text>
+<text class="t-sm t-muted" x="390" y="112" text-anchor="middle">more sample efficient; limited by model error</text>
+<rect class="box-blue" x="30" y="150" width="230" height="200" rx="10"/>
+<text class="t-bold" x="145" y="174" text-anchor="middle">Value-based</text><text class="t-sm t-muted" x="145" y="192" text-anchor="middle">learn Q, act greedily</text>
+<text class="t-sm" x="145" y="224" text-anchor="middle">Q-learning, SARSA</text><text class="t-sm" x="145" y="246" text-anchor="middle">DQN, Double, Dueling</text><text class="t-sm" x="145" y="268" text-anchor="middle">prioritized replay, Rainbow</text>
+<text class="t-sm t-muted" x="145" y="312" text-anchor="middle">off-policy, discrete actions</text>
+<rect class="box-amber" x="275" y="150" width="230" height="200" rx="10"/>
+<text class="t-bold" x="390" y="174" text-anchor="middle">Actor-critic</text><text class="t-sm t-muted" x="390" y="192" text-anchor="middle">policy + value function</text>
+<text class="t-sm" x="390" y="224" text-anchor="middle">A2C / A3C, GAE</text><text class="t-sm" x="390" y="246" text-anchor="middle">TRPO, PPO (on-policy)</text><text class="t-sm" x="390" y="268" text-anchor="middle">DDPG, TD3, SAC (off-policy)</text>
+<text class="t-sm t-muted" x="390" y="312" text-anchor="middle">discrete or continuous actions</text>
+<rect class="box-green" x="520" y="150" width="230" height="200" rx="10"/>
+<text class="t-bold" x="635" y="174" text-anchor="middle">Policy-based</text><text class="t-sm t-muted" x="635" y="192" text-anchor="middle">optimize π_θ directly</text>
+<text class="t-sm" x="635" y="224" text-anchor="middle">REINFORCE</text><text class="t-sm" x="635" y="246" text-anchor="middle">+ baseline</text><text class="t-sm" x="635" y="268" text-anchor="middle">evolution strategies</text>
+<text class="t-sm t-muted" x="635" y="312" text-anchor="middle">high variance, on-policy</text>
+<text class="t-sm t-muted" x="390" y="378" text-anchor="middle">Orthogonal axis: offline RL learns from a fixed dataset (CQL, IQL, BCQ) with any of these families</text>
+</svg>

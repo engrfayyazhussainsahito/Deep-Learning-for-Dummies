@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300"><defs><marker id="u9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Why Wasserstein: the critic keeps giving a useful slope when supports are disjoint</text>
+<line x1="40" y1="200" x2="720" y2="200" class="ln"/>
+<rect x="110" y="160" width="60" height="40" rx="6" class="box-blue"/>
+<text x="140.0" y="180.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">p_data</text>
+<rect x="540" y="160" width="60" height="40" rx="6" class="box-red"/>
+<text x="570.0" y="180.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">p_G</text>
+<path d="M40,90 L355,90 L365,60 L720,60" class="ln-amber" fill="none"/>
+<text x="200" y="76" class="t-sm" text-anchor="middle" dominant-baseline="middle">D (JS): saturates, flat, no gradient to G</text>
+<path d="M110,262 L600,234" class="ln-green" fill="none"/>
+<text x="360" y="284" class="t-sm" text-anchor="middle" dominant-baseline="middle">WGAN critic f (1-Lipschitz): slope tells G which way to move</text>
+<text x="380" y="126" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">JS(p,q) = log 2 for disjoint supports: constant, so zero gradient</text>
+</svg>

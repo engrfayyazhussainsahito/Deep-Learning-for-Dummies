@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img"><defs><marker id="w7a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="95" y="20" class="t t-bold" text-anchor="middle" dominant-baseline="middle">One-to-many</text>
+<text x="95" y="40" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">captioning, music</text>
+<rect x="24.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="56.0" y1="166" x2="79.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="79.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="111.0" y1="166" x2="134.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="134.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<rect x="28.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="40.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="40.0" y1="230" x2="40.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="28.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="40.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="40.0" y1="148" x2="40.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<rect x="83.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="95.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="95.0" y1="148" x2="95.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<rect x="138.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="150.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="150.0" y1="148" x2="150.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<text x="285" y="20" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Many-to-one</text>
+<text x="285" y="40" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">sentiment, classification</text>
+<rect x="214.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="246.0" y1="166" x2="269.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="269.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="301.0" y1="166" x2="324.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="324.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<rect x="218.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="230.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="230.0" y1="230" x2="230.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="273.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="285.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="285.0" y1="230" x2="285.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="328.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="340.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="340.0" y1="230" x2="340.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="328.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="340.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="340.0" y1="148" x2="340.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<text x="475" y="20" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Aligned many-to-many</text>
+<text x="475" y="40" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">tagging, per-step forecast</text>
+<rect x="404.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="436.0" y1="166" x2="459.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="459.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="491.0" y1="166" x2="514.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="514.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<rect x="408.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="420.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="420.0" y1="230" x2="420.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="408.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="420.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="420.0" y1="148" x2="420.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<rect x="463.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="475.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="475.0" y1="230" x2="475.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="463.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="475.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="475.0" y1="148" x2="475.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<rect x="518.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="530.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="530.0" y1="230" x2="530.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="518.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="530.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="530.0" y1="148" x2="530.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<text x="665" y="20" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Encode then decode</text>
+<text x="665" y="40" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">translation, summarization</text>
+<rect x="594.0" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="626.0" y1="166" x2="630.6666666666666" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="630.6666666666666" y="150" width="32" height="32" rx="6" class="box-accent"/>
+<line x1="662.6666666666666" y1="166" x2="667.3333333333334" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="667.3333333333334" y="150" width="32" height="32" rx="6" class="box-purple"/>
+<line x1="699.3333333333334" y1="166" x2="704.0" y2="166" class="ln" marker-end="url(#w7a)"/>
+<rect x="704.0" y="150" width="32" height="32" rx="6" class="box-purple"/>
+<rect x="598.0" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="610.0" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="610.0" y1="230" x2="610.0" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="634.6666666666666" y="230" width="24" height="24" rx="6" class="box-blue"/>
+<text x="646.6666666666666" y="242.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="646.6666666666666" y1="230" x2="646.6666666666666" y2="184" class="ln" marker-end="url(#w7a)"/>
+<rect x="671.3333333333334" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="683.3333333333334" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="683.3333333333334" y1="148" x2="683.3333333333334" y2="118" class="ln" marker-end="url(#w7a)"/>
+<rect x="708.0" y="92" width="24" height="24" rx="6" class="box-green"/>
+<text x="720.0" y="104.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">y</text>
+<line x1="720.0" y1="148" x2="720.0" y2="118" class="ln" marker-end="url(#w7a)"/>
+<text x="665.0" y="205" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">context</text>
+<text x="380" y="300" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Blue: inputs.  Green: outputs.  Each RNN box is the same cell with shared weights.</text>
+</svg>

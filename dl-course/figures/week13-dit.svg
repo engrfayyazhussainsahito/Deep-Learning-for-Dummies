@@ -1,0 +1,19 @@
+<svg viewBox="0 0 740 380" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w13d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="370" y="22" text-anchor="middle">Diffusion Transformer (DiT): patchify latents, condition by adaLN</text>
+<rect class="box-red" x="20" y="60" width="90" height="60" rx="6"/><text class="t-sm" x="65" y="82" text-anchor="middle" dominant-baseline="middle">noisy latent</text><text class="t-sm t-muted" x="65" y="102" text-anchor="middle" dominant-baseline="middle">4×32×32</text>
+<rect class="box-blue" x="140" y="60" width="90" height="60" rx="6"/><text class="t-sm" x="185" y="82" text-anchor="middle" dominant-baseline="middle">patchify p=2</text><text class="t-sm t-muted" x="185" y="102" text-anchor="middle" dominant-baseline="middle">256 tokens</text>
+<rect class="box" x="260" y="60" width="90" height="60" rx="6"/><text class="t-sm" x="305" y="82" text-anchor="middle" dominant-baseline="middle">+ pos. emb.</text><text class="t-sm t-muted" x="305" y="102" text-anchor="middle" dominant-baseline="middle">256×d</text>
+<line class="ln" x1="112" y1="90" x2="138" y2="90" marker-end="url(#w13d)"/><line class="ln" x1="232" y1="90" x2="258" y2="90" marker-end="url(#w13d)"/>
+<rect class="box-purple" x="130" y="160" width="240" height="190" rx="10"/>
+<text class="t-bold" x="250" y="182" text-anchor="middle">DiT block (×N)</text>
+<rect class="box" x="160" y="200" width="180" height="32" rx="6"/><text class="t-sm" x="250" y="216" text-anchor="middle" dominant-baseline="middle">adaLN(γ₁, β₁) → self-attention</text>
+<rect class="box" x="160" y="244" width="180" height="32" rx="6"/><text class="t-sm" x="250" y="260" text-anchor="middle" dominant-baseline="middle">scale α₁, residual add</text>
+<rect class="box" x="160" y="288" width="180" height="32" rx="6"/><text class="t-sm" x="250" y="304" text-anchor="middle" dominant-baseline="middle">adaLN(γ₂, β₂) → MLP, α₂, add</text>
+<line class="ln" x1="305" y1="122" x2="305" y2="158" marker-end="url(#w13d)"/>
+<rect class="box-green" x="470" y="200" width="150" height="60" rx="8"/><text class="t-sm" x="545" y="222" text-anchor="middle" dominant-baseline="middle">embed(t) + embed(class)</text><text class="t-sm t-muted" x="545" y="242" text-anchor="middle" dominant-baseline="middle">→ MLP → (γ,β,α) × 2</text>
+<line class="ln-green" x1="468" y1="230" x2="372" y2="250" marker-end="url(#w13d)"/>
+<rect class="box-blue" x="470" y="300" width="150" height="50" rx="8"/><text class="t-sm" x="545" y="318" text-anchor="middle" dominant-baseline="middle">linear + unpatchify</text><text class="t-sm t-muted" x="545" y="336" text-anchor="middle" dominant-baseline="middle">ε̂ (and optional Σ)</text>
+<line class="ln" x1="372" y1="325" x2="468" y2="325" marker-end="url(#w13d)"/>
+<text class="t-sm t-muted" x="545" y="110" text-anchor="middle">adaLN-Zero: α initialised to 0, so every</text><text class="t-sm t-muted" x="545" y="128" text-anchor="middle">block starts as the identity map</text>
+</svg>

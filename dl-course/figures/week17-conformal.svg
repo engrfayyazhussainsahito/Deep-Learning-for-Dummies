@@ -1,0 +1,23 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="20" y="22">1. Scores s_i = 1 - p(y_i | x_i) on n calibration points (sorted)</text>
+<line class="ln" x1="30" y1="90" x2="690" y2="90" marker-end="url(#w17d)"/>
+<g>
+<circle class="fill-blue" cx="60" cy="90" r="5"/><circle class="fill-blue" cx="90" cy="90" r="5"/><circle class="fill-blue" cx="115" cy="90" r="5"/><circle class="fill-blue" cx="150" cy="90" r="5"/><circle class="fill-blue" cx="170" cy="90" r="5"/><circle class="fill-blue" cx="215" cy="90" r="5"/><circle class="fill-blue" cx="250" cy="90" r="5"/><circle class="fill-blue" cx="290" cy="90" r="5"/><circle class="fill-blue" cx="320" cy="90" r="5"/><circle class="fill-blue" cx="370" cy="90" r="5"/><circle class="fill-blue" cx="410" cy="90" r="5"/><circle class="fill-blue" cx="450" cy="90" r="5"/><circle class="fill-blue" cx="480" cy="90" r="5"/>
+<circle class="fill-blue" cx="560" cy="90" r="5" style="opacity:.35"/><circle class="fill-blue" cx="610" cy="90" r="5" style="opacity:.35"/><circle class="fill-blue" cx="660" cy="90" r="5" style="opacity:.35"/>
+</g>
+<line class="ln-accent" x1="520" y1="60" x2="520" y2="120"/>
+<text class="t-accent t-bold" x="520" y="50" text-anchor="middle">q_hat</text>
+<text class="t-sm" x="520" y="138" text-anchor="middle">the ceil((n+1)(1-alpha))-th smallest</text>
+<text class="t-sm t-muted" x="610" y="112" text-anchor="middle">worst alpha</text>
+<text class="t-bold" x="20" y="176">2. New input: include every label j with 1 - p_j(x) <= q_hat</text>
+<g>
+<rect class="box" x="60" y="196" width="60" height="26"/><rect class="box-green" x="60" y="196" width="48" height="26"/>
+<rect class="box" x="140" y="196" width="60" height="26"/><rect class="box-green" x="140" y="196" width="40" height="26"/>
+<rect class="box" x="220" y="196" width="60" height="26"/><rect class="box" x="300" y="196" width="60" height="26"/><rect class="box" x="380" y="196" width="60" height="26"/>
+</g>
+<text class="t-sm" x="90" y="240" text-anchor="middle">cat 0.80</text><text class="t-sm" x="170" y="240" text-anchor="middle">dog 0.12</text><text class="t-sm" x="250" y="240" text-anchor="middle">fox 0.04</text><text class="t-sm" x="330" y="240" text-anchor="middle">cow 0.03</text><text class="t-sm" x="410" y="240" text-anchor="middle">cow 0.01</text>
+<text class="t" x="470" y="206">Set = {cat, dog} if q_hat = 0.9</text>
+<text class="t-sm t-muted" x="470" y="226">(1-p: cat 0.2, dog 0.88 pass; fox 0.96 fails)</text>
+<text class="t-sm t-muted" x="20" y="280">Guarantee: P(true label in set) >= 1 - alpha, for any model and any data distribution, if calibration and test are exchangeable.</text>
+</svg>

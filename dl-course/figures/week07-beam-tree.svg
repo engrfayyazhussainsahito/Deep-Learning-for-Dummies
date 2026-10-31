@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img"><defs><marker id="w7i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Beam search, width 2: keep the two best partial hypotheses at each step</text>
+<rect x="25" y="162" width="90" height="36" rx="6" class="box-accent"/>
+<text x="70.0" y="173.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">&lt;s></text>
+<text x="70.0" y="189.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">0.00</text>
+<rect x="205" y="72" width="90" height="36" rx="6" class="box-green"/>
+<text x="250.0" y="83.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the</text>
+<text x="250.0" y="99.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-0.9</text>
+<line x1="115" y1="180" x2="205" y2="90" class="ln" marker-end="url(#w7i)"/>
+<rect x="205" y="162" width="90" height="36" rx="6" class="box-green"/>
+<text x="250.0" y="173.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">a</text>
+<text x="250.0" y="189.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-1.2</text>
+<line x1="115" y1="180" x2="205" y2="180" class="ln" marker-end="url(#w7i)"/>
+<rect x="205" y="252" width="90" height="36" rx="6" class="box"/>
+<text x="250.0" y="263.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">one</text>
+<text x="250.0" y="279.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-2.3</text>
+<line x1="115" y1="180" x2="205" y2="270" class="ln-dash" marker-end="url(#w7i)"/>
+<rect x="385" y="72" width="90" height="36" rx="6" class="box-green"/>
+<text x="430.0" y="83.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the cat</text>
+<text x="430.0" y="99.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-1.6</text>
+<line x1="295" y1="90" x2="385" y2="90" class="ln" marker-end="url(#w7i)"/>
+<rect x="385" y="122" width="90" height="36" rx="6" class="box"/>
+<text x="430.0" y="133.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the dog</text>
+<text x="430.0" y="149.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-2.2</text>
+<line x1="295" y1="90" x2="385" y2="140" class="ln-dash" marker-end="url(#w7i)"/>
+<rect x="385" y="202" width="90" height="36" rx="6" class="box-green"/>
+<text x="430.0" y="213.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">a cat</text>
+<text x="430.0" y="229.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-1.8</text>
+<line x1="295" y1="180" x2="385" y2="220" class="ln" marker-end="url(#w7i)"/>
+<rect x="385" y="252" width="90" height="36" rx="6" class="box"/>
+<text x="430.0" y="263.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">a dog</text>
+<text x="430.0" y="279.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-2.7</text>
+<line x1="295" y1="180" x2="385" y2="270" class="ln-dash" marker-end="url(#w7i)"/>
+<text x="250" y="330" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">step 1</text>
+<text x="430" y="330" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">step 2</text>
+<text x="620" y="330" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">step 3 ...</text>
+<rect x="575" y="102" width="90" height="36" rx="6" class="box-green"/>
+<text x="620.0" y="113.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the cat sat</text>
+<text x="620.0" y="129.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-2.1</text>
+<rect x="575" y="192" width="90" height="36" rx="6" class="box-green"/>
+<text x="620.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">a cat sat</text>
+<text x="620.0" y="219.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">-2.2</text>
+<line x1="475" y1="90" x2="575" y2="120" class="ln" marker-end="url(#w7i)"/>
+<line x1="475" y1="220" x2="575" y2="210" class="ln" marker-end="url(#w7i)"/>
+<text x="710" y="262" class="t" text-anchor="middle" dominant-baseline="middle"></text>
+<text x="380" y="350" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Scores are cumulative log-probabilities. Dashed = pruned. Greedy would have kept only the single best node per step.</text>
+</svg>

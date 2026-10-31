@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450"><defs><marker id="w10b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="190" y="22" class="t-bold" text-anchor="middle" dominant-baseline="middle">One Transformer block, frozen (gray) vs trainable (colored)</text>
+<rect x="70" y="50" width="240" height="330" rx="8" class="box"/>
+<rect x="100" y="70" width="180" height="28" rx="5" class="box"/><text x="190.0" y="84.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">LayerNorm</text>
+<rect x="100" y="125" width="180" height="38" rx="5" class="box"/><text x="190.0" y="144.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Self-attention (W_Q W_K W_V W_O)</text>
+<rect x="100" y="195" width="180" height="28" rx="5" class="box"/><text x="190.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">LayerNorm</text>
+<rect x="100" y="250" width="180" height="38" rx="5" class="box"/><text x="190.0" y="269.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">FFN (W_1, W_2)</text>
+<rect x="100" y="320" width="180" height="28" rx="5" class="box"/><text x="190.0" y="334.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">residual + output</text>
+<line x1="190" y1="380" x2="190" y2="420" class="ln" marker-end="url(#w10b)"/>
+<text x="190" y="432" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">to next block</text>
+<rect x="330" y="166" width="120" height="24" rx="5" class="box-amber"/>
+<text x="390" y="178" class="t-sm" text-anchor="middle" dominant-baseline="middle">Adapter</text>
+<rect x="330" y="291" width="120" height="24" rx="5" class="box-amber"/>
+<text x="390" y="303" class="t-sm" text-anchor="middle" dominant-baseline="middle">Adapter</text>
+<line x1="280" y1="144" x2="330" y2="178" class="ln-amber"/>
+<line x1="280" y1="269" x2="330" y2="303" class="ln-amber"/>
+<rect x="330" y="110" width="120" height="24" rx="5" class="box-green"/>
+<text x="390" y="122" class="t-sm" text-anchor="middle" dominant-baseline="middle">LoRA  BA</text>
+<line x1="280" y1="144" x2="330" y2="122" class="ln-green"/>
+<rect x="330" y="70" width="120" height="24" rx="5" class="box-purple"/>
+<text x="390" y="82" class="t-sm" text-anchor="middle" dominant-baseline="middle">prefix K, V</text>
+<line x1="280" y1="132" x2="330" y2="82" class="ln-purple"/>
+<rect x="70" y="6" width="0" height="0" rx="6" class="box"/>
+<rect x="330" y="360" width="120" height="24" rx="5" class="box-red"/>
+<text x="390" y="372" class="t-sm" text-anchor="middle" dominant-baseline="middle">soft prompt</text>
+<text x="390" y="392" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">(input embeddings)</text>
+<rect x="490" y="50" width="250" height="330" rx="8" class="box"/>
+<text x="615" y="76" class="t-bold" text-anchor="middle" dominant-baseline="middle">Where the trainable parameters live</text>
+<text x="615" y="118" class="t-sm" text-anchor="middle" dominant-baseline="middle">Adapters (Houlsby 2019): small bottleneck</text>
+<text x="615" y="139" class="t-sm" text-anchor="middle" dominant-baseline="middle">MLPs inserted after sublayers.</text>
+<text x="615" y="181" class="t-sm" text-anchor="middle" dominant-baseline="middle">LoRA (Hu 2022): low-rank update BA added</text>
+<text x="615" y="202" class="t-sm" text-anchor="middle" dominant-baseline="middle">in parallel to a weight; mergeable.</text>
+<text x="615" y="244" class="t-sm" text-anchor="middle" dominant-baseline="middle">Prefix-tuning (Li, Liang 2021): learned</text>
+<text x="615" y="265" class="t-sm" text-anchor="middle" dominant-baseline="middle">key/value vectors prepended per layer.</text>
+<text x="615" y="307" class="t-sm" text-anchor="middle" dominant-baseline="middle">Prompt tuning (Lester 2021): learned</text>
+<text x="615" y="328" class="t-sm" text-anchor="middle" dominant-baseline="middle">embeddings prepended to the input only.</text>
+<text x="615" y="370" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Full fine-tuning: every weight trains.</text>
+</svg>

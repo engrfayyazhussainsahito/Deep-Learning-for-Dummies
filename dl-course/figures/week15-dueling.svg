@@ -1,0 +1,12 @@
+<svg viewBox="0 0 740 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-green" x="20" y="125" width="90" height="70" rx="10"/><text class="t-bold" x="65" y="152" text-anchor="middle">state</text><text class="t-sm" x="65" y="172" text-anchor="middle">s (obs_dim)</text>
+<rect class="box-blue" x="150" y="115" width="130" height="90" rx="10"/><text class="t-bold" x="215" y="150" text-anchor="middle">Shared trunk</text><text class="t-sm" x="215" y="170" text-anchor="middle">conv or MLP</text><text class="t-sm t-muted" x="215" y="188" text-anchor="middle">features h(s)</text>
+<path class="ln-bold" d="M110,160 L150,160" fill="none" marker-end="url(#w15d)"/>
+<rect class="box-purple" x="340" y="50" width="150" height="70" rx="10"/><text class="t-bold" x="415" y="78" text-anchor="middle">Value stream</text><text class="t-sm" x="415" y="98" text-anchor="middle">V(s) : scalar</text>
+<rect class="box-amber" x="340" y="200" width="150" height="70" rx="10"/><text class="t-bold" x="415" y="228" text-anchor="middle">Advantage stream</text><text class="t-sm" x="415" y="248" text-anchor="middle">A(s,a) : |A| outputs</text>
+<path class="ln-bold" d="M280,145 L340,95" fill="none" marker-end="url(#w15d)"/><path class="ln-bold" d="M280,175 L340,225" fill="none" marker-end="url(#w15d)"/>
+<rect class="box-red" x="550" y="125" width="170" height="70" rx="10"/><text class="t-bold" x="635" y="148" text-anchor="middle">Q(s,a)</text><text class="t-sm" x="635" y="168" text-anchor="middle">V + A − mean(A)</text><text class="t-sm t-muted" x="635" y="184" text-anchor="middle">|A| outputs</text>
+<path class="ln-bold" d="M490,85 L550,145" fill="none" marker-end="url(#w15d)"/><path class="ln-bold" d="M490,235 L550,175" fill="none" marker-end="url(#w15d)"/>
+<text class="t-sm t-muted" x="370" y="305" text-anchor="middle">Every update trains V(s) regardless of which action was taken</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320"><defs><marker id="v8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Multimodal LLM: vision encoder -> connector -> language model</text>
+<rect x="20" y="110" width="90" height="80" rx="6" class="box-blue"/>
+<text x="65.0" y="142.0" class="t" text-anchor="middle" dominant-baseline="middle">Image</text>
+<text x="65.0" y="159.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">336 x 336</text>
+<rect x="150" y="100" width="110" height="100" rx="6" class="box-green"/>
+<text x="205.0" y="142.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Vision encoder</text>
+<text x="205.0" y="159.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">CLIP ViT-L/14</text>
+<text x="205" y="218" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">576 x 1024</text>
+<line x1="110" y1="150" x2="150" y2="150" class="ln" marker-end="url(#v8a)"/>
+<rect x="300" y="115" width="100" height="70" rx="6" class="box-purple"/>
+<text x="350.0" y="142.0" class="t" text-anchor="middle" dominant-baseline="middle">Connector</text>
+<text x="350.0" y="159.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">MLP / Q-Former</text>
+<text x="350" y="203" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">576 x 4096</text>
+<line x1="260" y1="150" x2="300" y2="150" class="ln" marker-end="url(#v8a)"/>
+<rect x="450" y="60" width="290" height="190" rx="6" class="box-accent"/>
+<text x="595" y="80" class="t-bold" text-anchor="middle" dominant-baseline="middle">Language model (decoder-only)</text>
+<rect x="466" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<rect x="488" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<rect x="510" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<rect x="532" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<rect x="554" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<rect x="576" y="100" width="20" height="26" rx="2" class="box-blue"/>
+<text x="542" y="140" class="t-sm" text-anchor="middle" dominant-baseline="middle">visual tokens</text>
+<rect x="610" y="100" width="22" height="26" rx="2" class="box-amber"/>
+<rect x="634" y="100" width="22" height="26" rx="2" class="box-amber"/>
+<rect x="658" y="100" width="22" height="26" rx="2" class="box-amber"/>
+<rect x="682" y="100" width="22" height="26" rx="2" class="box-amber"/>
+<rect x="706" y="100" width="22" height="26" rx="2" class="box-amber"/>
+<text x="670" y="140" class="t-sm" text-anchor="middle" dominant-baseline="middle">text prompt tokens</text>
+<rect x="466" y="160" width="264" height="32" rx="6" class="box"/>
+<text x="598.0" y="176.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">causal self-attention + MLP blocks</text>
+<rect x="466" y="202" width="264" height="32" rx="6" class="box-green"/>
+<text x="598.0" y="218.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">next-token loss on answer tokens</text>
+<line x1="400" y1="150" x2="450" y2="150" class="ln" marker-end="url(#v8a)"/>
+<text x="380" y="290" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Typical recipe: stage 1 trains only the connector on captions; stage 2 tunes connector (and LLM) on instructions.</text>
+</svg>

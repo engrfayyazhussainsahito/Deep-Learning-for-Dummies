@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320"><defs><marker id="u4a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">GAN: generator and discriminator in a two-player game</text>
+<rect x="20" y="60" width="90" height="50" rx="6" class="box-amber"/>
+<text x="65.0" y="77.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">z ~ N(0,I)</text>
+<text x="65.0" y="94.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">noise</text>
+<rect x="150" y="55" width="110" height="60" rx="6" class="box-green"/>
+<text x="205.0" y="77.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Generator G</text>
+<text x="205.0" y="94.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">theta_G</text>
+<line x1="110" y1="85" x2="150" y2="85" class="ln" marker-end="url(#u4a)"/>
+<rect x="300" y="62" width="70" height="46" rx="6" class="box-green"/>
+<text x="335.0" y="77.0" class="t" text-anchor="middle" dominant-baseline="middle">fake</text>
+<text x="335.0" y="94.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">G(z)</text>
+<line x1="260" y1="85" x2="300" y2="85" class="ln" marker-end="url(#u4a)"/>
+<rect x="300" y="200" width="70" height="46" rx="6" class="box-blue"/>
+<text x="335.0" y="215.0" class="t" text-anchor="middle" dominant-baseline="middle">real</text>
+<text x="335.0" y="232.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">x ~ p_data</text>
+<rect x="430" y="125" width="120" height="70" rx="6" class="box-red"/>
+<text x="490.0" y="152.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Discriminator D</text>
+<text x="490.0" y="169.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">theta_D</text>
+<line x1="370" y1="85" x2="430" y2="145" class="ln" marker-end="url(#u4a)"/>
+<line x1="370" y1="223" x2="430" y2="175" class="ln" marker-end="url(#u4a)"/>
+<rect x="590" y="135" width="110" height="50" rx="6" class="box"/>
+<text x="645.0" y="152.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">D(x) in (0,1)</text>
+<text x="645.0" y="169.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">P(real)</text>
+<line x1="550" y1="160" x2="590" y2="160" class="ln" marker-end="url(#u4a)"/>
+<path d="M645,185 C645,290 205,290 205,118" class="ln-dash" fill="none" marker-end="url(#u4a)"/>
+<text x="420" y="282" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">gradient of D's output flows back through the fake sample to update G</text>
+<text x="380" y="308" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">D maximises log D(x) + log(1-D(G(z))). G minimises the second term (or maximises log D(G(z)), the non-saturating form).</text>
+</svg>

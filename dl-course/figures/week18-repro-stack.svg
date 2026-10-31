@@ -1,0 +1,12 @@
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w18e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="360" y="22" text-anchor="middle">The reproducibility stack: what a run must record</text>
+<rect class="box-blue" x="40" y="44" width="400" height="48" rx="6"/><text class="t-bold" x="60" y="62">Code</text><text class="t-sm" x="60" y="80">git commit hash, dirty-tree flag, patch of uncommitted changes</text>
+<rect class="box-green" x="40" y="100" width="400" height="48" rx="6"/><text class="t-bold" x="60" y="118">Config</text><text class="t-sm" x="60" y="136">every hyperparameter in one file, written next to the outputs</text>
+<rect class="box-purple" x="40" y="156" width="400" height="48" rx="6"/><text class="t-bold" x="60" y="174">Data</text><text class="t-sm" x="60" y="192">dataset version or hash, split indices, preprocessing, augmentation</text>
+<rect class="box-amber" x="40" y="212" width="400" height="48" rx="6"/><text class="t-bold" x="60" y="230">Environment</text><text class="t-sm" x="60" y="248">Python, torch and CUDA versions, GPU type, lock file or container</text>
+<rect class="box-red" x="40" y="268" width="400" height="48" rx="6"/><text class="t-bold" x="60" y="286">Randomness</text><text class="t-sm" x="60" y="304">seeds for python, numpy, torch, dataloader workers; determinism flags</text>
+<rect class="box-accent" x="500" y="100" width="180" height="116" rx="10"/>
+<text class="t-bold" x="590" y="126" text-anchor="middle">Run record</text><text class="t-sm" x="590" y="150" text-anchor="middle">metrics per step</text><text class="t-sm" x="590" y="168" text-anchor="middle">checkpoints</text><text class="t-sm" x="590" y="186" text-anchor="middle">final numbers</text><text class="t-sm" x="590" y="204" text-anchor="middle">model card</text>
+<line class="ln" x1="440" y1="68" x2="498" y2="130" marker-end="url(#w18e)"/><line class="ln" x1="440" y1="124" x2="498" y2="150" marker-end="url(#w18e)"/><line class="ln" x1="440" y1="180" x2="498" y2="170" marker-end="url(#w18e)"/><line class="ln" x1="440" y1="236" x2="498" y2="190" marker-end="url(#w18e)"/><line class="ln" x1="440" y1="292" x2="498" y2="205" marker-end="url(#w18e)"/>
+</svg>

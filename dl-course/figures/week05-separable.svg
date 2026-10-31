@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img"><defs><marker id="w05sep" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="22" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Standard convolution vs depthwise-separable (C_in = 64, C_out = 128, k = 3)</text>
+<text x="190" y="52" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Standard 3x3</text>
+<rect x="30" y="75" width="70" height="70" class="box-blue"/><text x="65" y="110" class="t-sm" text-anchor="middle" dominant-baseline="middle">H x W x 64</text>
+<line x1="102" y1="110" x2="148" y2="110" class="ln" marker-end="url(#w05sep)"/>
+<rect x="150" y="70" width="80" height="80" class="box-purple"/><text x="190" y="102" class="t-sm" text-anchor="middle" dominant-baseline="middle">128 filters</text><text x="190" y="120" class="t-sm" text-anchor="middle" dominant-baseline="middle">3x3x64</text>
+<line x1="232" y1="110" x2="278" y2="110" class="ln" marker-end="url(#w05sep)"/>
+<rect x="280" y="75" width="70" height="70" class="box-green"/><text x="315" y="110" class="t-sm" text-anchor="middle" dominant-baseline="middle">H x W x 128</text>
+<text x="190" y="185" class="t t-mono" text-anchor="middle" dominant-baseline="middle">params = 9*64*128 = 73,728</text>
+<text x="190" y="208" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">mixes space and channels in one step</text>
+<line x1="380" y1="45" x2="380" y2="360" class="ln-dash"/>
+<text x="570" y="52" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Depthwise 3x3, then pointwise 1x1</text>
+<rect x="400" y="75" width="70" height="70" class="box-blue"/><text x="435" y="110" class="t-sm" text-anchor="middle" dominant-baseline="middle">H x W x 64</text>
+<line x1="472" y1="110" x2="508" y2="110" class="ln" marker-end="url(#w05sep)"/>
+<rect x="510" y="70" width="70" height="80" class="box-amber"/><text x="545" y="98" class="t-sm" text-anchor="middle" dominant-baseline="middle">64 filters</text><text x="545" y="116" class="t-sm" text-anchor="middle" dominant-baseline="middle">3x3x1 each</text><text x="545" y="134" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">per channel</text>
+<line x1="582" y1="110" x2="618" y2="110" class="ln" marker-end="url(#w05sep)"/>
+<rect x="620" y="70" width="60" height="80" class="box-purple"/><text x="650" y="98" class="t-sm" text-anchor="middle" dominant-baseline="middle">128 filters</text><text x="650" y="116" class="t-sm" text-anchor="middle" dominant-baseline="middle">1x1x64</text>
+<line x1="682" y1="110" x2="708" y2="110" class="ln" marker-end="url(#w05sep)"/>
+<rect x="710" y="82" width="40" height="56" class="box-green"/><text x="730" y="110" class="t-sm" text-anchor="middle" dominant-baseline="middle">128</text>
+<text x="570" y="185" class="t t-mono" text-anchor="middle" dominant-baseline="middle">params = 9*64 + 64*128 = 8,768</text>
+<text x="570" y="208" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">space first (per channel), then channel mixing</text>
+<rect x="60" y="250" width="640" height="100" class="box"/>
+<text x="380" y="276" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Cost ratio (separable / standard) = 1/C_out + 1/k^2</text>
+<text x="380" y="304" class="t t-mono" text-anchor="middle" dominant-baseline="middle">1/128 + 1/9 = 0.119  (about 8.4x fewer params and multiply-adds)</text>
+<text x="380" y="330" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Depthwise: H*W*C_in*k^2 MACs.  Pointwise: H*W*C_in*C_out MACs.</text>
+</svg>

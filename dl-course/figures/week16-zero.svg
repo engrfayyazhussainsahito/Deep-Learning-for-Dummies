@@ -1,0 +1,24 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+<text class="t-bold" x="360" y="20" text-anchor="middle">Model-state memory per GPU (Ψ parameters, N GPUs, Adam, mixed precision, K = 12)</text>
+<g class="t-sm">
+<text x="20" y="75" >DDP</text><text x="20" y="135">ZeRO-1</text><text x="20" y="195">ZeRO-2</text><text x="20" y="255">ZeRO-3 / FSDP</text></g>
+<rect class="box-blue" x="130" y="55" width="60" height="34"/><text class="t-sm" x="160" y="72" text-anchor="middle" dominant-baseline="middle">params 2Ψ</text>
+<rect class="box-green" x="190" y="55" width="60" height="34"/><text class="t-sm" x="220" y="72" text-anchor="middle" dominant-baseline="middle">grads 2Ψ</text>
+<rect class="box-amber" x="250" y="55" width="360" height="34"/><text class="t-sm" x="430" y="72" text-anchor="middle" dominant-baseline="middle">optimizer: fp32 master + m + v = 12Ψ</text>
+<text class="t-bold" x="640" y="72">16Ψ</text>
+<rect class="box-blue" x="130" y="115" width="60" height="34"/><text class="t-sm" x="160" y="132" text-anchor="middle" dominant-baseline="middle">2Ψ</text>
+<rect class="box-green" x="190" y="115" width="60" height="34"/><text class="t-sm" x="220" y="132" text-anchor="middle" dominant-baseline="middle">2Ψ</text>
+<rect class="box-amber" x="250" y="115" width="90" height="34"/><text class="t-sm" x="295" y="132" text-anchor="middle" dominant-baseline="middle">12Ψ/N</text>
+<text class="t-bold" x="640" y="132">4Ψ + 12Ψ/N</text>
+<rect class="box-blue" x="130" y="175" width="60" height="34"/><text class="t-sm" x="160" y="192" text-anchor="middle" dominant-baseline="middle">2Ψ</text>
+<rect class="box-green" x="190" y="175" width="30" height="34"/><text class="t-sm" x="205" y="192" text-anchor="middle" dominant-baseline="middle">2Ψ/N</text>
+<rect class="box-amber" x="220" y="175" width="90" height="34"/><text class="t-sm" x="265" y="192" text-anchor="middle" dominant-baseline="middle">12Ψ/N</text>
+<text class="t-bold" x="640" y="192">2Ψ + 14Ψ/N</text>
+<rect class="box-blue" x="130" y="235" width="30" height="34"/><text class="t-sm" x="145" y="252" text-anchor="middle" dominant-baseline="middle">2Ψ/N</text>
+<rect class="box-green" x="160" y="235" width="30" height="34"/><text class="t-sm" x="175" y="252" text-anchor="middle" dominant-baseline="middle">2Ψ/N</text>
+<rect class="box-amber" x="190" y="235" width="90" height="34"/><text class="t-sm" x="235" y="252" text-anchor="middle" dominant-baseline="middle">12Ψ/N</text>
+<text class="t-bold" x="640" y="252">16Ψ/N</text>
+<text class="t-sm t-muted" x="20" y="305">Each stage shards one more thing across the N data-parallel ranks. Communication volume: stages 1 and 2 match DDP (about 2Ψ per step);</text>
+<text class="t-sm t-muted" x="20" y="323">stage 3 adds an all-gather of parameters in forward and again in backward, about 3Ψ in total (1.5x DDP).</text>
+<text class="t-sm t-muted" x="20" y="341">Widths are schematic. Activations and temporary buffers are not shown.</text>
+</svg>

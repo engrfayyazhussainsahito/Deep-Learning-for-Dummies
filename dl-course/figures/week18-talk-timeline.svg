@@ -1,0 +1,18 @@
+<svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w18b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="370" y="22" text-anchor="middle">A 12-minute talk: where the minutes go</text>
+<line class="ln-bold" x1="30" y1="70" x2="710" y2="70"/>
+<g class="t-sm"><text x="30" y="56" text-anchor="middle">0</text><text x="143" y="56" text-anchor="middle">2</text><text x="257" y="56" text-anchor="middle">4</text><text x="370" y="56" text-anchor="middle">6</text><text x="483" y="56" text-anchor="middle">8</text><text x="597" y="56" text-anchor="middle">10</text><text x="710" y="56" text-anchor="middle">12 min</text></g>
+<rect class="box-blue" x="30" y="84" width="113" height="60" rx="6"/><text class="t-bold" x="86" y="106" text-anchor="middle">Problem</text><text class="t-sm" x="86" y="126" text-anchor="middle">2 min, 2 slides</text>
+<rect class="box-green" x="143" y="84" width="114" height="60" rx="6"/><text class="t-bold" x="200" y="106" text-anchor="middle">Approach</text><text class="t-sm" x="200" y="126" text-anchor="middle">2 min, 2 slides</text>
+<rect class="box-purple" x="257" y="84" width="226" height="60" rx="6"/><text class="t-bold" x="370" y="106" text-anchor="middle">Main results</text><text class="t-sm" x="370" y="126" text-anchor="middle">4 min, 3 slides: baselines, error bars</text>
+<rect class="box-amber" x="483" y="84" width="114" height="60" rx="6"/><text class="t-bold" x="540" y="106" text-anchor="middle">Analysis</text><text class="t-sm" x="540" y="126" text-anchor="middle">2 min: ablation, failures</text>
+<rect class="box-red" x="597" y="84" width="113" height="60" rx="6"/><text class="t-bold" x="653" y="106" text-anchor="middle">Wrap-up</text><text class="t-sm" x="653" y="126" text-anchor="middle">2 min: limits, next</text>
+<text class="t-sm" x="86" y="170" text-anchor="middle">Why care?</text><text class="t-sm" x="86" y="188" text-anchor="middle">What exactly?</text>
+<text class="t-sm" x="200" y="170" text-anchor="middle">Idea, one figure</text><text class="t-sm" x="200" y="188" text-anchor="middle">Setup in one line</text>
+<text class="t-sm" x="370" y="170" text-anchor="middle">One claim per slide</text><text class="t-sm" x="370" y="188" text-anchor="middle">Mean +- std over seeds</text>
+<text class="t-sm" x="540" y="170" text-anchor="middle">What mattered?</text><text class="t-sm" x="540" y="188" text-anchor="middle">Where it breaks</text>
+<text class="t-sm" x="653" y="170" text-anchor="middle">One-sentence</text><text class="t-sm" x="653" y="188" text-anchor="middle">takeaway</text>
+<rect class="box" x="30" y="206" width="680" height="30" rx="6"/>
+<text class="t-sm" x="370" y="221" text-anchor="middle" dominant-baseline="middle">About 8 to 10 slides in total, plus backup slides for questions (ablation tables, extra seeds, hyperparameters)</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 780 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">From node embeddings to a graph prediction</text>
+<g class="ln"><line x1="40" y1="90" x2="90" y2="70"/><line x1="90" y1="70" x2="140" y2="100"/><line x1="90" y1="70" x2="90" y2="140"/><line x1="90" y1="140" x2="140" y2="100"/><line x1="90" y1="140" x2="40" y2="170"/><line x1="140" y1="100" x2="150" y2="170"/></g>
+<g class="box-blue"><circle cx="40" cy="90" r="12"/><circle cx="90" cy="70" r="12"/><circle cx="140" cy="100" r="12"/><circle cx="90" cy="140" r="12"/><circle cx="40" cy="170" r="12"/><circle cx="150" cy="170" r="12"/></g>
+<text class="t-sm" x="95" y="215" text-anchor="middle">input graph</text>
+<line class="ln" x1="170" y1="120" x2="215" y2="120" marker-end="url(#w14p)"/>
+<rect class="box-purple" x="220" y="90" width="110" height="60" rx="8"/><text class="t-sm" x="275" y="112" text-anchor="middle" dominant-baseline="middle">L message-passing</text><text class="t-sm" x="275" y="130" text-anchor="middle" dominant-baseline="middle">layers</text>
+<text class="t-sm t-muted" x="275" y="170" text-anchor="middle">H ∈ R^(n×d)</text>
+<line class="ln" x1="332" y1="120" x2="378" y2="120" marker-end="url(#w14p)"/>
+<rect class="box-amber" x="380" y="60" width="150" height="40" rx="8"/><text class="t-sm" x="455" y="80" text-anchor="middle" dominant-baseline="middle">flat: Σ / mean / max</text>
+<rect class="box-teal" x="380" y="110" width="150" height="40" rx="8"/><text class="t-sm" x="455" y="130" text-anchor="middle" dominant-baseline="middle">attention (Set2Set)</text>
+<rect class="box-green" x="380" y="160" width="150" height="40" rx="8"/><text class="t-sm" x="455" y="180" text-anchor="middle" dominant-baseline="middle">hierarchical: DiffPool, top-k</text>
+<text class="t-sm t-muted" x="455" y="225" text-anchor="middle">readout, permutation invariant</text>
+<line class="ln" x1="532" y1="120" x2="578" y2="120" marker-end="url(#w14p)"/>
+<rect class="box-red" x="580" y="95" width="80" height="50" rx="8"/><text class="t-sm" x="620" y="120" text-anchor="middle" dominant-baseline="middle">h_G ∈ R^d</text>
+<line class="ln" x1="662" y1="120" x2="688" y2="120" marker-end="url(#w14p)"/>
+<rect class="box" x="690" y="95" width="75" height="50" rx="8"/><text class="t-sm" x="727" y="120" text-anchor="middle" dominant-baseline="middle">MLP → ŷ</text>
+<text class="t-sm t-muted" x="390" y="275" text-anchor="middle">Sum readout keeps graph-size information; mean/max do not. Hierarchical pooling coarsens the graph in stages, like CNN pooling.</text>
+</svg>

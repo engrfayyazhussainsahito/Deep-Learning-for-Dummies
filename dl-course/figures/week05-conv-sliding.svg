@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img"><defs><marker id="mweek05convslid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="110" y="28" class="t t-bold" text-anchor="middle" dominant-baseline="middle">input x (5x5)</text>
+<text x="380" y="28" class="t t-bold" text-anchor="middle" dominant-baseline="middle">kernel w (3x3)</text>
+<text x="600" y="28" class="t t-bold" text-anchor="middle" dominant-baseline="middle">output y (3x3)</text>
+<rect x="25" y="50" width="34" height="34" rx="0" class="box" />
+<text x="42.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="59" y="50" width="34" height="34" rx="0" class="box-accent" />
+<text x="76.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="93" y="50" width="34" height="34" rx="0" class="box-accent" />
+<text x="110.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="127" y="50" width="34" height="34" rx="0" class="box-accent" />
+<text x="144.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="161" y="50" width="34" height="34" rx="0" class="box" />
+<text x="178.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="25" y="84" width="34" height="34" rx="0" class="box" />
+<text x="42.0" y="101.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="59" y="84" width="34" height="34" rx="0" class="box-accent" />
+<text x="76.0" y="101.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="93" y="84" width="34" height="34" rx="0" class="box-accent" />
+<text x="110.0" y="101.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="127" y="84" width="34" height="34" rx="0" class="box-accent" />
+<text x="144.0" y="101.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="161" y="84" width="34" height="34" rx="0" class="box" />
+<text x="178.0" y="101.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="25" y="118" width="34" height="34" rx="0" class="box" />
+<text x="42.0" y="135.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="59" y="118" width="34" height="34" rx="0" class="box-accent" />
+<text x="76.0" y="135.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="93" y="118" width="34" height="34" rx="0" class="box-accent" />
+<text x="110.0" y="135.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="127" y="118" width="34" height="34" rx="0" class="box-accent" />
+<text x="144.0" y="135.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="161" y="118" width="34" height="34" rx="0" class="box" />
+<text x="178.0" y="135.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="25" y="152" width="34" height="34" rx="0" class="box" />
+<text x="42.0" y="169.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="59" y="152" width="34" height="34" rx="0" class="box" />
+<text x="76.0" y="169.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="93" y="152" width="34" height="34" rx="0" class="box" />
+<text x="110.0" y="169.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="127" y="152" width="34" height="34" rx="0" class="box" />
+<text x="144.0" y="169.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="161" y="152" width="34" height="34" rx="0" class="box" />
+<text x="178.0" y="169.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="25" y="186" width="34" height="34" rx="0" class="box" />
+<text x="42.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="59" y="186" width="34" height="34" rx="0" class="box" />
+<text x="76.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="93" y="186" width="34" height="34" rx="0" class="box" />
+<text x="110.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="127" y="186" width="34" height="34" rx="0" class="box" />
+<text x="144.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="161" y="186" width="34" height="34" rx="0" class="box" />
+<text x="178.0" y="203.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="325" y="70" width="34" height="34" rx="0" class="box-purple" />
+<text x="342.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="359" y="70" width="34" height="34" rx="0" class="box-purple" />
+<text x="376.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="393" y="70" width="34" height="34" rx="0" class="box-purple" />
+<text x="410.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-1</text>
+<rect x="325" y="104" width="34" height="34" rx="0" class="box-purple" />
+<text x="342.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="359" y="104" width="34" height="34" rx="0" class="box-purple" />
+<text x="376.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="393" y="104" width="34" height="34" rx="0" class="box-purple" />
+<text x="410.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-1</text>
+<rect x="325" y="138" width="34" height="34" rx="0" class="box-purple" />
+<text x="342.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="359" y="138" width="34" height="34" rx="0" class="box-purple" />
+<text x="376.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="393" y="138" width="34" height="34" rx="0" class="box-purple" />
+<text x="410.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-1</text>
+<rect x="540" y="70" width="34" height="34" rx="0" class="box" />
+<text x="557.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="574" y="70" width="34" height="34" rx="0" class="box-green" />
+<text x="591.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="608" y="70" width="34" height="34" rx="0" class="box" />
+<text x="625.0" y="87.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-3</text>
+<rect x="540" y="104" width="34" height="34" rx="0" class="box" />
+<text x="557.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-1</text>
+<rect x="574" y="104" width="34" height="34" rx="0" class="box" />
+<text x="591.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-4</text>
+<rect x="608" y="104" width="34" height="34" rx="0" class="box" />
+<text x="625.0" y="121.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="540" y="138" width="34" height="34" rx="0" class="box" />
+<text x="557.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="574" y="138" width="34" height="34" rx="0" class="box" />
+<text x="591.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">-4</text>
+<rect x="608" y="138" width="34" height="34" rx="0" class="box" />
+<text x="625.0" y="155.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="305" y="121" class="t-lg" text-anchor="middle" dominant-baseline="middle">*</text>
+<text x="500" y="121" class="t-lg" text-anchor="middle" dominant-baseline="middle">=</text>
+<text x="360" y="255" class="t t-mono" text-anchor="middle" dominant-baseline="middle">y[0,1] = 2*1 + 1*(-1) + 1*1 + 1*(-1) + 1*1 + 2*(-1)</text>
+<text x="360" y="280" class="t t-mono t-bold" text-anchor="middle" dominant-baseline="middle">= 0</text>
+<text x="360" y="308" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Slide the window one step right: next output uses columns 2..4 of x. Same 9 weights every time.</text>
+</svg>

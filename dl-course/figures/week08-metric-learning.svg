@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 365" role="img"><defs><marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Metric learning: shape the space so that distance means similarity</text>
+<text x="190" y="46" class="t-bold" text-anchor="middle" dominant-baseline="middle">Triplet loss</text>
+<circle cx="120" cy="170" r="8" class="fill-blue"/>
+<text x="120" y="196" class="t-sm" text-anchor="middle" dominant-baseline="middle">anchor a</text>
+<circle cx="200" cy="150" r="8" class="fill-green"/>
+<text x="215" y="130" class="t-sm" text-anchor="middle" dominant-baseline="middle">positive p</text>
+<circle cx="290" cy="260" r="8" class="fill-red"/>
+<text x="320" y="278" class="t-sm" text-anchor="middle" dominant-baseline="middle">negative n</text>
+<line x1="128" y1="168" x2="192" y2="152" class="ln-green"/>
+<line x1="126" y1="177" x2="284" y2="256" class="ln-red"/>
+<text x="140" y="148" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">d(a,p)</text>
+<text x="230" y="230" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">d(a,n)</text>
+<text x="190" y="320" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">max(0, d(a,p) - d(a,n) + margin)</text>
+<text x="190" y="342" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">wants d(a,n) > d(a,p) + margin</text>
+<line x1="380" y1="50" x2="380" y2="350" class="ln-dash"/>
+<text x="570" y="46" class="t-bold" text-anchor="middle" dominant-baseline="middle">InfoNCE (batch of N pairs)</text>
+<circle cx="450" cy="110" r="9" class="fill-blue"/>
+<text x="450" y="92" class="t-sm" text-anchor="middle" dominant-baseline="middle">x1</text>
+<circle cx="450" cy="200" r="9" class="fill-green"/>
+<text x="450" y="222" class="t-sm" text-anchor="middle" dominant-baseline="middle">y1</text>
+<line x1="450" y1="119" x2="450" y2="191" class="ln-accent"/>
+<line x1="450" y1="119" x2="520" y2="191" class="ln-thin"/>
+<line x1="450" y1="119" x2="590" y2="191" class="ln-thin"/>
+<line x1="450" y1="119" x2="660" y2="191" class="ln-thin"/>
+<circle cx="520" cy="110" r="9" class="fill-blue"/>
+<text x="520" y="92" class="t-sm" text-anchor="middle" dominant-baseline="middle">x2</text>
+<circle cx="520" cy="200" r="9" class="fill-green"/>
+<text x="520" y="222" class="t-sm" text-anchor="middle" dominant-baseline="middle">y2</text>
+<line x1="520" y1="119" x2="450" y2="191" class="ln-thin"/>
+<line x1="520" y1="119" x2="520" y2="191" class="ln-accent"/>
+<line x1="520" y1="119" x2="590" y2="191" class="ln-thin"/>
+<line x1="520" y1="119" x2="660" y2="191" class="ln-thin"/>
+<circle cx="590" cy="110" r="9" class="fill-blue"/>
+<text x="590" y="92" class="t-sm" text-anchor="middle" dominant-baseline="middle">x3</text>
+<circle cx="590" cy="200" r="9" class="fill-green"/>
+<text x="590" y="222" class="t-sm" text-anchor="middle" dominant-baseline="middle">y3</text>
+<line x1="590" y1="119" x2="450" y2="191" class="ln-thin"/>
+<line x1="590" y1="119" x2="520" y2="191" class="ln-thin"/>
+<line x1="590" y1="119" x2="590" y2="191" class="ln-accent"/>
+<line x1="590" y1="119" x2="660" y2="191" class="ln-thin"/>
+<circle cx="660" cy="110" r="9" class="fill-blue"/>
+<text x="660" y="92" class="t-sm" text-anchor="middle" dominant-baseline="middle">x4</text>
+<circle cx="660" cy="200" r="9" class="fill-green"/>
+<text x="660" y="222" class="t-sm" text-anchor="middle" dominant-baseline="middle">y4</text>
+<line x1="660" y1="119" x2="450" y2="191" class="ln-thin"/>
+<line x1="660" y1="119" x2="520" y2="191" class="ln-thin"/>
+<line x1="660" y1="119" x2="590" y2="191" class="ln-thin"/>
+<line x1="660" y1="119" x2="660" y2="191" class="ln-accent"/>
+<text x="570" y="262" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">similarity matrix  s_ij = cos(x_i, y_j) / tau</text>
+<text x="570" y="284" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">row i: softmax cross-entropy, target = column i</text>
+<text x="570" y="306" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">positives on the diagonal, the other N-1 columns are negatives</text>
+<text x="570" y="330" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">loss >= 0, and  I(x;y) >= log N - loss  (a lower bound)</text>
+
+</svg>

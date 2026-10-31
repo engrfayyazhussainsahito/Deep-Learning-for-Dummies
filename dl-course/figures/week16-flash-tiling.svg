@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="190" y="20" text-anchor="middle">Standard attention</text>
+<rect class="box-blue" x="20" y="40" width="70" height="40" rx="6"/><text class="t" x="55" y="60" text-anchor="middle" dominant-baseline="middle">Q K^T</text>
+<rect class="box-red" x="120" y="30" width="80" height="60" rx="6"/><text class="t-sm" x="160" y="54" text-anchor="middle">S: N×N</text><text class="t-sm" x="160" y="72" text-anchor="middle">to HBM</text>
+<rect class="box-blue" x="230" y="40" width="70" height="40" rx="6"/><text class="t" x="265" y="60" text-anchor="middle" dominant-baseline="middle">softmax</text>
+<rect class="box-red" x="120" y="110" width="80" height="60" rx="6"/><text class="t-sm" x="160" y="134" text-anchor="middle">P: N×N</text><text class="t-sm" x="160" y="152" text-anchor="middle">to HBM</text>
+<rect class="box-blue" x="230" y="120" width="70" height="40" rx="6"/><text class="t" x="265" y="140" text-anchor="middle" dominant-baseline="middle">P V</text>
+<path class="ln" d="M90,60 L120,60 M200,60 L230,60 M265,80 L200,125 M200,140 L230,140" fill="none" marker-end="url(#w16d)"/>
+<text class="t-sm t-muted" x="190" y="200" text-anchor="middle">HBM traffic Θ(N d + N²); N=8192 per head per sequence:</text>
+<text class="t-sm t-muted" x="190" y="218" text-anchor="middle">N² = 67M scores, 134 MB in fp16, written and read several times</text>
+<text class="t-bold" x="540" y="20" text-anchor="middle">FlashAttention (tiled, fused)</text>
+<rect class="box-teal" x="400" y="40" width="60" height="150" rx="4"/><text class="t-sm" x="430" y="115" text-anchor="middle">Q</text>
+<rect class="box-accent" x="400" y="40" width="60" height="30" rx="4"/><text class="t-sm" x="430" y="55" text-anchor="middle" dominant-baseline="middle">Q_i</text>
+<rect class="box-purple" x="490" y="40" width="150" height="30" rx="4"/><text class="t-sm" x="565" y="55" text-anchor="middle" dominant-baseline="middle">K^T (blocks K_1 ... K_T)</text>
+<rect class="box-purple" x="490" y="80" width="150" height="30" rx="4"/><text class="t-sm" x="565" y="95" text-anchor="middle" dominant-baseline="middle">V (blocks V_1 ... V_T)</text>
+<rect class="box-amber" x="490" y="125" width="150" height="65" rx="6"/>
+<text class="t-sm" x="565" y="141" text-anchor="middle">SRAM: S_ij = Q_i K_j^T</text>
+<text class="t-sm" x="565" y="158" text-anchor="middle">running max m, sum ℓ</text>
+<text class="t-sm" x="565" y="175" text-anchor="middle">rescale accumulator O_i</text>
+<text class="t-sm t-muted" x="540" y="215" text-anchor="middle">Outer loop over Q blocks, inner loop over K,V blocks.</text>
+<text class="t-sm t-muted" x="540" y="233" text-anchor="middle">N×N matrix is never written to HBM; only O and logsumexp L (N values).</text>
+<text class="t" x="360" y="280" text-anchor="middle">Same FLOPs (even slightly more), far fewer HBM bytes: exact attention, 2-4× faster, O(N) memory.</text>
+<text class="t-sm t-muted" x="360" y="304" text-anchor="middle">Backward pass recomputes S and P tile by tile from Q, K, V, O and L instead of storing them.</text>
+</svg>

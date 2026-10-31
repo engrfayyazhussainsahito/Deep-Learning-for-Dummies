@@ -1,0 +1,22 @@
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<g transform="translate(20,0)">
+<line class="ln" x1="30" y1="170" x2="330" y2="170" marker-end="url(#w04b)"/><line class="ln" x1="180" y1="320" x2="180" y2="15" marker-end="url(#w04b)"/>
+<text class="t-sm" x="335" y="188">w1</text><text class="t-sm" x="190" y="20">w2</text>
+<g transform="rotate(-35 250 100)"><ellipse class="box-blue" cx="250" cy="100" rx="110" ry="50" style="fill-opacity:.08"/><ellipse class="box-blue" cx="250" cy="100" rx="75" ry="34" style="fill-opacity:.08"/><ellipse class="box-blue" cx="250" cy="100" rx="40" ry="18" style="fill-opacity:.12"/></g>
+<circle class="box-accent" cx="180" cy="170" r="78" style="fill-opacity:.15"/>
+<circle class="fill-red" cx="250" cy="100" r="4"/><text class="t-sm" x="258" y="92">unregularized optimum</text>
+<circle class="fill-ink" cx="224" cy="124" r="5"/><text class="t-sm t-bold" x="232" y="140">L2 solution</text>
+<text class="t-bold" x="180" y="338" text-anchor="middle">L2: round ball, both weights shrink</text>
+</g>
+<g transform="translate(390,0)">
+<line class="ln" x1="30" y1="170" x2="330" y2="170" marker-end="url(#w04b)"/><line class="ln" x1="180" y1="320" x2="180" y2="15" marker-end="url(#w04b)"/>
+<text class="t-sm" x="335" y="188">w1</text><text class="t-sm" x="190" y="20">w2</text>
+<g transform="rotate(-35 250 100)"><ellipse class="box-blue" cx="250" cy="100" rx="110" ry="50" style="fill-opacity:.08"/><ellipse class="box-blue" cx="250" cy="100" rx="75" ry="34" style="fill-opacity:.08"/><ellipse class="box-blue" cx="250" cy="100" rx="40" ry="18" style="fill-opacity:.12"/></g>
+<path class="box-accent" d="M180,92 L258,170 L180,248 L102,170 Z" style="fill-opacity:.15"/>
+<circle class="fill-red" cx="250" cy="100" r="4"/>
+<circle class="fill-ink" cx="258" cy="170" r="5"/><text class="t-sm t-bold" x="190" y="205">L1 solution: w2 = 0</text>
+<text class="t-sm" x="258" y="92" dx="8">same optimum</text>
+<text class="t-bold" x="180" y="338" text-anchor="middle">L1: diamond corners lie on axes</text>
+</g>
+</svg>

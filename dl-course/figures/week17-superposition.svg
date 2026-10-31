@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="20" y="22">Five features stored in a 2D activation space</text>
+<circle class="ln-thin" cx="150" cy="150" r="90" fill="none"/>
+<line class="ln-thin" x1="40" y1="150" x2="260" y2="150"/><line class="ln-thin" x1="150" y1="40" x2="150" y2="260"/>
+<line class="ln-blue" x1="150" y1="150" x2="150" y2="60" marker-end="url(#w17g)"/>
+<line class="ln-green" x1="150" y1="150" x2="236" y2="122" marker-end="url(#w17g)"/>
+<line class="ln-purple" x1="150" y1="150" x2="203" y2="223" marker-end="url(#w17g)"/>
+<line class="ln-amber" x1="150" y1="150" x2="97" y2="223" marker-end="url(#w17g)"/>
+<line class="ln-red" x1="150" y1="150" x2="64" y2="122" marker-end="url(#w17g)"/>
+<text class="t-sm" x="150" y="50" text-anchor="middle">f1</text><text class="t-sm" x="250" y="118">f2</text><text class="t-sm" x="212" y="238">f3</text><text class="t-sm" x="86" y="238">f4</text><text class="t-sm" x="50" y="118">f5</text>
+<text class="t-sm t-muted" x="150" y="284" text-anchor="middle">72 degrees apart: not orthogonal, so</text>
+<text class="t-sm t-muted" x="150" y="302" text-anchor="middle">features interfere, but sparsity makes it cheap</text>
+<line class="ln-dash" x1="300" y1="40" x2="300" y2="300"/>
+<text class="t-bold" x="330" y="22">Sparse autoencoder on activations a</text>
+<rect class="box-blue" x="330" y="120" width="70" height="60" rx="4"/><text class="t" x="365" y="146" text-anchor="middle">a</text><text class="t-sm" x="365" y="164" text-anchor="middle">R^d</text>
+<line class="ln" x1="400" y1="150" x2="432" y2="150" marker-end="url(#w17g)"/>
+<text class="t-sm" x="416" y="136" text-anchor="middle">W_e</text>
+<g><rect class="box-green" x="436" y="60" width="26" height="180"/></g>
+<rect class="fill-ink" x="436" y="76" width="26" height="12" style="opacity:.8"/><rect class="fill-ink" x="436" y="140" width="26" height="12" style="opacity:.8"/><rect class="fill-ink" x="436" y="206" width="26" height="12" style="opacity:.8"/>
+<text class="t" x="449" y="52" text-anchor="middle">f</text><text class="t-sm" x="449" y="258" text-anchor="middle">R^n, n >> d</text><text class="t-sm t-muted" x="449" y="276" text-anchor="middle">ReLU, mostly 0</text>
+<line class="ln" x1="462" y1="150" x2="500" y2="150" marker-end="url(#w17g)"/>
+<text class="t-sm" x="481" y="136" text-anchor="middle">W_d</text>
+<rect class="box-blue" x="504" y="120" width="70" height="60" rx="4"/><text class="t" x="539" y="146" text-anchor="middle">a_hat</text>
+<text class="t-sm" x="620" y="130">loss =</text><text class="t-sm" x="620" y="150">|a - a_hat|^2</text><text class="t-sm" x="620" y="170">+ lambda |f|_1</text>
+<text class="t-sm t-muted" x="330" y="302">Columns of W_d are the learned feature directions.</text>
+</svg>

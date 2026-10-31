@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300"><defs><marker id="u7a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">CycleGAN: two generators, two discriminators, cycle consistency</text>
+<rect x="40" y="110" width="110" height="70" rx="6" class="box-blue"/>
+<text x="95.0" y="137.0" class="t" text-anchor="middle" dominant-baseline="middle">Domain X</text>
+<text x="95.0" y="154.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">horses</text>
+<rect x="610" y="110" width="110" height="70" rx="6" class="box-green"/>
+<text x="665.0" y="137.0" class="t" text-anchor="middle" dominant-baseline="middle">Domain Y</text>
+<text x="665.0" y="154.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">zebras</text>
+<path d="M150,125 C300,60 460,60 610,125" class="ln-blue" fill="none" marker-end="url(#u7a)"/>
+<text x="380" y="64" class="t-sm" text-anchor="middle" dominant-baseline="middle">G : X -> Y</text>
+<path d="M610,165 C460,230 300,230 150,165" class="ln-green" fill="none" marker-end="url(#u7a)"/>
+<text x="380" y="232" class="t-sm" text-anchor="middle" dominant-baseline="middle">F : Y -> X</text>
+<rect x="300" y="100" width="160" height="70" rx="6" class="box-accent"/>
+<text x="380.0" y="127.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Cycle consistency</text>
+<text x="380.0" y="144.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">F(G(x)) = x, G(F(y)) = y</text>
+<rect x="40" y="200" width="110" height="40" rx="6" class="box-red"/>
+<text x="95.0" y="220.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">D_X</text>
+<rect x="610" y="200" width="110" height="40" rx="6" class="box-red"/>
+<text x="665.0" y="220.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">D_Y</text>
+<text x="380" y="272" class="t-sm" text-anchor="middle" dominant-baseline="middle">Total: L_GAN(G,D_Y) + L_GAN(F,D_X) + lambda * ( ||F(G(x)) - x||_1 + ||G(F(y)) - y||_1 ), lambda = 10 in the paper</text>
+</svg>

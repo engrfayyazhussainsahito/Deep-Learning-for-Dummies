@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260"><defs><marker id="v10a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">A short timeline of self-supervised vision</text>
+<line x1="30" y1="130" x2="730" y2="130" class="ln-bold" marker-end="url(#v10a)"/>
+<circle cx="60" cy="130" r="5" class="box-accent"/>
+<text x="60" y="96" class="t-bold" text-anchor="middle" dominant-baseline="middle">2014</text>
+<text x="60" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">Exemplar CNN</text>
+<circle cx="130" cy="130" r="5" class="box-accent"/>
+<text x="130" y="164" class="t-bold" text-anchor="middle" dominant-baseline="middle">2015</text>
+<text x="130" y="182" class="t-sm" text-anchor="middle" dominant-baseline="middle">Context pred.</text>
+<circle cx="200" cy="130" r="5" class="box-accent"/>
+<text x="200" y="96" class="t-bold" text-anchor="middle" dominant-baseline="middle">2016</text>
+<text x="200" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">Jigsaw, Colorize</text>
+<circle cx="280" cy="130" r="5" class="box-accent"/>
+<text x="280" y="164" class="t-bold" text-anchor="middle" dominant-baseline="middle">2018</text>
+<text x="280" y="182" class="t-sm" text-anchor="middle" dominant-baseline="middle">Rotation, CPC</text>
+<circle cx="360" cy="130" r="5" class="box-accent"/>
+<text x="360" y="96" class="t-bold" text-anchor="middle" dominant-baseline="middle">2019</text>
+<text x="360" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">MoCo v1</text>
+<circle cx="440" cy="130" r="5" class="box-accent"/>
+<text x="440" y="164" class="t-bold" text-anchor="middle" dominant-baseline="middle">2020</text>
+<text x="440" y="182" class="t-sm" text-anchor="middle" dominant-baseline="middle">SimCLR, BYOL</text>
+<circle cx="520" cy="130" r="5" class="box-accent"/>
+<text x="520" y="96" class="t-bold" text-anchor="middle" dominant-baseline="middle">2021</text>
+<text x="520" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">DINO, CLIP, MoCo v3</text>
+<circle cx="610" cy="130" r="5" class="box-accent"/>
+<text x="610" y="164" class="t-bold" text-anchor="middle" dominant-baseline="middle">2022</text>
+<text x="610" y="182" class="t-sm" text-anchor="middle" dominant-baseline="middle">MAE, BEiT</text>
+<circle cx="690" cy="130" r="5" class="box-accent"/>
+<text x="690" y="96" class="t-bold" text-anchor="middle" dominant-baseline="middle">2023</text>
+<text x="690" y="78" class="t-sm" text-anchor="middle" dominant-baseline="middle">DINOv2</text>
+<text x="380" y="236" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Pretext tasks -> contrastive learning -> non-contrastive -> masked modeling and scaled web-data pretraining</text>
+</svg>

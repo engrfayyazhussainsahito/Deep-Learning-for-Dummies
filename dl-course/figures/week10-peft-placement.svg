@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420"><defs><marker id="a10c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Where parameter-efficient methods act inside one Transformer block</text>
+<rect x="280" y="50" width="200" height="40" rx="6" class="box-blue"/>
+<text x="380.0" y="70.0" class="t" text-anchor="middle" dominant-baseline="middle">Multi-head attention</text>
+<rect x="280" y="150" width="200" height="40" rx="6" class="box-blue"/>
+<text x="380.0" y="170.0" class="t" text-anchor="middle" dominant-baseline="middle">Feed-forward (FFN)</text>
+<rect x="280" y="250" width="200" height="40" rx="6" class="box"/>
+<text x="380.0" y="270.0" class="t" text-anchor="middle" dominant-baseline="middle">Layer norms, embeddings</text>
+<line x1="380" y1="310" x2="380" y2="330" class="ln"/>
+<line x1="380" y1="90" x2="380" y2="150" class="ln" marker-end="url(#a10c)"/>
+<line x1="380" y1="190" x2="380" y2="230" class="ln-thin" marker-end="url(#a10c)"/>
+<text x="380" y="375" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Gray/blue: frozen pretrained weights. Colored: trainable.</text>
+<rect x="520" y="150" width="150" height="40" rx="6" class="box-green"/>
+<text x="595.0" y="170.0" class="t" text-anchor="middle" dominant-baseline="middle">Adapter (bottleneck)</text>
+<line x1="480" y1="170" x2="520" y2="170" class="ln-green" marker-end="url(#a10c)"/>
+<text x="595" y="205" class="t-sm" text-anchor="middle" dominant-baseline="middle">down d-&gt;m, nonlinearity, up m-&gt;d</text>
+<text x="595" y="222" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">residual added; Houlsby 2019</text>
+<rect x="520" y="50" width="150" height="40" rx="6" class="box-purple"/>
+<text x="595.0" y="70.0" class="t" text-anchor="middle" dominant-baseline="middle">LoRA on W_q, W_v</text>
+<line x1="480" y1="70" x2="520" y2="70" class="ln-purple" marker-end="url(#a10c)"/>
+<text x="595" y="105" class="t-sm" text-anchor="middle" dominant-baseline="middle">parallel low-rank update, no added latency after merging</text>
+<rect x="90" y="50" width="150" height="40" rx="6" class="box-amber"/>
+<text x="165.0" y="70.0" class="t" text-anchor="middle" dominant-baseline="middle">Prefix K, V vectors</text>
+<line x1="240" y1="70" x2="280" y2="70" class="ln-amber" marker-end="url(#a10c)"/>
+<text x="165" y="105" class="t-sm" text-anchor="middle" dominant-baseline="middle">learned vectors prepended to keys and values at every layer</text>
+<rect x="90" y="250" width="150" height="40" rx="6" class="box-amber"/>
+<text x="165.0" y="270.0" class="t" text-anchor="middle" dominant-baseline="middle">Soft prompt</text>
+<line x1="240" y1="270" x2="280" y2="270" class="ln-amber" marker-end="url(#a10c)"/>
+<text x="165" y="305" class="t-sm" text-anchor="middle" dominant-baseline="middle">learned embeddings prepended at the input only</text>
+<rect x="90" y="150" width="150" height="40" rx="6" class="box-red"/>
+<text x="165.0" y="170.0" class="t" text-anchor="middle" dominant-baseline="middle">BitFit: biases</text>
+<line x1="240" y1="170" x2="280" y2="170" class="ln-red" marker-end="url(#a10c)"/>
+<text x="165" y="205" class="t-sm" text-anchor="middle" dominant-baseline="middle">train only bias vectors</text>
+</svg>

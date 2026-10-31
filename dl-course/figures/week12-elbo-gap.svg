@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260"><defs><marker id="u5a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Decomposition of the log evidence</text>
+<rect x="60" y="60" width="640" height="50" rx="6" class="box-blue"/>
+<text x="380.0" y="85.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">log p_theta(x)   (a constant for fixed theta, x)</text>
+<rect x="60" y="140" width="420" height="50" rx="6" class="box-green"/>
+<text x="270.0" y="165.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">ELBO(phi, theta; x)</text>
+<rect x="480" y="140" width="220" height="50" rx="6" class="box-red"/>
+<text x="590.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">KL( q_phi(z|x) || p_theta(z|x) ) >= 0</text>
+<text x="270" y="212" class="t-sm" text-anchor="middle" dominant-baseline="middle">E_q[log p(x|z)] - KL(q(z|x) || p(z))</text>
+<text x="590" y="212" class="t-sm" text-anchor="middle" dominant-baseline="middle">gap = 0 iff q equals the true posterior</text>
+<line x1="60" y1="128" x2="700" y2="128" class="ln-dash"/>
+<text x="380" y="244" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Maximising the ELBO over phi shrinks the gap; maximising over theta pushes the whole bar up.</text>
+</svg>

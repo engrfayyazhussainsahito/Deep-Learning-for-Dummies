@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img"><defs><marker id="w7j" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Causal dilated convolutions (kernel 2, dilations 1, 2, 4)</text>
+<circle cx="70" cy="300" r="13" class="box-blue"/>
+<circle cx="158" cy="300" r="13" class="box-blue"/>
+<circle cx="246" cy="300" r="13" class="box-blue"/>
+<circle cx="334" cy="300" r="13" class="box-blue"/>
+<circle cx="422" cy="300" r="13" class="box-blue"/>
+<circle cx="510" cy="300" r="13" class="box-blue"/>
+<circle cx="598" cy="300" r="13" class="box-blue"/>
+<circle cx="686" cy="300" r="13" class="box-blue"/>
+<text x="740" y="300" class="t" text-anchor="middle" dominant-baseline="middle"></text>
+<circle cx="70" cy="220" r="13" class="box"/>
+<circle cx="158" cy="220" r="13" class="box"/>
+<circle cx="246" cy="220" r="13" class="box"/>
+<circle cx="334" cy="220" r="13" class="box"/>
+<circle cx="422" cy="220" r="13" class="box"/>
+<circle cx="510" cy="220" r="13" class="box"/>
+<circle cx="598" cy="220" r="13" class="box"/>
+<circle cx="686" cy="220" r="13" class="box"/>
+<text x="740" y="242" class="t" text-anchor="middle" dominant-baseline="middle"></text>
+<circle cx="70" cy="140" r="13" class="box"/>
+<circle cx="158" cy="140" r="13" class="box"/>
+<circle cx="246" cy="140" r="13" class="box"/>
+<circle cx="334" cy="140" r="13" class="box"/>
+<circle cx="422" cy="140" r="13" class="box"/>
+<circle cx="510" cy="140" r="13" class="box"/>
+<circle cx="598" cy="140" r="13" class="box"/>
+<circle cx="686" cy="140" r="13" class="box"/>
+<text x="740" y="162" class="t" text-anchor="middle" dominant-baseline="middle"></text>
+<circle cx="70" cy="60" r="13" class="box"/>
+<circle cx="158" cy="60" r="13" class="box"/>
+<circle cx="246" cy="60" r="13" class="box"/>
+<circle cx="334" cy="60" r="13" class="box"/>
+<circle cx="422" cy="60" r="13" class="box"/>
+<circle cx="510" cy="60" r="13" class="box"/>
+<circle cx="598" cy="60" r="13" class="box"/>
+<circle cx="686" cy="60" r="13" class="box"/>
+<text x="740" y="82" class="t" text-anchor="middle" dominant-baseline="middle"></text>
+<line x1="70" y1="287" x2="70" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="287" x2="158" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="70" y1="287" x2="153" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="287" x2="246" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="287" x2="241" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="287" x2="334" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="287" x2="329" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="422" y1="287" x2="422" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="287" x2="417" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="510" y1="287" x2="510" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="422" y1="287" x2="505" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="598" y1="287" x2="598" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="510" y1="287" x2="593" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="686" y1="287" x2="686" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="598" y1="287" x2="681" y2="233" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="70" y1="207" x2="70" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="207" x2="158" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="207" x2="246" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="70" y1="207" x2="241" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="207" x2="334" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="207" x2="329" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="422" y1="207" x2="422" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="207" x2="417" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="510" y1="207" x2="510" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="207" x2="505" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="598" y1="207" x2="598" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="422" y1="207" x2="593" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="686" y1="207" x2="686" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="510" y1="207" x2="681" y2="153" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="70" y1="127" x2="70" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="127" x2="158" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="127" x2="246" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="127" x2="334" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="422" y1="127" x2="422" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="70" y1="127" x2="417" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="510" y1="127" x2="510" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="158" y1="127" x2="505" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="598" y1="127" x2="598" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="246" y1="127" x2="593" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="686" y1="127" x2="686" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<line x1="334" y1="127" x2="681" y2="73" class="ln-thin" marker-end="url(#w7j)"/>
+<circle cx="686" cy="60" r="13" class="box-red"/>
+<circle cx="686" cy="140" r="13" class="box-red"/>
+<circle cx="334" cy="140" r="13" class="box-red"/>
+<circle cx="686" cy="220" r="13" class="box-red"/>
+<circle cx="510" cy="220" r="13" class="box-red"/>
+<circle cx="334" cy="220" r="13" class="box-red"/>
+<circle cx="158" cy="220" r="13" class="box-red"/>
+<circle cx="70" cy="300" r="13" class="box-red"/>
+<circle cx="158" cy="300" r="13" class="box-red"/>
+<circle cx="246" cy="300" r="13" class="box-red"/>
+<circle cx="334" cy="300" r="13" class="box-red"/>
+<circle cx="422" cy="300" r="13" class="box-red"/>
+<circle cx="510" cy="300" r="13" class="box-red"/>
+<circle cx="598" cy="300" r="13" class="box-red"/>
+<circle cx="686" cy="300" r="13" class="box-red"/>
+<text x="380" y="335" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Receptive field of the last output = 1 + (k-1)*(1+2+4) = 8 steps; all inputs to the left, none from the future</text>
+</svg>

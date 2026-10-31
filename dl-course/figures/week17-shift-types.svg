@@ -1,0 +1,26 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+<text class="t-bold" x="120" y="22" text-anchor="middle">Covariate shift</text>
+<text class="t-bold" x="360" y="22" text-anchor="middle">Label shift</text>
+<text class="t-bold" x="600" y="22" text-anchor="middle">Concept shift</text>
+<g>
+<rect class="box" x="15" y="34" width="210" height="150"/><rect class="box" x="255" y="34" width="210" height="150"/><rect class="box" x="495" y="34" width="210" height="150"/>
+</g>
+<line class="ln-dash" x1="120" y1="34" x2="120" y2="184"/>
+<line class="ln-dash" x1="360" y1="34" x2="360" y2="184"/>
+<line class="ln-dash" x1="600" y1="34" x2="600" y2="184"/>
+<circle class="fill-blue" cx="40" cy="60" r="4"/><circle class="fill-blue" cx="55" cy="90" r="4"/><circle class="fill-blue" cx="35" cy="120" r="4"/><circle class="fill-blue" cx="70" cy="75" r="4"/><circle class="fill-blue" cx="60" cy="150" r="4"/>
+<circle class="fill-red" cx="175" cy="60" r="4"/><circle class="fill-red" cx="190" cy="100" r="4"/><circle class="fill-red" cx="165" cy="140" r="4"/><circle class="fill-red" cx="205" cy="80" r="4"/><circle class="fill-red" cx="180" cy="165" r="4"/>
+<circle class="box-amber" cx="95" cy="60" r="5"/><circle class="box-amber" cx="80" cy="110" r="5"/><circle class="box-amber" cx="100" cy="150" r="5"/>
+<text class="t-sm" x="120" y="206" text-anchor="middle">test inputs (amber) drift to new regions;</text>
+<text class="t-sm" x="120" y="224" text-anchor="middle">the boundary rule is unchanged</text>
+<circle class="fill-blue" cx="280" cy="60" r="4"/><circle class="fill-blue" cx="300" cy="90" r="4"/><circle class="fill-blue" cx="285" cy="120" r="4"/><circle class="fill-blue" cx="320" cy="75" r="4"/><circle class="fill-blue" cx="310" cy="150" r="4"/><circle class="fill-blue" cx="270" cy="160" r="4"/><circle class="fill-blue" cx="335" cy="110" r="4"/>
+<circle class="fill-red" cx="420" cy="100" r="4"/><circle class="fill-red" cx="440" cy="140" r="4"/>
+<text class="t-sm" x="360" y="206" text-anchor="middle">same class-conditional shapes,</text>
+<text class="t-sm" x="360" y="224" text-anchor="middle">different class proportions p(y)</text>
+<circle class="fill-blue" cx="520" cy="60" r="4"/><circle class="fill-blue" cx="540" cy="90" r="4"/><circle class="fill-blue" cx="525" cy="120" r="4"/><circle class="fill-blue" cx="560" cy="75" r="4"/><circle class="fill-red" cx="650" cy="60" r="4"/><circle class="fill-red" cx="670" cy="100" r="4"/><circle class="fill-red" cx="645" cy="140" r="4"/>
+<line class="ln-accent" x1="600" y1="40" x2="600" y2="180"/>
+<line class="ln-red" x1="560" y1="40" x2="640" y2="180"/>
+<text class="t-sm" x="600" y="206" text-anchor="middle">inputs look the same, but the rule</text>
+<text class="t-sm" x="600" y="224" text-anchor="middle">p(y|x) moved (accent to red boundary)</text>
+<text class="t-sm t-muted" x="360" y="256" text-anchor="middle">Detectable from unlabeled test data: covariate, partly label shift. Concept shift needs labels.</text>
+</svg>

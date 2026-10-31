@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="190" y="22" text-anchor="middle">Advantage A &gt; 0</text>
+<text class="t-bold" x="570" y="22" text-anchor="middle">Advantage A &lt; 0</text>
+<!-- left panel axes: x from 40 to 360 (r 0..2), y baseline 250 -->
+<line class="ln" x1="40" y1="250" x2="350" y2="250" marker-end="url(#w15f)"/><line class="ln" x1="60" y1="270" x2="60" y2="40" marker-end="url(#w15f)"/>
+<text class="t-sm t-muted" x="350" y="272" text-anchor="end">r (ratio)</text>
+<text class="t-sm" x="60" y="288" text-anchor="middle">0</text><text class="t-sm" x="200" y="288" text-anchor="middle">1</text><text class="t-sm" x="228" y="288" text-anchor="middle">1+ε</text><text class="t-sm" x="172" y="288" text-anchor="middle">1−ε</text>
+<line class="ln-thin ln-dash" x1="200" y1="250" x2="200" y2="50"/><line class="ln-thin ln-dash" x1="228" y1="250" x2="228" y2="50"/><line class="ln-thin ln-dash" x1="172" y1="250" x2="172" y2="50"/>
+<path class="ln-dash" d="M60,250 L340,80" fill="none"/>
+<path class="ln-accent ln-bold" d="M60,250 L228,148 L340,148" fill="none"/>
+<path class="ln-red ln-bold" d="M228,148 L340,148" fill="none"/>
+<text class="t-sm" x="290" y="136" text-anchor="middle">flat: no gradient</text>
+<text class="t-sm t-muted" x="110" y="200" text-anchor="middle">r·A (unclipped)</text>
+<!-- right panel: x from 420 to 740 -->
+<line class="ln" x1="420" y1="50" x2="730" y2="50" marker-end="url(#w15f)"/><line class="ln" x1="440" y1="40" x2="440" y2="270" marker-start="url(#w15f)"/>
+<text class="t-sm t-muted" x="730" y="38" text-anchor="end">r (ratio)</text>
+<text class="t-sm" x="440" y="288" text-anchor="middle">0</text><text class="t-sm" x="580" y="288" text-anchor="middle">1</text><text class="t-sm" x="608" y="288" text-anchor="middle">1+ε</text><text class="t-sm" x="552" y="288" text-anchor="middle">1−ε</text>
+<line class="ln-thin ln-dash" x1="580" y1="50" x2="580" y2="270"/><line class="ln-thin ln-dash" x1="608" y1="50" x2="608" y2="270"/><line class="ln-thin ln-dash" x1="552" y1="50" x2="552" y2="270"/>
+<path class="ln-dash" d="M440,50 L720,224" fill="none"/>
+<path class="ln-accent ln-bold" d="M440,120 L552,120 L720,224" fill="none"/>
+<path class="ln-red ln-bold" d="M440,120 L552,120" fill="none"/>
+<text class="t-sm" x="496" y="108" text-anchor="middle">flat</text>
+<text class="t-sm t-muted" x="660" y="170" text-anchor="middle">r·A (unclipped)</text>
+<text class="t-sm t-muted" x="380" y="312" text-anchor="middle">solid = PPO-Clip objective L(r); dashed diagonal = unclipped surrogate rA</text>
+</svg>

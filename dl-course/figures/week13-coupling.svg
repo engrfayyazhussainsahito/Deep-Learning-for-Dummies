@@ -1,0 +1,17 @@
+<svg viewBox="0 0 740 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w13f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="370" y="22" text-anchor="middle">Affine coupling layer (RealNVP-style): forward and inverse</text>
+<rect class="box-blue" x="40" y="60" width="110" height="40" rx="6"/><text class="t" x="95" y="80" text-anchor="middle" dominant-baseline="middle">x_a (d dims)</text>
+<rect class="box" x="40" y="180" width="110" height="40" rx="6"/><text class="t" x="95" y="200" text-anchor="middle" dominant-baseline="middle">x_b (D−d)</text>
+<rect class="box-purple" x="240" y="100" width="140" height="80" rx="8"/><text class="t-sm" x="310" y="128" text-anchor="middle" dominant-baseline="middle">any network</text><text class="t-sm" x="310" y="150" text-anchor="middle" dominant-baseline="middle">s(x_a), t(x_a)</text>
+<rect class="box-amber" x="470" y="180" width="130" height="40" rx="6"/><text class="t-sm" x="535" y="200" text-anchor="middle" dominant-baseline="middle">y_b = x_b⊙e^s + t</text>
+<rect class="box-blue" x="470" y="60" width="130" height="40" rx="6"/><text class="t" x="535" y="80" text-anchor="middle" dominant-baseline="middle">y_a = x_a</text>
+<line class="ln" x1="152" y1="80" x2="468" y2="80" marker-end="url(#w13f)"/>
+<path class="ln" d="M200,80 L200,130 L238,130" fill="none" marker-end="url(#w13f)"/>
+<line class="ln" x1="152" y1="200" x2="468" y2="200" marker-end="url(#w13f)"/>
+<line class="ln-accent" x1="310" y1="182" x2="310" y2="196" />
+<path class="ln-accent" d="M310,182 L310,198" fill="none" marker-end="url(#w13f)"/>
+<text class="t-sm" x="370" y="260" text-anchor="middle">Jacobian is block-triangular: log|det J| = Σ_j s_j(x_a)  (cost O(D))</text>
+<text class="t-sm t-muted" x="370" y="284" text-anchor="middle">Inverse: x_b = (y_b − t(y_a)) ⊙ e^(−s(y_a)); x_a = y_a. No inversion of the network needed.</text>
+<text class="t-sm t-muted" x="650" y="130" text-anchor="middle">stack layers,</text><text class="t-sm t-muted" x="650" y="148" text-anchor="middle">swap roles</text><text class="t-sm t-muted" x="650" y="166" text-anchor="middle">of the halves</text>
+</svg>

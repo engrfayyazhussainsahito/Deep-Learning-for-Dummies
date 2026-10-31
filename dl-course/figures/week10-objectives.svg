@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470"><defs><marker id="a10a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Three ways to turn raw text into a prediction problem</text>
+<text x="20" y="50" class="t-bold" text-anchor="start" dominant-baseline="middle">BERT: masked language modeling (encoder, bidirectional)</text>
+<rect x="20" y="66" width="52" height="28" rx="5" class="box"/>
+<text x="46.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="76" y="66" width="52" height="28" rx="5" class="box-amber"/>
+<text x="102.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">[MASK]</text>
+<rect x="132" y="66" width="52" height="28" rx="5" class="box"/>
+<text x="158.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">sat</text>
+<rect x="188" y="66" width="52" height="28" rx="5" class="box"/>
+<text x="214.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="244" y="66" width="52" height="28" rx="5" class="box"/>
+<text x="270.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="300" y="66" width="52" height="28" rx="5" class="box-amber"/>
+<text x="326.0" y="80.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">[MASK]</text>
+<line x1="102" y1="94" x2="102" y2="124" class="ln-amber" marker-end="url(#a10a)"/>
+<line x1="326" y1="94" x2="326" y2="124" class="ln-amber" marker-end="url(#a10a)"/>
+<rect x="76" y="126" width="52" height="28" rx="5" class="box-green"/>
+<text x="102.0" y="140.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">cat</text>
+<rect x="300" y="126" width="52" height="28" rx="5" class="box-green"/>
+<text x="326.0" y="140.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">mat</text>
+<text x="430" y="80" class="t-sm" text-anchor="start" dominant-baseline="middle">Loss only on the 15% selected positions.</text>
+<text x="430" y="100" class="t-sm" text-anchor="start" dominant-baseline="middle">Each prediction sees left AND right context.</text>
+<text x="20" y="186" class="t-bold" text-anchor="start" dominant-baseline="middle">GPT: autoregressive (decoder, causal)</text>
+<rect x="20" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="46.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="76" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="102.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">cat</text>
+<rect x="132" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="158.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">sat</text>
+<rect x="188" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="214.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="244" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="270.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="300" y="202" width="52" height="28" rx="5" class="box"/>
+<text x="326.0" y="216.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">mat</text>
+<line x1="46" y1="230" x2="102" y2="260" class="ln-green" marker-end="url(#a10a)"/>
+<line x1="102" y1="230" x2="158" y2="260" class="ln-green" marker-end="url(#a10a)"/>
+<line x1="158" y1="230" x2="214" y2="260" class="ln-green" marker-end="url(#a10a)"/>
+<line x1="214" y1="230" x2="270" y2="260" class="ln-green" marker-end="url(#a10a)"/>
+<line x1="270" y1="230" x2="326" y2="260" class="ln-green" marker-end="url(#a10a)"/>
+<rect x="76" y="262" width="52" height="28" rx="5" class="box-green"/>
+<text x="102.0" y="276.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">cat</text>
+<rect x="132" y="262" width="52" height="28" rx="5" class="box-green"/>
+<text x="158.0" y="276.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">sat</text>
+<rect x="188" y="262" width="52" height="28" rx="5" class="box-green"/>
+<text x="214.0" y="276.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="244" y="262" width="52" height="28" rx="5" class="box-green"/>
+<text x="270.0" y="276.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="300" y="262" width="52" height="28" rx="5" class="box-green"/>
+<text x="326.0" y="276.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">mat</text>
+<text x="430" y="216" class="t-sm" text-anchor="start" dominant-baseline="middle">Loss at every position: predict the next token.</text>
+<text x="430" y="236" class="t-sm" text-anchor="start" dominant-baseline="middle">Each prediction sees only the left context.</text>
+<text x="20" y="322" class="t-bold" text-anchor="start" dominant-baseline="middle">T5: span corruption (encoder-decoder)</text>
+<rect x="20" y="338" width="60" height="28" rx="5" class="box"/>
+<text x="50.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="84" y="338" width="60" height="28" rx="5" class="box-amber"/>
+<text x="114.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;X&gt;</text>
+<rect x="148" y="338" width="60" height="28" rx="5" class="box"/>
+<text x="178.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="212" y="338" width="60" height="28" rx="5" class="box"/>
+<text x="242.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="276" y="338" width="60" height="28" rx="5" class="box-amber"/>
+<text x="306.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;Y&gt;</text>
+<text x="20" y="386" class="t-sm" text-anchor="start" dominant-baseline="middle">encoder input (spans replaced by sentinels)</text>
+<line x1="350" y1="352" x2="396" y2="352" class="ln" marker-end="url(#a10a)"/>
+<rect x="402" y="338" width="64" height="28" rx="5" class="box"/>
+<text x="434.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;X&gt;</text>
+<rect x="470" y="338" width="64" height="28" rx="5" class="box-green"/>
+<text x="502.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">cat sat</text>
+<rect x="538" y="338" width="64" height="28" rx="5" class="box"/>
+<text x="570.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;Y&gt;</text>
+<rect x="606" y="338" width="64" height="28" rx="5" class="box-green"/>
+<text x="638.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">mat</text>
+<rect x="674" y="338" width="64" height="28" rx="5" class="box"/>
+<text x="706.0" y="352.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;Z&gt;</text>
+<text x="402" y="386" class="t-sm" text-anchor="start" dominant-baseline="middle">decoder target: sentinel, dropped span, ...</text>
+<text x="20" y="424" class="t-sm" text-anchor="start" dominant-baseline="middle">Corrupted spans average 3 tokens; about 15% of tokens are dropped. Targets are short, so training is cheap.</text>
+</svg>

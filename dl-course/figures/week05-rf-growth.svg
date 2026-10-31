@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 330" role="img">
+<text x="370" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">One layer-3 unit traced back through three 3-tap layers (stride 1)</text>
+<text x="30" y="61" class="t-sm t-muted" dominant-baseline="middle">layer 3</text>
+<rect x="388" y="50" width="22" height="22" class="box-accent"/>
+<text x="30" y="141" class="t-sm t-muted" dominant-baseline="middle">layer 2</text>
+<rect x="364" y="130" width="22" height="22" class="box-blue"/><rect x="388" y="130" width="22" height="22" class="box-blue"/><rect x="412" y="130" width="22" height="22" class="box-blue"/>
+<text x="30" y="221" class="t-sm t-muted" dominant-baseline="middle">layer 1</text>
+<rect x="340" y="210" width="22" height="22" class="box-green"/><rect x="364" y="210" width="22" height="22" class="box-green"/><rect x="388" y="210" width="22" height="22" class="box-green"/><rect x="412" y="210" width="22" height="22" class="box-green"/><rect x="436" y="210" width="22" height="22" class="box-green"/>
+<text x="30" y="301" class="t-sm t-muted" dominant-baseline="middle">input</text>
+<rect x="316" y="290" width="22" height="22" class="box-purple"/><rect x="340" y="290" width="22" height="22" class="box-purple"/><rect x="364" y="290" width="22" height="22" class="box-purple"/><rect x="388" y="290" width="22" height="22" class="box-purple"/><rect x="412" y="290" width="22" height="22" class="box-purple"/><rect x="436" y="290" width="22" height="22" class="box-purple"/><rect x="460" y="290" width="22" height="22" class="box-purple"/>
+<line x1="399.0" y1="72" x2="375.0" y2="130" class="ln-thin"/>
+<line x1="399.0" y1="72" x2="399.0" y2="130" class="ln-thin"/>
+<line x1="399.0" y1="72" x2="423.0" y2="130" class="ln-thin"/>
+<line x1="375.0" y1="152" x2="351.0" y2="210" class="ln-thin"/>
+<line x1="375.0" y1="152" x2="375.0" y2="210" class="ln-thin"/>
+<line x1="375.0" y1="152" x2="399.0" y2="210" class="ln-thin"/>
+<line x1="399.0" y1="152" x2="375.0" y2="210" class="ln-thin"/>
+<line x1="399.0" y1="152" x2="399.0" y2="210" class="ln-thin"/>
+<line x1="399.0" y1="152" x2="423.0" y2="210" class="ln-thin"/>
+<line x1="423.0" y1="152" x2="399.0" y2="210" class="ln-thin"/>
+<line x1="423.0" y1="152" x2="423.0" y2="210" class="ln-thin"/>
+<line x1="423.0" y1="152" x2="447.0" y2="210" class="ln-thin"/>
+<line x1="351.0" y1="232" x2="327.0" y2="290" class="ln-thin"/>
+<line x1="351.0" y1="232" x2="351.0" y2="290" class="ln-thin"/>
+<line x1="351.0" y1="232" x2="375.0" y2="290" class="ln-thin"/>
+<line x1="375.0" y1="232" x2="351.0" y2="290" class="ln-thin"/>
+<line x1="375.0" y1="232" x2="375.0" y2="290" class="ln-thin"/>
+<line x1="375.0" y1="232" x2="399.0" y2="290" class="ln-thin"/>
+<line x1="399.0" y1="232" x2="375.0" y2="290" class="ln-thin"/>
+<line x1="399.0" y1="232" x2="399.0" y2="290" class="ln-thin"/>
+<line x1="399.0" y1="232" x2="423.0" y2="290" class="ln-thin"/>
+<line x1="423.0" y1="232" x2="399.0" y2="290" class="ln-thin"/>
+<line x1="423.0" y1="232" x2="423.0" y2="290" class="ln-thin"/>
+<line x1="423.0" y1="232" x2="447.0" y2="290" class="ln-thin"/>
+<line x1="447.0" y1="232" x2="423.0" y2="290" class="ln-thin"/>
+<line x1="447.0" y1="232" x2="447.0" y2="290" class="ln-thin"/>
+<line x1="447.0" y1="232" x2="471.0" y2="290" class="ln-thin"/>
+<text x="560" y="61" class="t-sm" dominant-baseline="middle">1 unit</text>
+<text x="560" y="141" class="t-sm" dominant-baseline="middle">sees 3 units of layer 2</text>
+<text x="560" y="221" class="t-sm" dominant-baseline="middle">sees 5 units of layer 1</text>
+<text x="560" y="301" class="t-sm" dominant-baseline="middle">sees 7 input samples</text>
+<text x="370" y="326" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">r = 1 + 3*(3-1) = 7: each extra layer adds (k-1) x jump = 2</text>
+</svg>

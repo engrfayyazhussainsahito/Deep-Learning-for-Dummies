@@ -1,0 +1,23 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="360" y="22" text-anchor="middle">Memory hierarchy of a datacenter GPU (A100-class, order of magnitude)</text>
+<rect class="box-red" x="230" y="40" width="260" height="46" rx="8"/>
+<text class="t-bold" x="360" y="57" text-anchor="middle">Registers</text>
+<text class="t-sm" x="360" y="74" text-anchor="middle">256 KB per SM, fastest</text>
+<rect class="box-amber" x="180" y="96" width="360" height="46" rx="8"/>
+<text class="t-bold" x="360" y="113" text-anchor="middle">Shared memory / L1 (SRAM)</text>
+<text class="t-sm" x="360" y="130" text-anchor="middle">up to 164 KB per SM, ~20 MB total, ~19 TB/s</text>
+<rect class="box-green" x="130" y="152" width="460" height="46" rx="8"/>
+<text class="t-bold" x="360" y="169" text-anchor="middle">L2 cache</text>
+<text class="t-sm" x="360" y="186" text-anchor="middle">40 MB, shared by all SMs</text>
+<rect class="box-blue" x="80" y="208" width="560" height="46" rx="8"/>
+<text class="t-bold" x="360" y="225" text-anchor="middle">HBM (global memory)</text>
+<text class="t-sm" x="360" y="242" text-anchor="middle">40 or 80 GB, 1.5 to 2.0 TB/s</text>
+<rect class="box-purple" x="30" y="264" width="660" height="46" rx="8"/>
+<text class="t-bold" x="360" y="281" text-anchor="middle">Host DRAM over PCIe, then NVMe / network</text>
+<text class="t-sm" x="360" y="298" text-anchor="middle">hundreds of GB to TB, PCIe 4.0 x16 about 32 GB/s per direction</text>
+<path class="ln" d="M650,50 L650,300" fill="none" marker-end="url(#w16a)"/>
+<text class="t-sm t-muted" x="700" y="175" text-anchor="middle" transform="rotate(90 700 175)">larger, slower</text>
+<path class="ln" d="M70,300 L70,50" fill="none" marker-end="url(#w16a)"/>
+<text class="t-sm t-muted" x="22" y="175" text-anchor="middle" transform="rotate(-90 22 175)">smaller, faster</text>
+</svg>

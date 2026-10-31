@@ -1,0 +1,22 @@
+<svg viewBox="0 0 740 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-green" x="20" y="125" width="110" height="70" rx="10"/><text class="t-bold" x="75" y="152" text-anchor="middle">Environment</text><text class="t-sm" x="75" y="172" text-anchor="middle">s, r, done</text>
+<rect class="box-blue" x="240" y="30" width="170" height="80" rx="10"/><text class="t-bold" x="325" y="56" text-anchor="middle">Actor π_θ(a|s)</text><text class="t-sm" x="325" y="78" text-anchor="middle">softmax or Gaussian head</text><text class="t-sm t-muted" x="325" y="94" text-anchor="middle">chooses actions</text>
+<rect class="box-purple" x="240" y="210" width="170" height="80" rx="10"/><text class="t-bold" x="325" y="236" text-anchor="middle">Critic V_φ(s)</text><text class="t-sm" x="325" y="258" text-anchor="middle">scalar value head</text><text class="t-sm t-muted" x="325" y="274" text-anchor="middle">scores states</text>
+<path class="ln-bold" d="M130,145 L240,80" fill="none" marker-end="url(#w15e)"/>
+<path class="ln-bold" d="M130,175 L240,240" fill="none" marker-end="url(#w15e)"/>
+<text class="t-sm" x="170" y="104" text-anchor="middle">s_t</text>
+<path class="ln-bold" d="M240,50 L90,50 L90,125" fill="none" marker-end="url(#w15e)"/>
+<text class="t-sm" x="165" y="42" text-anchor="middle">a_t</text>
+<rect class="box-amber" x="500" y="110" width="220" height="100" rx="10"/>
+<text class="t-bold" x="610" y="136" text-anchor="middle">TD error / advantage</text>
+<text class="t-mono" x="610" y="162" text-anchor="middle">δ = r + γV(s') − V(s)</text>
+<text class="t-sm t-muted" x="610" y="184" text-anchor="middle">or GAE(γ, λ) over a rollout</text>
+<path class="ln-bold" d="M410,255 L520,210" fill="none" marker-end="url(#w15e)"/>
+<path class="ln-dash" d="M130,185 L130,300 L520,300 L560,210" fill="none"/>
+<text class="t-sm" x="330" y="314" text-anchor="middle" dominant-baseline="middle">reward r_{t+1}</text>
+<path class="ln-red" d="M560,110 L560,70 L410,70" fill="none" marker-end="url(#w15e)"/>
+<text class="t-sm" x="560" y="58" text-anchor="middle">policy gradient: ∇ log π · δ</text>
+<path class="ln-red" d="M680,210 L680,250 L410,265" fill="none" marker-end="url(#w15e)"/>
+<text class="t-sm" x="560" y="262" text-anchor="middle">value loss: δ²</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w13c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="190" y="24" text-anchor="middle">Standard VAE</text>
+<text class="t-bold" x="565" y="24" text-anchor="middle">Diffusion = hierarchical VAE with fixed encoder</text>
+<circle class="box-purple" cx="190" cy="90" r="26"/><text class="t" x="190" y="90" text-anchor="middle" dominant-baseline="middle">z</text>
+<circle class="box-blue" cx="190" cy="210" r="26"/><text class="t" x="190" y="210" text-anchor="middle" dominant-baseline="middle">x</text>
+<line class="ln" x1="170" y1="112" x2="170" y2="188" marker-end="url(#w13c)"/>
+<line class="ln-dash" x1="210" y1="188" x2="210" y2="112" marker-end="url(#w13c)"/>
+<text class="t-sm" x="150" y="150" text-anchor="end">decoder p_θ(x|z)</text>
+<text class="t-sm t-muted" x="230" y="150">encoder q_φ(z|x)</text>
+<text class="t-sm t-muted" x="190" y="270" text-anchor="middle">one latent layer, learned encoder,</text>
+<text class="t-sm t-muted" x="190" y="288" text-anchor="middle">latent has a bottleneck dimension</text>
+<line class="ln-thin" x1="380" y1="40" x2="380" y2="300"/>
+<circle class="box-red" cx="480" cy="90" r="24"/><text class="t-sm" x="480" y="90" text-anchor="middle" dominant-baseline="middle">x_T</text>
+<circle class="box" cx="565" cy="90" r="24"/><text class="t-sm" x="565" y="90" text-anchor="middle" dominant-baseline="middle">x_t</text>
+<circle class="box" cx="650" cy="90" r="24"/><text class="t-sm" x="650" y="90" text-anchor="middle" dominant-baseline="middle">x_(t-1)</text>
+<circle class="box-blue" cx="565" cy="210" r="24"/><text class="t-sm" x="565" y="210" text-anchor="middle" dominant-baseline="middle">x₀</text>
+<line class="ln-accent" x1="506" y1="90" x2="539" y2="90" marker-end="url(#w13c)"/>
+<line class="ln-accent" x1="591" y1="90" x2="624" y2="90" marker-end="url(#w13c)"/>
+<text class="t-sm t-accent" x="565" y="52" text-anchor="middle">generative chain p_θ (top-down)</text>
+<line class="ln-blue ln-dash" x1="565" y1="186" x2="565" y2="116" />
+<line class="ln-blue ln-dash" x1="548" y1="190" x2="490" y2="112"/>
+<line class="ln-blue ln-dash" x1="582" y1="190" x2="640" y2="112"/>
+<text class="t-sm" x="565" y="250" text-anchor="middle" style="fill:var(--c-blue)">fixed encoder q(x_(1:T)|x₀): same dimension as data,</text>
+<text class="t-sm" x="565" y="268" text-anchor="middle" style="fill:var(--c-blue)">no learned parameters, so no posterior collapse</text>
+<text class="t-sm t-muted" x="565" y="300" text-anchor="middle">latents x₁..x_T are noisy copies of x₀</text>
+</svg>

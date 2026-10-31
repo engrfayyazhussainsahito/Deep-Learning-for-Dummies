@@ -1,0 +1,25 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w01c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w01d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker></defs>
+<text class="t-bold t-sm" x="20" y="22">Computation graph of one linear regression loss: L = mean((X w + b - y)^2)</text>
+<rect class="box-green" x="20" y="70" width="70" height="40" rx="6"/><text class="t-mono" x="55" y="90" text-anchor="middle" dominant-baseline="middle">w</text>
+<rect class="box" x="20" y="130" width="70" height="40" rx="6"/><text class="t-mono" x="55" y="150" text-anchor="middle" dominant-baseline="middle">X</text>
+<rect class="box-green" x="20" y="200" width="70" height="40" rx="6"/><text class="t-mono" x="55" y="220" text-anchor="middle" dominant-baseline="middle">b</text>
+<rect class="box" x="20" y="262" width="70" height="40" rx="6"/><text class="t-mono" x="55" y="282" text-anchor="middle" dominant-baseline="middle">y</text>
+<circle class="box-blue" cx="190" cy="120" r="26"/><text class="t-mono" x="190" y="120" text-anchor="middle" dominant-baseline="middle">X@w</text>
+<circle class="box-blue" cx="300" cy="170" r="26"/><text class="t-mono" x="300" y="170" text-anchor="middle" dominant-baseline="middle">+b</text>
+<circle class="box-blue" cx="410" cy="215" r="26"/><text class="t-mono" x="410" y="215" text-anchor="middle" dominant-baseline="middle">-y</text>
+<circle class="box-blue" cx="520" cy="215" r="26"/><text class="t-mono" x="520" y="215" text-anchor="middle" dominant-baseline="middle">sq</text>
+<circle class="box-amber" cx="630" cy="215" r="26"/><text class="t-mono" x="630" y="215" text-anchor="middle" dominant-baseline="middle">mean</text>
+<rect class="box-red" x="690" y="196" width="56" height="38" rx="6"/><text class="t-mono" x="718" y="215" text-anchor="middle" dominant-baseline="middle">L</text>
+<g class="ln" fill="none">
+<line x1="90" y1="90" x2="165" y2="110" marker-end="url(#w01c)"/><line x1="90" y1="150" x2="165" y2="130" marker-end="url(#w01c)"/>
+<line x1="216" y1="130" x2="276" y2="162" marker-end="url(#w01c)"/><line x1="90" y1="220" x2="275" y2="178" marker-end="url(#w01c)"/>
+<line x1="326" y1="180" x2="386" y2="210" marker-end="url(#w01c)"/><line x1="90" y1="282" x2="388" y2="224" marker-end="url(#w01c)"/>
+<line x1="436" y1="215" x2="494" y2="215" marker-end="url(#w01c)"/><line x1="546" y1="215" x2="604" y2="215" marker-end="url(#w01c)"/><line x1="656" y1="215" x2="688" y2="215" marker-end="url(#w01c)"/></g>
+<path class="ln-accent" fill="none" d="M690,246 C650,290 400,290 120,262 C80,255 60,250 55,244" marker-end="url(#w01d)" style="opacity:0"/>
+<path class="ln-accent ln-dash" fill="none" d="M700,246 C690,300 300,310 230,150" marker-end="url(#w01d)" style="opacity:0"/>
+<text class="t-accent t-sm" x="20" y="320">Backward pass (not drawn): start at L with dL/dL = 1, multiply local derivatives along each edge in reverse; w and b (green) receive dL/dw, dL/db.</text>
+<text class="t-sm t-muted" x="300" y="60">leaves = inputs and parameters</text>
+<text class="t-sm t-muted" x="560" y="140">each circle = one primitive op with a known local derivative</text>
+</svg>

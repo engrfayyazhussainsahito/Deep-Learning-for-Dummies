@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390"><defs><marker id="w9r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<circle cx="190" cy="190" r="120" class="ln-thin" fill="none"/>
+<line x1="40" y1="190" x2="340" y2="190" class="ln" marker-end="url(#w9r)"/>
+<line x1="190" y1="340" x2="190" y2="40" class="ln" marker-end="url(#w9r)"/>
+<text x="340" y="204" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">dim 2i</text>
+<text x="194" y="32" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">dim 2i+1</text>
+<line x1="190" y1="190" x2="293.3661882864499" y2="152.37778423417643" class="ln-blue" marker-end="url(#w9r)"/>
+<line x1="190" y1="190" x2="218.47009496127728" y2="83.74815910820249" class="ln-green" marker-end="url(#w9r)"/>
+<line x1="190" y1="190" x2="119.29336293448067" y2="105.73511125691242" class="ln-purple" marker-end="url(#w9r)"/>
+<text x="319.67758166845533" y="142.80122022105772" class="t-bold" text-anchor="middle" dominant-baseline="middle">m</text>
+<text x="225.71702822414787" y="56.70223597210858" class="t-bold" text-anchor="middle" dominant-baseline="middle">m+1</text>
+<text x="101.29530986325757" y="84.28586684958104" class="t-bold" text-anchor="middle" dominant-baseline="middle">m+2</text>
+<path d="M 246.3815572471545 169.47879140045987 A 60 60 0 0 0 205.52914270615125 132.0444504226559" class="ln-amber" fill="none"/>
+<text x="272" y="108" class="t-sm" text-anchor="start" dominant-baseline="middle">theta_i</text>
+<rect x="400" y="30" width="330" height="330" rx="6" class="box"/>
+<text x="565" y="58" class="t-bold" text-anchor="middle" dominant-baseline="middle">Rotary position embedding</text>
+<text x="565" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">Pair up coordinates: (x_0,x_1), (x_2,x_3), ...</text>
+<text x="565" y="121" class="t-sm" text-anchor="middle" dominant-baseline="middle">Rotate pair i by angle m * theta_i:</text>
+<text x="565" y="142" class="t-mono" text-anchor="middle" dominant-baseline="middle">[x'_2i ; x'_2i+1] = R(m theta_i) [x_2i ; x_2i+1]</text>
+<text x="565" y="163" class="t-mono" text-anchor="middle" dominant-baseline="middle">theta_i = 10000^(-2i/d)</text>
+<text x="565" y="205" class="t-sm" text-anchor="middle" dominant-baseline="middle">Apply to queries and keys only:</text>
+<text x="565" y="226" class="t-mono" text-anchor="middle" dominant-baseline="middle"><R(m)q, R(n)k> = q^T R(n-m) k</text>
+<text x="565" y="268" class="t-sm" text-anchor="middle" dominant-baseline="middle">The score depends on m and n only through</text>
+<text x="565" y="289" class="t-sm" text-anchor="middle" dominant-baseline="middle">the offset n - m (relative position).</text>
+<text x="565" y="331" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Low i: fast rotation, fine position detail.</text>
+<text x="565" y="352" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">High i: slow rotation, coarse, long range.</text>
+</svg>

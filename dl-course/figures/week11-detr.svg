@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340"><defs><marker id="v9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">DETR: CNN features, Transformer, N object queries, one-to-one Hungarian matching</text>
+<rect x="14" y="120" width="70" height="70" rx="6" class="box-blue"/>
+<text x="49.0" y="155.0" class="t" text-anchor="middle" dominant-baseline="middle">Image</text>
+<rect x="110" y="115" width="80" height="80" rx="6" class="box-green"/>
+<text x="150.0" y="147.0" class="t" text-anchor="middle" dominant-baseline="middle">CNN</text>
+<text x="150.0" y="164.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">backbone</text>
+<line x1="84" y1="155" x2="110" y2="155" class="ln" marker-end="url(#v9a)"/>
+<rect x="220" y="100" width="80" height="110" rx="6" class="box-purple"/>
+<text x="260.0" y="147.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Encoder</text>
+<text x="260.0" y="164.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">6 layers</text>
+<line x1="190" y1="155" x2="220" y2="155" class="ln" marker-end="url(#v9a)"/>
+<text x="205" y="225" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">HW/32 tokens + pos</text>
+<rect x="330" y="100" width="90" height="110" rx="6" class="box-accent"/>
+<text x="375.0" y="147.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Decoder</text>
+<text x="375.0" y="164.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">6 layers</text>
+<line x1="300" y1="155" x2="330" y2="155" class="ln" marker-end="url(#v9a)"/>
+<rect x="330" y="40" width="90" height="36" rx="6" class="box-amber"/>
+<text x="375.0" y="58.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">N=100 queries</text>
+<line x1="375" y1="76" x2="375" y2="100" class="ln" marker-end="url(#v9a)"/>
+<rect x="460" y="60" width="70" height="32" rx="6" class="box-red"/>
+<text x="495.0" y="76.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">class+box</text>
+<rect x="460" y="100" width="70" height="32" rx="6" class="box"/>
+<text x="495.0" y="116.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">no object</text>
+<rect x="460" y="140" width="70" height="32" rx="6" class="box"/>
+<text x="495.0" y="156.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">no object</text>
+<rect x="460" y="180" width="70" height="32" rx="6" class="box-red"/>
+<text x="495.0" y="196.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">class+box</text>
+<rect x="460" y="220" width="70" height="32" rx="6" class="box"/>
+<text x="495.0" y="236.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">no object</text>
+<line x1="420" y1="155" x2="460" y2="155" class="ln" marker-end="url(#v9a)"/>
+<rect x="570" y="70" width="170" height="80" rx="6" class="box-teal"/>
+<text x="655.0" y="102.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Hungarian matching</text>
+<text x="655.0" y="119.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">min-cost assignment</text>
+<rect x="570" y="170" width="170" height="70" rx="6" class="box-green"/>
+<text x="655.0" y="197.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Set loss</text>
+<text x="655.0" y="214.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">CE + L1 + GIoU on matches</text>
+<line x1="530" y1="92" x2="570" y2="100" class="ln" marker-end="url(#v9a)"/>
+<line x1="655" y1="150" x2="655" y2="170" class="ln" marker-end="url(#v9a)"/>
+<text x="380" y="312" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">No anchors, no NMS: predictions are a set, and duplicates are penalised by the one-to-one matching.</text>
+</svg>

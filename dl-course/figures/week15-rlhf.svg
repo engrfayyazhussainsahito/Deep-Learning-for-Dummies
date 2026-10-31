@@ -1,0 +1,25 @@
+<svg viewBox="0 0 780 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-blue" x="15" y="40" width="240" height="280" rx="12"/><rect class="box-purple" x="270" y="40" width="240" height="280" rx="12"/><rect class="box-green" x="525" y="40" width="240" height="280" rx="12"/>
+<text class="t-bold" x="135" y="64" text-anchor="middle">1. Supervised fine-tuning</text>
+<text class="t-bold" x="390" y="64" text-anchor="middle">2. Reward model</text>
+<text class="t-bold" x="645" y="64" text-anchor="middle">3. RL with PPO</text>
+<rect class="box" x="35" y="86" width="200" height="40" rx="6"/><text class="t-sm" x="135" y="106" text-anchor="middle">prompts + human demonstrations</text>
+<rect class="box" x="35" y="150" width="200" height="40" rx="6"/><text class="t-sm" x="135" y="170" text-anchor="middle">pretrained LM</text>
+<path class="ln-bold" d="M135,126 L135,150" fill="none" marker-end="url(#w15g)"/>
+<rect class="box-blue" x="35" y="214" width="200" height="44" rx="6"/><text class="t-sm" x="135" y="230" text-anchor="middle">cross-entropy training</text><text class="t-mono" x="135" y="248" text-anchor="middle">π_ref (SFT model)</text>
+<path class="ln-bold" d="M135,190 L135,214" fill="none" marker-end="url(#w15g)"/>
+<rect class="box" x="290" y="86" width="200" height="50" rx="6"/><text class="t-sm" x="390" y="104" text-anchor="middle">prompt x, two responses</text><text class="t-sm" x="390" y="122" text-anchor="middle">human picks y_w over y_l</text>
+<rect class="box-purple" x="290" y="160" width="200" height="50" rx="6"/><text class="t-sm" x="390" y="178" text-anchor="middle">reward model r_φ(x, y)</text><text class="t-sm t-muted" x="390" y="196" text-anchor="middle">LM with a scalar head</text>
+<path class="ln-bold" d="M390,136 L390,160" fill="none" marker-end="url(#w15g)"/>
+<rect class="box" x="290" y="234" width="200" height="60" rx="6"/><text class="t-mono" x="390" y="254" text-anchor="middle">−log σ(r_w − r_l)</text><text class="t-sm t-muted" x="390" y="276" text-anchor="middle">Bradley-Terry loss</text>
+<path class="ln-bold" d="M390,210 L390,234" fill="none" marker-end="url(#w15g)"/>
+<rect class="box" x="545" y="86" width="200" height="40" rx="6"/><text class="t-sm" x="645" y="106" text-anchor="middle">policy π_θ writes a response</text>
+<rect class="box-purple" x="545" y="146" width="200" height="40" rx="6"/><text class="t-sm" x="645" y="166" text-anchor="middle">reward r_φ(x, y) (frozen)</text>
+<rect class="box-amber" x="545" y="206" width="200" height="40" rx="6"/><text class="t-sm" x="645" y="220" text-anchor="middle">− β KL(π_θ || π_ref)</text><text class="t-sm t-muted" x="645" y="237" text-anchor="middle">keeps the policy near SFT</text>
+<rect class="box-green" x="545" y="266" width="200" height="40" rx="6"/><text class="t-sm" x="645" y="286" text-anchor="middle">PPO update (GAE, clip)</text>
+<path class="ln-bold" d="M645,126 L645,146" fill="none" marker-end="url(#w15g)"/><path class="ln-bold" d="M645,186 L645,206" fill="none" marker-end="url(#w15g)"/><path class="ln-bold" d="M645,246 L645,266" fill="none" marker-end="url(#w15g)"/>
+<path class="ln-dash" d="M235,236 L270,236 L270,330 L520,330 L520,226 L545,226" fill="none" marker-end="url(#w15g)"/>
+<path class="ln-dash" d="M490,185 L545,166" fill="none" marker-end="url(#w15g)"/>
+<text class="t-sm t-muted" x="390" y="348" text-anchor="middle">DPO folds stages 2 and 3 into one supervised loss on preference pairs; GRPO replaces the critic with group-relative baselines</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 360"><defs><marker id="a10e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="390" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Retrieval-augmented generation</text>
+<rect x="20" y="150" width="110" height="50" rx="6" class="box-accent"/>
+<text x="75.0" y="175.0" class="t" text-anchor="middle" dominant-baseline="middle">Question q</text>
+<line x1="130" y1="175" x2="190" y2="175" class="ln" marker-end="url(#a10e)"/>
+<rect x="190" y="150" width="120" height="50" rx="6" class="box-blue"/>
+<text x="250.0" y="167.5" class="t" text-anchor="middle" dominant-baseline="middle">Query encoder</text>
+<text x="250.0" y="182.5" class="t" text-anchor="middle" dominant-baseline="middle">e(q)</text>
+<line x1="310" y1="175" x2="370" y2="175" class="ln" marker-end="url(#a10e)"/>
+<rect x="370" y="120" width="140" height="110" rx="6" class="box-teal"/>
+<text x="440.0" y="160.0" class="t" text-anchor="middle" dominant-baseline="middle">Vector index</text>
+<text x="440.0" y="175.0" class="t" text-anchor="middle" dominant-baseline="middle">(ANN search)</text>
+<text x="440.0" y="190.0" class="t" text-anchor="middle" dominant-baseline="middle">top-k passages</text>
+<rect x="370" y="260" width="140" height="60" rx="6" class="box"/>
+<text x="440.0" y="282.5" class="t" text-anchor="middle" dominant-baseline="middle">Corpus chunks</text>
+<text x="440.0" y="297.5" class="t" text-anchor="middle" dominant-baseline="middle">embedded offline</text>
+<line x1="440" y1="260" x2="440" y2="230" class="ln-dash" marker-end="url(#a10e)"/>
+<line x1="510" y1="175" x2="570" y2="175" class="ln" marker-end="url(#a10e)"/>
+<rect x="570" y="120" width="190" height="110" rx="6" class="box-purple"/>
+<text x="665.0" y="160.0" class="t" text-anchor="middle" dominant-baseline="middle">LLM</text>
+<text x="665.0" y="175.0" class="t" text-anchor="middle" dominant-baseline="middle">prompt = instructions</text>
+<text x="665.0" y="190.0" class="t" text-anchor="middle" dominant-baseline="middle">+ passages + q</text>
+<path d="M75,200 L75,310 L650,310 L650,230" class="ln-dash" fill="none" marker-end="url(#a10e)"/>
+<text x="360" y="328" class="t-sm" text-anchor="middle" dominant-baseline="middle">question is also placed in the prompt</text>
+<rect x="570" y="40" width="190" height="44" rx="6" class="box-green"/>
+<text x="665.0" y="62.0" class="t" text-anchor="middle" dominant-baseline="middle">Answer with citations</text>
+<line x1="665" y1="120" x2="665" y2="84" class="ln" marker-end="url(#a10e)"/>
+</svg>

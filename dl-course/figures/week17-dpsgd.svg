@@ -1,0 +1,21 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-blue" x="15" y="110" width="100" height="70" rx="6"/><text class="t-bold" x="65" y="136" text-anchor="middle">Poisson batch</text><text class="t-sm" x="65" y="156" text-anchor="middle">each example in</text><text class="t-sm" x="65" y="170" text-anchor="middle">with prob q</text>
+<line class="ln" x1="115" y1="145" x2="148" y2="145" marker-end="url(#w17h)"/>
+<rect class="box-green" x="152" y="95" width="120" height="100" rx="6"/><text class="t-bold" x="212" y="118" text-anchor="middle">per-example grads</text>
+<line class="ln-accent" x1="170" y1="170" x2="200" y2="130"/><line class="ln-accent" x1="215" y1="170" x2="238" y2="140"/><line class="ln-accent" x1="245" y1="170" x2="264" y2="156"/>
+<text class="t-sm" x="212" y="186" text-anchor="middle">g_1 ... g_B (B x p)</text>
+<line class="ln" x1="272" y1="145" x2="306" y2="145" marker-end="url(#w17h)"/>
+<rect class="box-amber" x="310" y="95" width="120" height="100" rx="6"/><text class="t-bold" x="370" y="118" text-anchor="middle">clip to norm C</text>
+<circle class="ln-dash" cx="370" cy="158" r="26" fill="none"/>
+<line class="ln-accent" x1="370" y1="158" x2="394" y2="146"/><line class="ln-accent" x1="370" y1="158" x2="350" y2="140"/><line class="ln-accent" x1="370" y1="158" x2="388" y2="176"/>
+<line class="ln" x1="430" y1="145" x2="464" y2="145" marker-end="url(#w17h)"/>
+<rect class="box-purple" x="468" y="95" width="120" height="100" rx="6"/><text class="t-bold" x="528" y="118" text-anchor="middle">sum + noise</text><text class="t-sm" x="528" y="144" text-anchor="middle">sum_i clipped g_i</text><text class="t-sm" x="528" y="164" text-anchor="middle">+ N(0, s^2 C^2 I)</text>
+<line class="ln" x1="588" y1="145" x2="620" y2="145" marker-end="url(#w17h)"/>
+<rect class="box-teal" x="624" y="110" width="80" height="70" rx="6"/><text class="t-bold" x="664" y="140" text-anchor="middle">/ B, then</text><text class="t-sm" x="664" y="160" text-anchor="middle">SGD update</text>
+<rect class="box-red" x="230" y="235" width="260" height="46" rx="6"/><text class="t-bold" x="360" y="254" text-anchor="middle">privacy accountant</text><text class="t-sm" x="360" y="271" text-anchor="middle">(q, sigma, steps, delta) gives epsilon</text>
+<line class="ln-dash" x1="528" y1="195" x2="470" y2="240" marker-end="url(#w17h)"/>
+<line class="ln-dash" x1="212" y1="195" x2="260" y2="240" marker-end="url(#w17h)"/>
+<text class="t-sm t-muted" x="20" y="40">Clipping bounds how much one person can change the sum (sensitivity C);</text>
+<text class="t-sm t-muted" x="20" y="58">the noise is sized to hide exactly that much.</text>
+</svg>

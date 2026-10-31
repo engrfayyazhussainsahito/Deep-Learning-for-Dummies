@@ -1,0 +1,25 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w18d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="380" y="22" text-anchor="middle">Which model family first? A starting-point guide</text>
+<rect class="box-accent" x="290" y="40" width="180" height="40" rx="8"/><text class="t-bold" x="380" y="60" text-anchor="middle" dominant-baseline="middle">What is your data?</text>
+<line class="ln" x1="330" y1="80" x2="95" y2="130" marker-end="url(#w18d)"/><line class="ln" x1="360" y1="80" x2="250" y2="130" marker-end="url(#w18d)"/><line class="ln" x1="400" y1="80" x2="420" y2="130" marker-end="url(#w18d)"/><line class="ln" x1="430" y1="80" x2="585" y2="130" marker-end="url(#w18d)"/><line class="ln" x1="450" y1="80" x2="705" y2="130" marker-end="url(#w18d)"/>
+<rect class="box-blue" x="20" y="130" width="150" height="50" rx="6"/><text class="t" x="95" y="155" text-anchor="middle" dominant-baseline="middle">Images, grids</text>
+<rect class="box-green" x="180" y="130" width="140" height="50" rx="6"/><text class="t" x="250" y="155" text-anchor="middle" dominant-baseline="middle">Text, tokens</text>
+<rect class="box-purple" x="350" y="130" width="140" height="50" rx="6"/><text class="t" x="420" y="155" text-anchor="middle" dominant-baseline="middle">Tabular</text>
+<rect class="box-amber" x="515" y="130" width="140" height="50" rx="6"/><text class="t" x="585" y="155" text-anchor="middle" dominant-baseline="middle">Graphs, molecules</text>
+<rect class="box-red" x="665" y="130" width="85" height="50" rx="6"/><text class="t" x="707" y="155" text-anchor="middle" dominant-baseline="middle">Control</text>
+<line class="ln" x1="95" y1="180" x2="95" y2="205" marker-end="url(#w18d)"/><line class="ln" x1="250" y1="180" x2="250" y2="205" marker-end="url(#w18d)"/><line class="ln" x1="420" y1="180" x2="420" y2="205" marker-end="url(#w18d)"/><line class="ln" x1="585" y1="180" x2="585" y2="205" marker-end="url(#w18d)"/><line class="ln" x1="707" y1="180" x2="707" y2="205" marker-end="url(#w18d)"/>
+<rect class="box" x="20" y="205" width="150" height="110" rx="6"/>
+<text class="t-sm" x="95" y="227" text-anchor="middle">Pretrained CNN or ViT,</text><text class="t-sm" x="95" y="245" text-anchor="middle">fine-tune (W6, W11)</text><text class="t-sm t-muted" x="95" y="270" text-anchor="middle">small data: CNN +</text><text class="t-sm t-muted" x="95" y="286" text-anchor="middle">augmentation; large:</text><text class="t-sm t-muted" x="95" y="302" text-anchor="middle">ViT</text>
+<rect class="box" x="180" y="205" width="140" height="110" rx="6"/>
+<text class="t-sm" x="250" y="227" text-anchor="middle">Pretrained Transformer</text><text class="t-sm" x="250" y="245" text-anchor="middle">(W9, W10)</text><text class="t-sm t-muted" x="250" y="270" text-anchor="middle">encoder to classify,</text><text class="t-sm t-muted" x="250" y="286" text-anchor="middle">decoder to generate,</text><text class="t-sm t-muted" x="250" y="302" text-anchor="middle">LoRA if tight on GPU</text>
+<rect class="box" x="350" y="205" width="140" height="110" rx="6"/>
+<text class="t-sm" x="420" y="227" text-anchor="middle">Gradient boosting first,</text><text class="t-sm" x="420" y="245" text-anchor="middle">then an MLP baseline</text><text class="t-sm t-muted" x="420" y="270" text-anchor="middle">deep nets rarely win</text><text class="t-sm t-muted" x="420" y="286" text-anchor="middle">on small tabular data</text>
+<rect class="box" x="515" y="205" width="140" height="110" rx="6"/>
+<text class="t-sm" x="585" y="227" text-anchor="middle">GNN with message</text><text class="t-sm" x="585" y="245" text-anchor="middle">passing (W14)</text><text class="t-sm t-muted" x="585" y="270" text-anchor="middle">GCN/GAT/GIN baseline,</text><text class="t-sm t-muted" x="585" y="286" text-anchor="middle">then equivariant nets</text>
+<rect class="box" x="665" y="205" width="85" height="110" rx="6"/>
+<text class="t-sm" x="707" y="227" text-anchor="middle">PPO / SAC</text><text class="t-sm" x="707" y="245" text-anchor="middle">(W15)</text><text class="t-sm t-muted" x="707" y="270" text-anchor="middle">offline data:</text><text class="t-sm t-muted" x="707" y="286" text-anchor="middle">IQL / CQL</text>
+<rect class="box-teal" x="20" y="335" width="730" height="48" rx="8"/>
+<text class="t-bold" x="385" y="353" text-anchor="middle">Always</text>
+<text class="t-sm" x="385" y="371" text-anchor="middle">Start from the simplest strong baseline, AdamW + warmup + cosine, then add one change at a time</text>
+</svg>

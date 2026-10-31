@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img"><defs><marker id="mweek05connecti" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="110" y="25" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Fully connected</text>
+<line x1="40" y1="85" x2="180" y2="85" class="ln-thin"/>
+<line x1="40" y1="137" x2="180" y2="85" class="ln-thin"/>
+<line x1="40" y1="189" x2="180" y2="85" class="ln-thin"/>
+<line x1="40" y1="241" x2="180" y2="85" class="ln-thin"/>
+<line x1="40" y1="293" x2="180" y2="85" class="ln-thin"/>
+<line x1="40" y1="85" x2="180" y2="137" class="ln-thin"/>
+<line x1="40" y1="137" x2="180" y2="137" class="ln-thin"/>
+<line x1="40" y1="189" x2="180" y2="137" class="ln-thin"/>
+<line x1="40" y1="241" x2="180" y2="137" class="ln-thin"/>
+<line x1="40" y1="293" x2="180" y2="137" class="ln-thin"/>
+<line x1="40" y1="85" x2="180" y2="189" class="ln-thin"/>
+<line x1="40" y1="137" x2="180" y2="189" class="ln-thin"/>
+<line x1="40" y1="189" x2="180" y2="189" class="ln-thin"/>
+<line x1="40" y1="241" x2="180" y2="189" class="ln-thin"/>
+<line x1="40" y1="293" x2="180" y2="189" class="ln-thin"/>
+<line x1="40" y1="85" x2="180" y2="241" class="ln-thin"/>
+<line x1="40" y1="137" x2="180" y2="241" class="ln-thin"/>
+<line x1="40" y1="189" x2="180" y2="241" class="ln-thin"/>
+<line x1="40" y1="241" x2="180" y2="241" class="ln-thin"/>
+<line x1="40" y1="293" x2="180" y2="241" class="ln-thin"/>
+<line x1="40" y1="85" x2="180" y2="293" class="ln-thin"/>
+<line x1="40" y1="137" x2="180" y2="293" class="ln-thin"/>
+<line x1="40" y1="189" x2="180" y2="293" class="ln-thin"/>
+<line x1="40" y1="241" x2="180" y2="293" class="ln-thin"/>
+<line x1="40" y1="293" x2="180" y2="293" class="ln-thin"/>
+<circle cx="40" cy="85" r="9" class="box"/>
+<circle cx="180" cy="85" r="9" class="box-accent"/>
+<circle cx="40" cy="137" r="9" class="box"/>
+<circle cx="180" cy="137" r="9" class="box-accent"/>
+<circle cx="40" cy="189" r="9" class="box"/>
+<circle cx="180" cy="189" r="9" class="box-accent"/>
+<circle cx="40" cy="241" r="9" class="box"/>
+<circle cx="180" cy="241" r="9" class="box-accent"/>
+<circle cx="40" cy="293" r="9" class="box"/>
+<circle cx="180" cy="293" r="9" class="box-accent"/>
+<text x="40" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">input</text>
+<text x="180" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">output</text>
+<text x="110" y="335" class="t" text-anchor="middle" dominant-baseline="middle">25 weights</text>
+<text x="110" y="357" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">every output sees every input</text>
+<text x="350" y="25" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Local, unshared</text>
+<line x1="280" y1="85" x2="420" y2="85" class="ln-blue"/>
+<line x1="280" y1="137" x2="420" y2="85" class="ln-blue"/>
+<line x1="280" y1="85" x2="420" y2="137" class="ln-green"/>
+<line x1="280" y1="137" x2="420" y2="137" class="ln-green"/>
+<line x1="280" y1="189" x2="420" y2="137" class="ln-green"/>
+<line x1="280" y1="137" x2="420" y2="189" class="ln-amber"/>
+<line x1="280" y1="189" x2="420" y2="189" class="ln-amber"/>
+<line x1="280" y1="241" x2="420" y2="189" class="ln-amber"/>
+<line x1="280" y1="189" x2="420" y2="241" class="ln-purple"/>
+<line x1="280" y1="241" x2="420" y2="241" class="ln-purple"/>
+<line x1="280" y1="293" x2="420" y2="241" class="ln-purple"/>
+<line x1="280" y1="241" x2="420" y2="293" class="ln-red"/>
+<line x1="280" y1="293" x2="420" y2="293" class="ln-red"/>
+<circle cx="280" cy="85" r="9" class="box"/>
+<circle cx="420" cy="85" r="9" class="box-accent"/>
+<circle cx="280" cy="137" r="9" class="box"/>
+<circle cx="420" cy="137" r="9" class="box-accent"/>
+<circle cx="280" cy="189" r="9" class="box"/>
+<circle cx="420" cy="189" r="9" class="box-accent"/>
+<circle cx="280" cy="241" r="9" class="box"/>
+<circle cx="420" cy="241" r="9" class="box-accent"/>
+<circle cx="280" cy="293" r="9" class="box"/>
+<circle cx="420" cy="293" r="9" class="box-accent"/>
+<text x="280" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">input</text>
+<text x="420" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">output</text>
+<text x="350" y="335" class="t" text-anchor="middle" dominant-baseline="middle">15 weights</text>
+<text x="350" y="357" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">5 outputs x 3 taps, all different</text>
+<text x="590" y="25" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Local and shared (conv)</text>
+<line x1="520" y1="85" x2="660" y2="85" class="ln-green"/>
+<line x1="520" y1="137" x2="660" y2="85" class="ln-amber"/>
+<line x1="520" y1="85" x2="660" y2="137" class="ln-blue"/>
+<line x1="520" y1="137" x2="660" y2="137" class="ln-green"/>
+<line x1="520" y1="189" x2="660" y2="137" class="ln-amber"/>
+<line x1="520" y1="137" x2="660" y2="189" class="ln-blue"/>
+<line x1="520" y1="189" x2="660" y2="189" class="ln-green"/>
+<line x1="520" y1="241" x2="660" y2="189" class="ln-amber"/>
+<line x1="520" y1="189" x2="660" y2="241" class="ln-blue"/>
+<line x1="520" y1="241" x2="660" y2="241" class="ln-green"/>
+<line x1="520" y1="293" x2="660" y2="241" class="ln-amber"/>
+<line x1="520" y1="241" x2="660" y2="293" class="ln-blue"/>
+<line x1="520" y1="293" x2="660" y2="293" class="ln-green"/>
+<circle cx="520" cy="85" r="9" class="box"/>
+<circle cx="660" cy="85" r="9" class="box-accent"/>
+<circle cx="520" cy="137" r="9" class="box"/>
+<circle cx="660" cy="137" r="9" class="box-accent"/>
+<circle cx="520" cy="189" r="9" class="box"/>
+<circle cx="660" cy="189" r="9" class="box-accent"/>
+<circle cx="520" cy="241" r="9" class="box"/>
+<circle cx="660" cy="241" r="9" class="box-accent"/>
+<circle cx="520" cy="293" r="9" class="box"/>
+<circle cx="660" cy="293" r="9" class="box-accent"/>
+<text x="520" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">input</text>
+<text x="660" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">output</text>
+<text x="590" y="335" class="t" text-anchor="middle" dominant-baseline="middle">3 weights</text>
+<text x="590" y="357" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">same 3 taps at every position</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 740 260" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w18f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="370" y="22" text-anchor="middle">Reading a paper in three passes</text>
+<rect class="box-blue" x="20" y="44" width="215" height="190" rx="8"/><text class="t-bold" x="127" y="68" text-anchor="middle">Pass 1: survey</text><text class="t-sm t-muted" x="127" y="86" text-anchor="middle">5 to 10 minutes</text>
+<text class="t-sm" x="127" y="114" text-anchor="middle">Title, abstract, intro</text><text class="t-sm" x="127" y="134" text-anchor="middle">Headings, figures, tables</text><text class="t-sm" x="127" y="154" text-anchor="middle">Conclusion</text><text class="t-bold t-sm" x="127" y="196" text-anchor="middle">Decide: read on or stop?</text>
+<rect class="box-green" x="262" y="44" width="215" height="190" rx="8"/><text class="t-bold" x="370" y="68" text-anchor="middle">Pass 2: understand</text><text class="t-sm t-muted" x="370" y="86" text-anchor="middle">1 hour</text>
+<text class="t-sm" x="370" y="114" text-anchor="middle">Method and notation</text><text class="t-sm" x="370" y="134" text-anchor="middle">Experimental setup</text><text class="t-sm" x="370" y="154" text-anchor="middle">Baselines, seeds, ablations</text><text class="t-bold t-sm" x="370" y="196" text-anchor="middle">Summarize in 3 sentences</text>
+<rect class="box-purple" x="505" y="44" width="215" height="190" rx="8"/><text class="t-bold" x="612" y="68" text-anchor="middle">Pass 3: critique</text><text class="t-sm t-muted" x="612" y="86" text-anchor="middle">hours, only for key papers</text>
+<text class="t-sm" x="612" y="114" text-anchor="middle">Re-derive the key result</text><text class="t-sm" x="612" y="134" text-anchor="middle">Which claims lack evidence?</text><text class="t-sm" x="612" y="154" text-anchor="middle">Reimplement a piece</text><text class="t-bold t-sm" x="612" y="196" text-anchor="middle">Own list of weaknesses</text>
+<line class="ln" x1="235" y1="139" x2="260" y2="139" marker-end="url(#w18f)"/><line class="ln" x1="477" y1="139" x2="503" y2="139" marker-end="url(#w18f)"/>
+</svg>

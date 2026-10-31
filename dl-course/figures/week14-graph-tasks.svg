@@ -1,0 +1,18 @@
+<svg viewBox="0 0 780 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">Three levels of graph prediction tasks</text>
+<rect class="box" x="20" y="40" width="230" height="210" rx="10"/><rect class="box" x="275" y="40" width="230" height="210" rx="10"/><rect class="box" x="530" y="40" width="230" height="210" rx="10"/>
+<g class="ln"><line x1="70" y1="110" x2="130" y2="90"/><line x1="130" y1="90" x2="190" y2="120"/><line x1="130" y1="90" x2="120" y2="170"/><line x1="120" y1="170" x2="190" y2="120"/><line x1="120" y1="170" x2="70" y2="200"/><line x1="190" y1="120" x2="215" y2="190"/></g>
+<circle class="box-blue" cx="70" cy="110" r="13"/><circle class="box-red" cx="130" cy="90" r="13"/><circle class="box-blue" cx="190" cy="120" r="13"/><circle class="box-red" cx="120" cy="170" r="13"/><circle class="box" cx="70" cy="200" r="13"/><circle class="box-blue" cx="215" cy="190" r="13"/>
+<text class="t-sm" x="70" y="200" text-anchor="middle" dominant-baseline="middle">?</text>
+<text class="t-bold" x="135" y="62" text-anchor="middle">Node level</text><text class="t-sm t-muted" x="135" y="232" text-anchor="middle">label every node (? = unlabeled)</text>
+<g class="ln"><line x1="320" y1="110" x2="380" y2="90"/><line x1="380" y1="90" x2="440" y2="120"/><line x1="380" y1="90" x2="370" y2="170"/><line x1="370" y1="170" x2="440" y2="120"/><line x1="320" y1="200" x2="370" y2="170"/></g>
+<circle class="box-blue" cx="320" cy="110" r="13"/><circle class="box" cx="380" cy="90" r="13"/><circle class="box-blue" cx="440" cy="120" r="13"/><circle class="box" cx="370" cy="170" r="13"/><circle class="box-blue" cx="320" cy="200" r="13"/>
+<path class="ln-accent ln-dash" d="M320,110 Q290,155 320,200" fill="none"/><text class="t-bold t-accent" x="285" y="158" text-anchor="middle">?</text>
+<text class="t-bold" x="390" y="62" text-anchor="middle">Edge level</text><text class="t-sm t-muted" x="390" y="232" text-anchor="middle">predict missing / future edges</text>
+<g class="ln"><line x1="590" y1="110" x2="650" y2="90"/><line x1="650" y1="90" x2="710" y2="120"/><line x1="650" y1="90" x2="640" y2="170"/><line x1="640" y1="170" x2="710" y2="120"/><line x1="640" y1="170" x2="590" y2="200"/></g>
+<circle class="box-blue" cx="590" cy="110" r="13"/><circle class="box-blue" cx="650" cy="90" r="13"/><circle class="box-blue" cx="710" cy="120" r="13"/><circle class="box-blue" cx="640" cy="170" r="13"/><circle class="box-blue" cx="590" cy="200" r="13"/>
+<rect class="box-accent" x="660" y="190" width="80" height="34" rx="6"/><text class="t-sm" x="700" y="207" text-anchor="middle" dominant-baseline="middle">y = toxic?</text>
+<text class="t-bold" x="645" y="62" text-anchor="middle">Graph level</text><text class="t-sm t-muted" x="645" y="240" text-anchor="middle">one label per whole graph</text>
+<text class="t-sm t-muted" x="390" y="282" text-anchor="middle">Cora citations, social networks | recommender and knowledge graphs | molecules (MUTAG), proteins</text>
+</svg>

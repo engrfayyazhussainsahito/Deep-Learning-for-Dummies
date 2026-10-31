@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img"><defs><marker id="mw03nestero" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="190.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Classical momentum</text>
+<text x="570.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Nesterov (look-ahead)</text>
+<circle cx="60.0" cy="240.0" r="5" class="fill-ink" />
+<text x="54.0" y="258.0" class="t" text-anchor="end" dominant-baseline="middle" >θₜ</text>
+<line x1="60.0" y1="240.0" x2="160.0" y2="180.0" class="ln" marker-end="url(#mw03nestero)" />
+<text x="102.0" y="200.0" class="t-sm" text-anchor="end" dominant-baseline="middle" >βv</text>
+<circle cx="160.0" cy="180.0" r="4" class="fill-amber" />
+<line x1="60.0" y1="240.0" x2="100.0" y2="290.0" class="ln-red" marker-end="url(#mw03nestero)" />
+<text x="96.0" y="304.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >−η∇L(θₜ)</text>
+<line x1="160.0" y1="180.0" x2="200.0" y2="230.0" class="ln-red" marker-end="url(#mw03nestero)" stroke-dasharray="4 3"/>
+<line x1="60.0" y1="240.0" x2="200.0" y2="230.0" class="ln-blue" marker-end="url(#mw03nestero)" />
+<circle cx="200.0" cy="230.0" r="5" class="fill-blue" />
+<text x="210.0" y="234.0" class="t" text-anchor="start" dominant-baseline="middle" >θₜ₊₁</text>
+<text x="164.0" y="166.0" class="t-sm" text-anchor="start" dominant-baseline="middle" >θₜ + βv</text>
+<text x="190.0" y="300.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >gradient taken where you are, then added to the velocity step</text>
+<circle cx="440.0" cy="240.0" r="5" class="fill-ink" />
+<text x="434.0" y="258.0" class="t" text-anchor="end" dominant-baseline="middle" >θₜ</text>
+<line x1="440.0" y1="240.0" x2="540.0" y2="180.0" class="ln" marker-end="url(#mw03nestero)" />
+<text x="482.0" y="200.0" class="t-sm" text-anchor="end" dominant-baseline="middle" >βv</text>
+<circle cx="540.0" cy="180.0" r="4" class="fill-amber" />
+<text x="544.0" y="166.0" class="t-sm" text-anchor="start" dominant-baseline="middle" >θₜ + βv</text>
+<line x1="540.0" y1="180.0" x2="535.0" y2="242.0" class="ln-red" marker-end="url(#mw03nestero)" />
+<text x="546.0" y="214.0" class="t-sm" text-anchor="start" dominant-baseline="middle" >−η∇L(θₜ + βv)</text>
+<line x1="440.0" y1="240.0" x2="535.0" y2="242.0" class="ln-blue" marker-end="url(#mw03nestero)" />
+<circle cx="535.0" cy="242.0" r="5" class="fill-blue" />
+<text x="545.0" y="248.0" class="t" text-anchor="start" dominant-baseline="middle" >θₜ₊₁</text>
+<text x="570.0" y="300.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >gradient taken at the look-ahead point: already sees the wall ahead</text>
+</svg>

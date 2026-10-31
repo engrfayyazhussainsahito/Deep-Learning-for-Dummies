@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 290" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w01b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="20" y="22">a: shape (3, 1)</text>
+<g class="box-blue"><rect x="30" y="40" width="34" height="34"/><rect x="30" y="74" width="34" height="34"/><rect x="30" y="108" width="34" height="34"/></g>
+<text class="t-mono t-sm" x="47" y="57" text-anchor="middle" dominant-baseline="middle">0</text><text class="t-mono t-sm" x="47" y="91" text-anchor="middle" dominant-baseline="middle">10</text><text class="t-mono t-sm" x="47" y="125" text-anchor="middle" dominant-baseline="middle">20</text>
+<text class="t-sm t-muted" x="47" y="160" text-anchor="middle">copied across</text><text class="t-sm t-muted" x="47" y="176" text-anchor="middle">columns</text>
+<text class="t" x="115" y="95" text-anchor="middle" dominant-baseline="middle">+</text>
+<text class="t-bold" x="150" y="22">b: shape (4,) → (1, 4)</text>
+<g class="box-green"><rect x="160" y="55" width="34" height="34"/><rect x="194" y="55" width="34" height="34"/><rect x="228" y="55" width="34" height="34"/><rect x="262" y="55" width="34" height="34"/></g>
+<text class="t-mono t-sm" x="177" y="72" text-anchor="middle" dominant-baseline="middle">0</text><text class="t-mono t-sm" x="211" y="72" text-anchor="middle" dominant-baseline="middle">1</text><text class="t-mono t-sm" x="245" y="72" text-anchor="middle" dominant-baseline="middle">2</text><text class="t-mono t-sm" x="279" y="72" text-anchor="middle" dominant-baseline="middle">3</text>
+<text class="t-sm t-muted" x="228" y="112" text-anchor="middle">copied down rows</text>
+<line class="ln" x1="330" y1="95" x2="378" y2="95" marker-end="url(#w01b)"/>
+<text class="t-bold" x="410" y="22">a + b: shape (3, 4)</text>
+<g class="box-purple">
+<rect x="410" y="40" width="40" height="34"/><rect x="450" y="40" width="40" height="34"/><rect x="490" y="40" width="40" height="34"/><rect x="530" y="40" width="40" height="34"/>
+<rect x="410" y="74" width="40" height="34"/><rect x="450" y="74" width="40" height="34"/><rect x="490" y="74" width="40" height="34"/><rect x="530" y="74" width="40" height="34"/>
+<rect x="410" y="108" width="40" height="34"/><rect x="450" y="108" width="40" height="34"/><rect x="490" y="108" width="40" height="34"/><rect x="530" y="108" width="40" height="34"/></g>
+<g class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">
+<text x="430" y="57">0</text><text x="470" y="57">1</text><text x="510" y="57">2</text><text x="550" y="57">3</text>
+<text x="430" y="91">10</text><text x="470" y="91">11</text><text x="510" y="91">12</text><text x="550" y="91">13</text>
+<text x="430" y="125">20</text><text x="470" y="125">21</text><text x="510" y="125">22</text><text x="550" y="125">23</text></g>
+<line class="ln-dash" x1="20" y1="200" x2="740" y2="200"/>
+<text class="t-bold" x="20" y="224">The rule</text>
+<text class="t" x="20" y="247">Align shapes from the right. Each pair of axes must be equal, or one of them must be 1 (or missing).</text>
+<text class="t t-mono" x="20" y="271">(3, 1) vs (4,)  →  (3, 1) vs (1, 4)  →  result (3, 4)        (3, 4) vs (3,)  →  error</text>
+</svg>

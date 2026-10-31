@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360"><defs><marker id="v7a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">CLIP: contrastive pretraining over a batch of N image-text pairs</text>
+<rect x="20" y="60" width="110" height="44" rx="6" class="box-blue"/>
+<text x="75.0" y="74.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Image encoder</text>
+<text x="75.0" y="91.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">ViT or ResNet</text>
+<rect x="20" y="236" width="110" height="44" rx="6" class="box-green"/>
+<text x="75.0" y="250.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Text encoder</text>
+<text x="75.0" y="267.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Transformer</text>
+<rect x="300" y="50" width="52" height="26" rx="6" class="box-blue"/>
+<text x="326.0" y="63.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I1</text>
+<rect x="210" y="90" width="52" height="26" rx="6" class="box-green"/>
+<text x="236.0" y="103.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">T1</text>
+<rect x="356" y="50" width="52" height="26" rx="6" class="box-blue"/>
+<text x="382.0" y="63.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I2</text>
+<rect x="210" y="146" width="52" height="26" rx="6" class="box-green"/>
+<text x="236.0" y="159.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">T2</text>
+<rect x="412" y="50" width="52" height="26" rx="6" class="box-blue"/>
+<text x="438.0" y="63.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I3</text>
+<rect x="210" y="202" width="52" height="26" rx="6" class="box-green"/>
+<text x="236.0" y="215.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">T3</text>
+<rect x="468" y="50" width="52" height="26" rx="6" class="box-blue"/>
+<text x="494.0" y="63.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I4</text>
+<rect x="210" y="258" width="52" height="26" rx="6" class="box-green"/>
+<text x="236.0" y="271.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">T4</text>
+<rect x="300" y="90" width="52" height="52" rx="2" class="box-accent"/>
+<text x="326.0" y="116.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I1.T1</text>
+<rect x="356" y="90" width="52" height="52" rx="2" class="box"/>
+<text x="382.0" y="116.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I2.T1</text>
+<rect x="412" y="90" width="52" height="52" rx="2" class="box"/>
+<text x="438.0" y="116.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I3.T1</text>
+<rect x="468" y="90" width="52" height="52" rx="2" class="box"/>
+<text x="494.0" y="116.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I4.T1</text>
+<rect x="300" y="146" width="52" height="52" rx="2" class="box"/>
+<text x="326.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I1.T2</text>
+<rect x="356" y="146" width="52" height="52" rx="2" class="box-accent"/>
+<text x="382.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I2.T2</text>
+<rect x="412" y="146" width="52" height="52" rx="2" class="box"/>
+<text x="438.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I3.T2</text>
+<rect x="468" y="146" width="52" height="52" rx="2" class="box"/>
+<text x="494.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I4.T2</text>
+<rect x="300" y="202" width="52" height="52" rx="2" class="box"/>
+<text x="326.0" y="228.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I1.T3</text>
+<rect x="356" y="202" width="52" height="52" rx="2" class="box"/>
+<text x="382.0" y="228.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I2.T3</text>
+<rect x="412" y="202" width="52" height="52" rx="2" class="box-accent"/>
+<text x="438.0" y="228.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I3.T3</text>
+<rect x="468" y="202" width="52" height="52" rx="2" class="box"/>
+<text x="494.0" y="228.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I4.T3</text>
+<rect x="300" y="258" width="52" height="52" rx="2" class="box"/>
+<text x="326.0" y="284.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I1.T4</text>
+<rect x="356" y="258" width="52" height="52" rx="2" class="box"/>
+<text x="382.0" y="284.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I2.T4</text>
+<rect x="412" y="258" width="52" height="52" rx="2" class="box"/>
+<text x="438.0" y="284.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I3.T4</text>
+<rect x="468" y="258" width="52" height="52" rx="2" class="box-accent"/>
+<text x="494.0" y="284.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">I4.T4</text>
+<line x1="130" y1="82" x2="298" y2="63" class="ln" marker-end="url(#v7a)"/>
+<line x1="130" y1="258" x2="208" y2="205" class="ln" marker-end="url(#v7a)"/>
+<text x="520" y="326" class="t-sm" text-anchor="middle" dominant-baseline="middle">N x N cosine similarities scaled by learnable temperature</text>
+<text x="520" y="344" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">diagonal = true pairs; cross-entropy per row and per column</text>
+<text x="640" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">logit_{ij} =</text>
+<text x="640" y="120" class="t-sm" text-anchor="middle" dominant-baseline="middle">exp(tau) * &lt;u_i, v_j></text>
+<text x="640" y="140" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">u,v unit-norm</text>
+</svg>

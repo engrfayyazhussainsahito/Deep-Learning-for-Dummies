@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340"><defs><marker id="v6a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Masked Autoencoder: encode only the 25% visible patches, decode with mask tokens</text>
+<rect x="20" y="50" width="32" height="32" rx="1" class="box"/>
+<rect x="54" y="50" width="32" height="32" rx="1" class="box-blue"/>
+<rect x="88" y="50" width="32" height="32" rx="1" class="box"/>
+<rect x="122" y="50" width="32" height="32" rx="1" class="box"/>
+<rect x="20" y="84" width="32" height="32" rx="1" class="box"/>
+<rect x="54" y="84" width="32" height="32" rx="1" class="box"/>
+<rect x="88" y="84" width="32" height="32" rx="1" class="box-blue"/>
+<rect x="122" y="84" width="32" height="32" rx="1" class="box"/>
+<rect x="20" y="118" width="32" height="32" rx="1" class="box"/>
+<rect x="54" y="118" width="32" height="32" rx="1" class="box"/>
+<rect x="88" y="118" width="32" height="32" rx="1" class="box"/>
+<rect x="122" y="118" width="32" height="32" rx="1" class="box-blue"/>
+<rect x="20" y="152" width="32" height="32" rx="1" class="box-blue"/>
+<rect x="54" y="152" width="32" height="32" rx="1" class="box"/>
+<rect x="88" y="152" width="32" height="32" rx="1" class="box"/>
+<rect x="122" y="152" width="32" height="32" rx="1" class="box"/>
+<text x="88" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">75% masked</text>
+<text x="88" y="218" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">49 of 196 kept</text>
+<line x1="160" y1="118" x2="200" y2="118" class="ln" marker-end="url(#v6a)"/>
+<rect x="200" y="70" width="110" height="96" rx="6" class="box-accent"/>
+<text x="255.0" y="110.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">ViT encoder</text>
+<text x="255.0" y="127.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">visible only</text>
+<text x="255" y="184" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">no [MASK] tokens here</text>
+<line x1="310" y1="118" x2="350" y2="118" class="ln" marker-end="url(#v6a)"/>
+<rect x="350" y="60" width="22" height="16" rx="2" class="box-blue"/>
+<rect x="350" y="80" width="22" height="16" rx="2" class="box-blue"/>
+<rect x="350" y="100" width="22" height="16" rx="2" class="box-blue"/>
+<rect x="350" y="120" width="22" height="16" rx="2" class="box-blue"/>
+<rect x="350" y="140" width="22" height="16" rx="2" class="box-amber"/>
+<rect x="350" y="160" width="22" height="16" rx="2" class="box-amber"/>
+<rect x="350" y="180" width="22" height="16" rx="2" class="box-amber"/>
+<rect x="350" y="200" width="22" height="16" rx="2" class="box-amber"/>
+<rect x="350" y="220" width="22" height="16" rx="2" class="box-amber"/>
+<text x="361" y="262" class="t-sm" text-anchor="middle" dominant-baseline="middle">+ mask tokens</text>
+<text x="361" y="278" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">unshuffle</text>
+<line x1="372" y1="118" x2="408" y2="118" class="ln" marker-end="url(#v6a)"/>
+<rect x="408" y="70" width="110" height="96" rx="6" class="box-purple"/>
+<text x="463.0" y="110.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Light decoder</text>
+<text x="463.0" y="127.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">8 blocks, 512-d</text>
+<line x1="518" y1="118" x2="556" y2="118" class="ln" marker-end="url(#v6a)"/>
+<rect x="560" y="50" width="32" height="32" rx="1" class="box-green"/>
+<rect x="594" y="50" width="32" height="32" rx="1" class="box-green"/>
+<rect x="628" y="50" width="32" height="32" rx="1" class="box-green"/>
+<rect x="662" y="50" width="32" height="32" rx="1" class="box-green"/>
+<rect x="560" y="84" width="32" height="32" rx="1" class="box-green"/>
+<rect x="594" y="84" width="32" height="32" rx="1" class="box-green"/>
+<rect x="628" y="84" width="32" height="32" rx="1" class="box-green"/>
+<rect x="662" y="84" width="32" height="32" rx="1" class="box-green"/>
+<rect x="560" y="118" width="32" height="32" rx="1" class="box-green"/>
+<rect x="594" y="118" width="32" height="32" rx="1" class="box-green"/>
+<rect x="628" y="118" width="32" height="32" rx="1" class="box-green"/>
+<rect x="662" y="118" width="32" height="32" rx="1" class="box-green"/>
+<rect x="560" y="152" width="32" height="32" rx="1" class="box-green"/>
+<rect x="594" y="152" width="32" height="32" rx="1" class="box-green"/>
+<rect x="628" y="152" width="32" height="32" rx="1" class="box-green"/>
+<rect x="662" y="152" width="32" height="32" rx="1" class="box-green"/>
+<text x="628" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">reconstruct pixels</text>
+<text x="628" y="218" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">loss on masked patches only</text>
+<text x="380" y="310" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Encoder cost drops ~4x because attention and MLP run on 49 tokens instead of 196.</text>
+</svg>

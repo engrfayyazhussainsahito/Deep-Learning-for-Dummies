@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300"><defs><marker id="a10f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="390" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Timeline of pretrained language models (selected)</text>
+<line x1="30" y1="150" x2="750" y2="150" class="ln-bold"/>
+<circle cx="70" cy="150" r="6" class="fill-blue"/>
+<text x="70" y="128" class="t-bold" text-anchor="middle" dominant-baseline="middle">2018</text>
+<text x="70" y="102" class="t-sm" text-anchor="middle" dominant-baseline="middle">ELMo, GPT-1,</text>
+<text x="70" y="117" class="t-sm" text-anchor="middle" dominant-baseline="middle">BERT</text>
+<circle cx="175" cy="150" r="6" class="fill-blue"/>
+<text x="175" y="172" class="t-bold" text-anchor="middle" dominant-baseline="middle">2019</text>
+<text x="175" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">GPT-2, T5,</text>
+<text x="175" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">RoBERTa</text>
+<circle cx="280" cy="150" r="6" class="fill-blue"/>
+<text x="280" y="128" class="t-bold" text-anchor="middle" dominant-baseline="middle">2020</text>
+<text x="280" y="102" class="t-sm" text-anchor="middle" dominant-baseline="middle">Scaling laws,</text>
+<text x="280" y="117" class="t-sm" text-anchor="middle" dominant-baseline="middle">GPT-3</text>
+<circle cx="385" cy="150" r="6" class="fill-blue"/>
+<text x="385" y="172" class="t-bold" text-anchor="middle" dominant-baseline="middle">2021</text>
+<text x="385" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">LoRA, prompt</text>
+<text x="385" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">tuning</text>
+<circle cx="490" cy="150" r="6" class="fill-blue"/>
+<text x="490" y="128" class="t-bold" text-anchor="middle" dominant-baseline="middle">2022</text>
+<text x="490" y="102" class="t-sm" text-anchor="middle" dominant-baseline="middle">Chinchilla,</text>
+<text x="490" y="117" class="t-sm" text-anchor="middle" dominant-baseline="middle">InstructGPT, CoT</text>
+<circle cx="595" cy="150" r="6" class="fill-blue"/>
+<text x="595" y="172" class="t-bold" text-anchor="middle" dominant-baseline="middle">2023</text>
+<text x="595" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">LLaMA, DPO,</text>
+<text x="595" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">QLoRA</text>
+<circle cx="700" cy="150" r="6" class="fill-blue"/>
+<text x="700" y="128" class="t-bold" text-anchor="middle" dominant-baseline="middle">2024</text>
+<text x="700" y="102" class="t-sm" text-anchor="middle" dominant-baseline="middle">Open models,</text>
+<text x="700" y="117" class="t-sm" text-anchor="middle" dominant-baseline="middle">long context</text>
+</svg>

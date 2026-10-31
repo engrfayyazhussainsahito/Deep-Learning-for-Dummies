@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img"><defs><marker id="w7b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">A vanilla RNN, folded (left) and unrolled in time (right)</text>
+<rect x="40" y="140" width="70" height="50" rx="6" class="box-accent"/>
+<text x="75.0" y="165.0" class="t" text-anchor="middle" dominant-baseline="middle">RNN</text>
+<line x1="75" y1="230" x2="75" y2="192" class="ln" marker-end="url(#w7b)"/>
+<text x="75" y="246" class="t-mono" text-anchor="middle" dominant-baseline="middle">x_t</text>
+<line x1="75" y1="138" x2="75" y2="100" class="ln" marker-end="url(#w7b)"/>
+<text x="75" y="86" class="t-mono" text-anchor="middle" dominant-baseline="middle">y_t</text>
+<path d="M110,165 C160,165 160,115 75,115 L75,138" class="ln-accent" fill="none"/>
+<path d="M110,165 C150,165 150,128 112,128" class="ln-accent" fill="none"/>
+<text x="150" y="115" class="t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_t</text>
+<rect x="195" y="150" width="90" height="44" rx="6" class="box-accent"/>
+<text x="240.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh cell</text>
+<line x1="240" y1="262" x2="240" y2="196" class="ln" marker-end="url(#w7b)"/>
+<text x="240" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">x_1</text>
+<line x1="240" y1="148" x2="240" y2="110" class="ln" marker-end="url(#w7b)"/>
+<text x="240" y="98" class="t-mono" text-anchor="middle" dominant-baseline="middle">y_1</text>
+<line x1="285" y1="172" x2="335" y2="172" class="ln-accent" marker-end="url(#w7b)"/>
+<text x="310" y="158" class="t-sm t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_1</text>
+<rect x="335" y="150" width="90" height="44" rx="6" class="box-accent"/>
+<text x="380.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh cell</text>
+<line x1="380" y1="262" x2="380" y2="196" class="ln" marker-end="url(#w7b)"/>
+<text x="380" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">x_2</text>
+<line x1="380" y1="148" x2="380" y2="110" class="ln" marker-end="url(#w7b)"/>
+<text x="380" y="98" class="t-mono" text-anchor="middle" dominant-baseline="middle">y_2</text>
+<line x1="425" y1="172" x2="475" y2="172" class="ln-accent" marker-end="url(#w7b)"/>
+<text x="450" y="158" class="t-sm t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_2</text>
+<rect x="475" y="150" width="90" height="44" rx="6" class="box-accent"/>
+<text x="520.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh cell</text>
+<line x1="520" y1="262" x2="520" y2="196" class="ln" marker-end="url(#w7b)"/>
+<text x="520" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">x_3</text>
+<line x1="520" y1="148" x2="520" y2="110" class="ln" marker-end="url(#w7b)"/>
+<text x="520" y="98" class="t-mono" text-anchor="middle" dominant-baseline="middle">y_3</text>
+<line x1="565" y1="172" x2="615" y2="172" class="ln-accent" marker-end="url(#w7b)"/>
+<text x="590" y="158" class="t-sm t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_3</text>
+<rect x="615" y="150" width="90" height="44" rx="6" class="box-accent"/>
+<text x="660.0" y="172.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh cell</text>
+<line x1="660" y1="262" x2="660" y2="196" class="ln" marker-end="url(#w7b)"/>
+<text x="660" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">x_4</text>
+<line x1="660" y1="148" x2="660" y2="110" class="ln" marker-end="url(#w7b)"/>
+<text x="660" y="98" class="t-mono" text-anchor="middle" dominant-baseline="middle">y_4</text>
+<line x1="170" y1="172" x2="195" y2="172" class="ln-accent" marker-end="url(#w7b)"/>
+<text x="172" y="158" class="t-sm t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_0</text>
+<text x="450" y="305" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Same W_hh, W_xh, W_hy at every step: weights are shared across time</text>
+</svg>

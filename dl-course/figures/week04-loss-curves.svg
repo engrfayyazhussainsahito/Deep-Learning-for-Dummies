@@ -1,0 +1,16 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<g id="p1" transform="translate(20,10)"><line class="ln-thin" x1="20" y1="140" x2="340" y2="140"/><line class="ln-thin" x1="20" y1="140" x2="20" y2="20"/>
+<path class="ln-blue" fill="none" d="M20,40 C60,90 120,100 340,105" style="stroke-width:2.5"/><path class="ln-red" fill="none" d="M20,42 C60,92 120,103 340,108" style="stroke-width:2.5"/>
+<text class="t-bold" x="180" y="12" text-anchor="middle">A. Underfitting / too little capacity</text><text class="t-sm t-muted" x="180" y="162" text-anchor="middle">both plateau high: bigger model, train longer, lower regularization</text></g>
+<g transform="translate(390,10)"><line class="ln-thin" x1="20" y1="140" x2="340" y2="140"/><line class="ln-thin" x1="20" y1="140" x2="20" y2="20"/>
+<path class="ln-blue" fill="none" d="M20,50 C60,100 120,125 340,132" style="stroke-width:2.5"/><path class="ln-red" fill="none" d="M20,52 C60,85 120,80 200,70 C260,66 300,50 340,35" style="stroke-width:2.5"/>
+<text class="t-bold" x="180" y="12" text-anchor="middle">B. Overfitting</text><text class="t-sm t-muted" x="180" y="162" text-anchor="middle">validation turns up: regularize, augment, early stop</text></g>
+<g transform="translate(20,190)"><line class="ln-thin" x1="20" y1="140" x2="340" y2="140"/><line class="ln-thin" x1="20" y1="140" x2="20" y2="20"/>
+<path class="ln-blue" fill="none" d="M20,40 L60,38 L120,40 L200,39 L340,40" style="stroke-width:2.5"/><path class="ln-red" fill="none" d="M20,42 L120,41 L340,41" style="stroke-width:2.5;stroke-dasharray:5 3"/>
+<text class="t-bold" x="180" y="12" text-anchor="middle">C. Stuck at the initial loss</text><text class="t-sm t-muted" x="180" y="162" text-anchor="middle">flat at ln(K): LR, init, dead ReLUs, broken labels or data</text></g>
+<g transform="translate(390,190)"><line class="ln-thin" x1="20" y1="140" x2="340" y2="140"/><line class="ln-thin" x1="20" y1="140" x2="20" y2="20"/>
+<path class="ln-blue" fill="none" d="M20,60 L50,80 L80,50 L110,100 L140,30 L170,70 L200,25 L230,24 L260,22 L340,22" style="stroke-width:2.5"/>
+<text class="t-bold" x="180" y="12" text-anchor="middle">D. Diverging / noisy</text><text class="t-sm t-muted" x="180" y="162" text-anchor="middle">LR too high, no clipping, NaN from log(0) or overflow</text></g>
+<text class="t-sm" x="30" y="352" style="fill:var(--c-blue)">blue = training loss</text><text class="t-sm" x="190" y="352" style="fill:var(--c-red)">red = validation loss</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<line class="ln" x1="60" y1="280" x2="690" y2="280" marker-end="url(#w04g)"/><line class="ln" x1="60" y1="280" x2="60" y2="25" marker-end="url(#w04g)"/>
+<text class="t" x="380" y="315" text-anchor="middle">number of parameters p (relative to n training points)</text>
+<text class="t" x="20" y="150" text-anchor="middle" transform="rotate(-90 20 150)">test error</text>
+<rect class="box-blue" x="60" y="35" width="270" height="245" style="opacity:.12"/><rect class="box-green" x="430" y="35" width="260" height="245" style="opacity:.12"/>
+<text class="t-bold" x="195" y="55" text-anchor="middle">classical regime</text><text class="t-bold" x="560" y="55" text-anchor="middle">modern (over-parameterized)</text>
+<path class="ln-red" fill="none" d="M70,150 C130,215 200,235 260,200 C300,150 340,40 365,35 C390,60 420,160 470,200 C530,232 600,240 680,244" style="stroke-width:3"/>
+<path class="ln-blue" fill="none" d="M70,200 C150,235 250,265 365,276 L680,278" style="stroke-width:2.5"/>
+<line class="ln-dash" x1="365" y1="28" x2="365" y2="280"/>
+<text class="t-sm" x="365" y="22" text-anchor="middle">interpolation threshold p ~ n</text>
+<text class="t-sm" x="90" y="262" style="fill:var(--c-blue)">train error (reaches 0)</text>
+<text class="t-sm t-bold" x="520" y="225" style="fill:var(--c-red)">test error</text>
+<text class="t-sm t-muted" x="70" y="100">illustrative sketch</text>
+</svg>

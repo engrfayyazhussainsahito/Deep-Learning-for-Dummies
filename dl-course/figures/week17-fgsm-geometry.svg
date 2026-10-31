@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w17c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-green)"/></marker></defs>
+<text class="t-bold" x="20" y="24">Input space (two coordinates shown); contours are loss levels</text>
+<ellipse class="ln-thin" cx="300" cy="190" rx="250" ry="130" fill="none"/>
+<ellipse class="ln-thin" cx="300" cy="190" rx="190" ry="95" fill="none"/>
+<ellipse class="ln-thin" cx="300" cy="190" rx="130" ry="62" fill="none"/>
+<ellipse class="ln-thin" cx="300" cy="190" rx="70" ry="30" fill="none"/>
+<text class="t-sm t-muted" x="545" y="150">higher loss</text>
+<text class="t-sm t-muted" x="285" y="195">low loss</text>
+<rect class="box-green" x="300" y="150" width="80" height="80" style="fill-opacity:.10"/>
+<circle class="box-red" cx="340" cy="190" r="40" style="fill-opacity:.10"/>
+<circle class="fill-ink" cx="340" cy="190" r="4"/>
+<text class="t" x="330" y="258" text-anchor="end">x</text>
+<line class="ln-accent" x1="340" y1="190" x2="428" y2="124" marker-end="url(#w17b)"/>
+<text class="t-sm t-accent" x="436" y="118">gradient g</text>
+<line class="ln-green" x1="340" y1="190" x2="380" y2="150" marker-end="url(#w17c)"/>
+<circle class="fill-green" cx="380" cy="150" r="5"/>
+<text class="t-sm" x="392" y="146" style="fill:var(--c-green)">x + eps sign(g)</text>
+<circle class="fill-red" cx="363" cy="167" r="5" style="opacity:.9"/>
+<text class="t-sm" x="276" y="270" text-anchor="end" style="fill:var(--c-red)">L2: x + eps g/|g|</text>
+<line class="ln-thin" x1="280" y1="266" x2="360" y2="171"/>
+<text class="t-bold" x="20" y="300">Linear model:  L(x + d) = L(x) + d . g</text>
+<text class="t-sm t-muted" x="20" y="320">Over a box, the best d is the corner with sign(g); over a ball, the best d is along g. Both increase L by eps|g|_1 and eps|g|_2 respectively.</text>
+</svg>

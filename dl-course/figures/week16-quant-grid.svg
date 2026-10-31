@@ -1,0 +1,20 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="360" y="20" text-anchor="middle">Symmetric int4 quantization of a weight row (levels -7 ... 7, scale s = max|w| / 7)</text>
+<path class="ln-bold" d="M40,100 L680,100" fill="none" marker-end="url(#w16g)"/>
+<g class="ln-thin"><path d="M60,90 L60,110 M100,90 L100,110 M140,90 L140,110 M180,90 L180,110 M220,90 L220,110 M260,90 L260,110 M300,90 L300,110 M340,85 L340,115 M380,90 L380,110 M420,90 L420,110 M460,90 L460,110 M500,90 L500,110 M540,90 L540,110 M580,90 L580,110 M620,90 L620,110" fill="none"/></g>
+<text class="t-sm" x="60" y="130" text-anchor="middle">-7s</text><text class="t-sm" x="340" y="130" text-anchor="middle">0</text><text class="t-sm" x="620" y="130" text-anchor="middle">+7s</text>
+<circle class="fill-blue" cx="268" cy="100" r="5"/>
+<text class="t-sm" x="268" y="70" text-anchor="middle">real value w (between two levels)</text>
+<path class="ln-red" d="M268,100 L260,100" fill="none"/>
+<text class="t-sm" x="268" y="152" text-anchor="middle">rounds to nearest level</text>
+<text class="t" x="360" y="190" text-anchor="middle">w_q = clip(round(w / s), -7, 7),   ŵ = s · w_q,   error |w - ŵ| ≤ s/2 inside the range</text>
+<rect class="box-red" x="40" y="215" width="310" height="60" rx="8"/>
+<text class="t-bold" x="195" y="235" text-anchor="middle">Per-tensor scale</text>
+<text class="t-sm" x="195" y="254" text-anchor="middle">one outlier row/weight inflates s for everyone</text>
+<text class="t-sm" x="195" y="268" text-anchor="middle">most weights land on few levels</text>
+<rect class="box-green" x="370" y="215" width="310" height="60" rx="8"/>
+<text class="t-bold" x="525" y="235" text-anchor="middle">Per-channel / group-wise scale</text>
+<text class="t-sm" x="525" y="254" text-anchor="middle">each output channel (or group of 64-128 weights)</text>
+<text class="t-sm" x="525" y="268" text-anchor="middle">gets its own s; outliers stay local</text>
+</svg>

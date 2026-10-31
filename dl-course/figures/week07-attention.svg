@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img"><defs><marker id="w7h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Additive (Bahdanau) attention at decoder step t</text>
+<rect x="48" y="330" width="64" height="34" rx="6" class="box-blue"/>
+<text x="80.0" y="347.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_1</text>
+<line x1="80" y1="396" x2="80" y2="366" class="ln" marker-end="url(#w7h)"/>
+<text x="80" y="408" class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">je</text>
+<line x1="112" y1="347" x2="148" y2="347" class="ln-blue" marker-end="url(#w7h)"/>
+<rect x="148" y="330" width="64" height="34" rx="6" class="box-blue"/>
+<text x="180.0" y="347.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_2</text>
+<line x1="180" y1="396" x2="180" y2="366" class="ln" marker-end="url(#w7h)"/>
+<text x="180" y="408" class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">suis</text>
+<line x1="212" y1="347" x2="248" y2="347" class="ln-blue" marker-end="url(#w7h)"/>
+<rect x="248" y="330" width="64" height="34" rx="6" class="box-blue"/>
+<text x="280.0" y="347.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_3</text>
+<line x1="280" y1="396" x2="280" y2="366" class="ln" marker-end="url(#w7h)"/>
+<text x="280" y="408" class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">un</text>
+<line x1="312" y1="347" x2="348" y2="347" class="ln-blue" marker-end="url(#w7h)"/>
+<rect x="348" y="330" width="64" height="34" rx="6" class="box-blue"/>
+<text x="380.0" y="347.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_4</text>
+<line x1="380" y1="396" x2="380" y2="366" class="ln" marker-end="url(#w7h)"/>
+<text x="380" y="408" class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">etu-</text>
+<line x1="412" y1="347" x2="448" y2="347" class="ln-blue" marker-end="url(#w7h)"/>
+<rect x="448" y="330" width="64" height="34" rx="6" class="box-blue"/>
+<text x="480.0" y="347.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_5</text>
+<line x1="480" y1="396" x2="480" y2="366" class="ln" marker-end="url(#w7h)"/>
+<text x="480" y="408" class="t-mono t-sm" text-anchor="middle" dominant-baseline="middle">diant</text>
+<rect x="56" y="250" width="48" height="26" rx="6" class="box-amber"/>
+<text x="80.0" y="263.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">a_1</text>
+<line x1="80" y1="328" x2="80" y2="278" class="ln" marker-end="url(#w7h)"/>
+<rect x="156" y="250" width="48" height="26" rx="6" class="box-amber"/>
+<text x="180.0" y="263.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">a_2</text>
+<line x1="180" y1="328" x2="180" y2="278" class="ln" marker-end="url(#w7h)"/>
+<rect x="256" y="250" width="48" height="26" rx="6" class="box-amber"/>
+<text x="280.0" y="263.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">a_3</text>
+<line x1="280" y1="328" x2="280" y2="278" class="ln" marker-end="url(#w7h)"/>
+<rect x="356" y="250" width="48" height="26" rx="6" class="box-amber"/>
+<text x="380.0" y="263.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">a_4</text>
+<line x1="380" y1="328" x2="380" y2="278" class="ln" marker-end="url(#w7h)"/>
+<rect x="456" y="250" width="48" height="26" rx="6" class="box-amber"/>
+<text x="480.0" y="263.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">a_5</text>
+<line x1="480" y1="328" x2="480" y2="278" class="ln" marker-end="url(#w7h)"/>
+<text x="20" y="236" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">attention weights a_ti (sum to 1)</text>
+<circle cx="280" cy="170" r="22" class="box-purple"/>
+<text x="280" y="170" class="t-lg" text-anchor="middle" dominant-baseline="middle">Σ</text>
+<line x1="80" y1="248" x2="256.0" y2="192" class="ln-thin" marker-end="url(#w7h)"/>
+<line x1="180" y1="248" x2="268.0" y2="192" class="ln-thin" marker-end="url(#w7h)"/>
+<line x1="280" y1="248" x2="280.0" y2="192" class="ln-thin" marker-end="url(#w7h)"/>
+<line x1="380" y1="248" x2="292.0" y2="192" class="ln-thin" marker-end="url(#w7h)"/>
+<line x1="480" y1="248" x2="304.0" y2="192" class="ln-thin" marker-end="url(#w7h)"/>
+<text x="280" y="132" class="t-mono t-accent" text-anchor="middle" dominant-baseline="middle">context c_t = Σ a_ti h_i</text>
+<rect x="520" y="150" width="110" height="40" rx="6" class="box-green"/>
+<text x="575.0" y="170.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">s_{t-1}</text>
+<path d="M520,170 L500,170 L500,238 L430,238" class="ln-dash" fill="none" marker-end="url(#w7h)"/>
+<text x="640" y="225" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">scores use s_{t-1}</text>
+<rect x="470" y="60" width="150" height="40" rx="6" class="box-green"/>
+<text x="545.0" y="80.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">s_t = f(s_{t-1}, y_{t-1}, c_t)</text>
+<line x1="302" y1="170" x2="380" y2="170" class="ln" marker-end="url(#w7h)"/>
+<path d="M380,170 L380,80 L468,80" class="ln" fill="none" marker-end="url(#w7h)"/>
+<path d="M575,148 L575,102" class="ln" fill="none" marker-end="url(#w7h)"/>
+<text x="20" y="70" class="t-mono t-sm" text-anchor="start" dominant-baseline="middle">e_ti = v^T tanh(W s_{t-1} + U h_i)</text>
+<text x="20" y="92" class="t-mono t-sm" text-anchor="start" dominant-baseline="middle">a_ti = softmax_i(e_ti)</text>
+</svg>

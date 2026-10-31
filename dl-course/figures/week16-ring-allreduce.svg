@@ -1,0 +1,28 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="180" y="22" text-anchor="middle">Data parallel step</text>
+<rect class="box-blue" x="20" y="40" width="70" height="50" rx="8"/><text class="t" x="55" y="60" text-anchor="middle">GPU 0</text><text class="t-sm" x="55" y="78" text-anchor="middle">batch 0</text>
+<rect class="box-blue" x="110" y="40" width="70" height="50" rx="8"/><text class="t" x="145" y="60" text-anchor="middle">GPU 1</text><text class="t-sm" x="145" y="78" text-anchor="middle">batch 1</text>
+<rect class="box-blue" x="200" y="40" width="70" height="50" rx="8"/><text class="t" x="235" y="60" text-anchor="middle">GPU 2</text><text class="t-sm" x="235" y="78" text-anchor="middle">batch 2</text>
+<rect class="box-blue" x="290" y="40" width="70" height="50" rx="8"/><text class="t" x="325" y="60" text-anchor="middle">GPU 3</text><text class="t-sm" x="325" y="78" text-anchor="middle">batch 3</text>
+<path class="ln" d="M55,90 L55,120 M145,90 L145,120 M235,90 L235,120 M325,90 L325,120" fill="none" marker-end="url(#w16c)"/>
+<text class="t-sm" x="190" y="112" text-anchor="middle">local gradients g0..g3</text>
+<rect class="box-amber" x="20" y="125" width="340" height="40" rx="8"/>
+<text class="t" x="190" y="146" text-anchor="middle">all-reduce (average): every GPU gets ḡ</text>
+<path class="ln" d="M190,165 L190,195" fill="none" marker-end="url(#w16c)"/>
+<rect class="box-green" x="20" y="198" width="340" height="40" rx="8"/>
+<text class="t" x="190" y="219" text-anchor="middle">identical optimizer step, identical weights</text>
+<text class="t-sm t-muted" x="190" y="262" text-anchor="middle">Replicas never diverge because they</text>
+<text class="t-sm t-muted" x="190" y="278" text-anchor="middle">start equal and apply the same update.</text>
+<text class="t-bold" x="545" y="22" text-anchor="middle">Ring all-reduce, N = 4</text>
+<circle class="box-purple" cx="545" cy="80" r="24"/><text class="t" x="545" y="80" text-anchor="middle" dominant-baseline="middle">0</text>
+<circle class="box-purple" cx="635" cy="170" r="24"/><text class="t" x="635" y="170" text-anchor="middle" dominant-baseline="middle">1</text>
+<circle class="box-purple" cx="545" cy="260" r="24"/><text class="t" x="545" y="260" text-anchor="middle" dominant-baseline="middle">2</text>
+<circle class="box-purple" cx="455" cy="170" r="24"/><text class="t" x="455" y="170" text-anchor="middle" dominant-baseline="middle">3</text>
+<path class="ln-bold" d="M565,95 L615,150" fill="none" marker-end="url(#w16c)"/>
+<path class="ln-bold" d="M620,192 L565,240" fill="none" marker-end="url(#w16c)"/>
+<path class="ln-bold" d="M525,242 L475,192" fill="none" marker-end="url(#w16c)"/>
+<path class="ln-bold" d="M470,150 L525,98" fill="none" marker-end="url(#w16c)"/>
+<text class="t-sm" x="545" y="305" text-anchor="middle">2(N-1) steps, each sends |g|/N values</text>
+<text class="t-sm" x="545" y="323" text-anchor="middle">per-GPU traffic: 2(N-1)/N · |g| ≈ 2|g|</text>
+</svg>

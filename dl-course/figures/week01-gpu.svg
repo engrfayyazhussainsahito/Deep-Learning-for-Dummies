@@ -1,0 +1,31 @@
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w01g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<!-- CPU -->
+<rect class="box-blue" x="15" y="15" width="200" height="190" rx="8"/>
+<text class="t-bold" x="115" y="36" text-anchor="middle">CPU (host)</text>
+<g class="box-blue"><rect x="30" y="52" width="80" height="48" rx="4"/><rect x="120" y="52" width="80" height="48" rx="4"/><rect x="30" y="108" width="80" height="48" rx="4"/><rect x="120" y="108" width="80" height="48" rx="4"/></g>
+<text class="t-sm" x="70" y="76" text-anchor="middle" dominant-baseline="middle">big core</text><text class="t-sm" x="160" y="76" text-anchor="middle" dominant-baseline="middle">big core</text><text class="t-sm" x="70" y="132" text-anchor="middle" dominant-baseline="middle">big core</text><text class="t-sm" x="160" y="132" text-anchor="middle" dominant-baseline="middle">big core</text>
+<text class="t-sm t-muted" x="115" y="178" text-anchor="middle">few cores, deep caches,</text><text class="t-sm t-muted" x="115" y="194" text-anchor="middle">low latency per task</text>
+<!-- GPU -->
+<rect class="box-green" x="300" y="15" width="270" height="190" rx="8"/>
+<text class="t-bold" x="435" y="36" text-anchor="middle">GPU (device)</text>
+<g class="box-green">
+<rect x="315" y="52" width="22" height="22"/><rect x="341" y="52" width="22" height="22"/><rect x="367" y="52" width="22" height="22"/><rect x="393" y="52" width="22" height="22"/><rect x="419" y="52" width="22" height="22"/><rect x="445" y="52" width="22" height="22"/><rect x="471" y="52" width="22" height="22"/><rect x="497" y="52" width="22" height="22"/><rect x="523" y="52" width="22" height="22"/>
+<rect x="315" y="78" width="22" height="22"/><rect x="341" y="78" width="22" height="22"/><rect x="367" y="78" width="22" height="22"/><rect x="393" y="78" width="22" height="22"/><rect x="419" y="78" width="22" height="22"/><rect x="445" y="78" width="22" height="22"/><rect x="471" y="78" width="22" height="22"/><rect x="497" y="78" width="22" height="22"/><rect x="523" y="78" width="22" height="22"/>
+<rect x="315" y="104" width="22" height="22"/><rect x="341" y="104" width="22" height="22"/><rect x="367" y="104" width="22" height="22"/><rect x="393" y="104" width="22" height="22"/><rect x="419" y="104" width="22" height="22"/><rect x="445" y="104" width="22" height="22"/><rect x="471" y="104" width="22" height="22"/><rect x="497" y="104" width="22" height="22"/><rect x="523" y="104" width="22" height="22"/>
+<rect x="315" y="130" width="22" height="22"/><rect x="341" y="130" width="22" height="22"/><rect x="367" y="130" width="22" height="22"/><rect x="393" y="130" width="22" height="22"/><rect x="419" y="130" width="22" height="22"/><rect x="445" y="130" width="22" height="22"/><rect x="471" y="130" width="22" height="22"/><rect x="497" y="130" width="22" height="22"/><rect x="523" y="130" width="22" height="22"/></g>
+<text class="t-sm t-muted" x="435" y="172" text-anchor="middle">thousands of simple lanes (schematic: far fewer drawn),</text><text class="t-sm t-muted" x="435" y="190" text-anchor="middle">built for the same op on lots of data</text>
+<!-- memory -->
+<rect class="box-amber" x="15" y="245" width="200" height="60" rx="6"/><text class="t" x="115" y="268" text-anchor="middle">System RAM</text><text class="t-sm t-muted" x="115" y="288" text-anchor="middle">hundreds of GB, slower</text>
+<rect class="box-amber" x="300" y="245" width="270" height="60" rx="6"/><text class="t" x="435" y="268" text-anchor="middle">GPU memory (HBM / GDDR)</text><text class="t-sm t-muted" x="435" y="288" text-anchor="middle">tens of GB, very high bandwidth</text>
+<line class="ln" x1="115" y1="205" x2="115" y2="245"/><line class="ln" x1="435" y1="205" x2="435" y2="245"/>
+<line class="ln-red" x1="215" y1="275" x2="300" y2="275" marker-end="url(#w01g)" marker-start="url(#w01g)"/>
+<text class="t-sm" x="257" y="262" text-anchor="middle" style="fill:var(--c-red)">PCIe</text>
+<text class="t-sm t-muted" x="257" y="296" text-anchor="middle">slow link</text>
+<rect class="box" x="598" y="15" width="150" height="290" rx="8"/>
+<text class="t-bold t-sm" x="673" y="38" text-anchor="middle">Rules of thumb</text>
+<text class="t-sm" x="610" y="64">Keep data on the</text><text class="t-sm" x="610" y="80">device; avoid</text><text class="t-sm" x="610" y="96">.cpu() / .item()</text><text class="t-sm" x="610" y="112">inside loops.</text>
+<text class="t-sm" x="610" y="144">Batch work into</text><text class="t-sm" x="610" y="160">large tensor ops.</text>
+<text class="t-sm" x="610" y="192">All operands of an</text><text class="t-sm" x="610" y="208">op must be on the</text><text class="t-sm" x="610" y="224">same device.</text>
+<text class="t-sm" x="610" y="256">GPU kernels run</text><text class="t-sm" x="610" y="272">asynchronously.</text>
+</svg>

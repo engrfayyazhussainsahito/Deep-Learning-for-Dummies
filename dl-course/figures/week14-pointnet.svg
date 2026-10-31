@@ -1,0 +1,15 @@
+<svg viewBox="0 0 780 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">PointNet: a shared per-point MLP, then a symmetric max pool</text>
+<rect class="box-blue" x="20" y="90" width="110" height="80" rx="8"/><text class="t-sm" x="75" y="120" text-anchor="middle" dominant-baseline="middle">n points</text><text class="t-sm t-muted" x="75" y="142" text-anchor="middle" dominant-baseline="middle">n × 3 (x, y, z)</text>
+<line class="ln" x1="132" y1="130" x2="178" y2="130" marker-end="url(#w14n)"/>
+<rect class="box-purple" x="180" y="90" width="150" height="80" rx="8"/><text class="t-sm" x="255" y="115" text-anchor="middle" dominant-baseline="middle">shared MLP h</text><text class="t-sm" x="255" y="135" text-anchor="middle" dominant-baseline="middle">same weights per point</text><text class="t-sm t-muted" x="255" y="155" text-anchor="middle" dominant-baseline="middle">3→64→128→1024</text>
+<line class="ln" x1="332" y1="130" x2="378" y2="130" marker-end="url(#w14n)"/>
+<rect class="box-green" x="380" y="90" width="110" height="80" rx="8"/><text class="t-sm" x="435" y="115" text-anchor="middle" dominant-baseline="middle">n × 1024</text><text class="t-sm t-muted" x="435" y="137" text-anchor="middle" dominant-baseline="middle">per-point features</text>
+<line class="ln" x1="492" y1="130" x2="538" y2="130" marker-end="url(#w14n)"/>
+<rect class="box-amber" x="540" y="90" width="100" height="80" rx="8"/><text class="t-sm" x="590" y="115" text-anchor="middle" dominant-baseline="middle">max over</text><text class="t-sm" x="590" y="135" text-anchor="middle" dominant-baseline="middle">points</text><text class="t-sm t-muted" x="590" y="155" text-anchor="middle" dominant-baseline="middle">symmetric</text>
+<line class="ln" x1="642" y1="130" x2="678" y2="130" marker-end="url(#w14n)"/>
+<rect class="box-red" x="680" y="90" width="80" height="80" rx="8"/><text class="t-sm" x="720" y="120" text-anchor="middle" dominant-baseline="middle">1024-d</text><text class="t-sm" x="720" y="140" text-anchor="middle" dominant-baseline="middle">→ MLP → ŷ</text>
+<text class="t-sm" x="390" y="220" text-anchor="middle">f(x₁,…,xₙ) = ρ( max_i h(x_i) )  is invariant to any permutation of the points</text>
+<text class="t-sm t-muted" x="390" y="250" text-anchor="middle">No local structure is used (PointNet++ adds neighborhoods; DGCNN builds k-NN graphs and runs message passing).</text>
+</svg>

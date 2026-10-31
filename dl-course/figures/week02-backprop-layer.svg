@@ -1,0 +1,25 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w02f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w02g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker></defs>
+<text class="t-bold t-sm" x="20" y="22">What one layer stores on the way forward and computes on the way back (batched, row convention)</text>
+<rect class="box" x="30" y="90" width="110" height="52" rx="6"/><text class="t-mono" x="85" y="110" text-anchor="middle">A(l-1)</text><text class="t-sm t-mono" x="85" y="128" text-anchor="middle">(B, n_in)</text>
+<rect class="box-blue" x="250" y="90" width="110" height="52" rx="6"/><text class="t-mono" x="305" y="110" text-anchor="middle">Z(l)</text><text class="t-sm t-mono" x="305" y="128" text-anchor="middle">(B, n_out)</text>
+<rect class="box-purple" x="470" y="90" width="110" height="52" rx="6"/><text class="t-mono" x="525" y="110" text-anchor="middle">A(l)</text><text class="t-sm t-mono" x="525" y="128" text-anchor="middle">(B, n_out)</text>
+<g class="ln" fill="none"><line x1="140" y1="116" x2="248" y2="116" marker-end="url(#w02f)"/><line x1="360" y1="116" x2="468" y2="116" marker-end="url(#w02f)"/><line x1="580" y1="116" x2="660" y2="116" marker-end="url(#w02f)"/></g>
+<text class="t-sm" x="194" y="104" text-anchor="middle">A W + b</text><text class="t-sm" x="414" y="104" text-anchor="middle">phi(Z)</text>
+<text class="t-sm t-muted" x="700" y="110" text-anchor="middle">to layer l+1</text>
+<rect class="box-green" x="150" y="40" width="80" height="30" rx="5"/><text class="t-sm t-mono" x="190" y="55" text-anchor="middle" dominant-baseline="middle">W(l), b(l)</text>
+<line class="ln-thin" x1="205" y1="70" x2="260" y2="90"/>
+<text class="t-sm t-muted" x="305" y="170" text-anchor="middle">cached for backward: A(l-1), Z(l)</text>
+<g class="ln-accent" fill="none"><line x1="660" y1="200" x2="582" y2="200" marker-end="url(#w02g)"/><line x1="468" y1="200" x2="362" y2="200" marker-end="url(#w02g)"/><line x1="248" y1="200" x2="142" y2="200" marker-end="url(#w02g)"/></g>
+<rect class="box-red" x="470" y="174" width="110" height="52" rx="6"/><text class="t-mono t-accent" x="525" y="193" text-anchor="middle">dA(l)</text><text class="t-sm t-mono" x="525" y="211" text-anchor="middle">(B, n_out)</text>
+<rect class="box-red" x="250" y="174" width="110" height="52" rx="6"/><text class="t-mono t-accent" x="305" y="193" text-anchor="middle">dZ(l)</text><text class="t-sm t-mono" x="305" y="211" text-anchor="middle">(B, n_out)</text>
+<rect class="box-red" x="30" y="174" width="110" height="52" rx="6"/><text class="t-mono t-accent" x="85" y="193" text-anchor="middle">dA(l-1)</text><text class="t-sm t-mono" x="85" y="211" text-anchor="middle">(B, n_in)</text>
+<text class="t-sm t-accent" x="414" y="240" text-anchor="middle">dZ = dA * phi'(Z)</text>
+<text class="t-sm t-accent" x="194" y="240" text-anchor="middle">dA(l-1) = dZ W^T</text>
+<rect class="box-amber" x="230" y="268" width="150" height="62" rx="6"/>
+<text class="t-sm t-mono t-accent" x="305" y="288" text-anchor="middle">dW = A(l-1)^T dZ</text><text class="t-sm t-mono t-accent" x="305" y="308" text-anchor="middle">db = sum over batch of dZ</text>
+<line class="ln-accent ln-thin" x1="305" y1="226" x2="305" y2="266"/>
+<text class="t-sm t-muted" x="450" y="290">shapes: dW (n_in, n_out) matches W; db (n_out,) matches b.</text>
+<text class="t-sm t-muted" x="450" y="310">Loss is a mean over the batch, so 1/B is already inside dA of the last layer.</text>
+</svg>

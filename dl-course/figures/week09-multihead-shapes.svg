@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470"><defs><marker id="w09b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect x="30" y="20" width="330" height="38" rx="6" class="box-accent" />
+<text x="195" y="39" class="t" text-anchor="middle" dominant-baseline="middle" >Input X</text>
+<text x="385" y="39" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, T, d)</text>
+<line x1="195" y1="58" x2="195" y2="74" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="74" width="330" height="38" rx="6" class="box-blue" />
+<text x="195" y="93" class="t" text-anchor="middle" dominant-baseline="middle" >Q, K, V = X W_Q, X W_K, X W_V</text>
+<text x="385" y="93" class="t-mono" text-anchor="start" dominant-baseline="middle" >each (B, T, d)</text>
+<line x1="195" y1="112" x2="195" y2="128" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="128" width="330" height="38" rx="6" class="box" />
+<text x="195" y="147" class="t" text-anchor="middle" dominant-baseline="middle" >view + transpose: split into h heads</text>
+<text x="385" y="147" class="t-mono" text-anchor="start" dominant-baseline="middle" >each (B, h, T, d_k),  d_k = d / h</text>
+<line x1="195" y1="166" x2="195" y2="182" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="182" width="330" height="38" rx="6" class="box-amber" />
+<text x="195" y="201" class="t" text-anchor="middle" dominant-baseline="middle" >scores = Q K^T / sqrt(d_k)  (+ mask)</text>
+<text x="385" y="201" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, h, T, T)</text>
+<line x1="195" y1="220" x2="195" y2="236" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="236" width="330" height="38" rx="6" class="box-red" />
+<text x="195" y="255" class="t" text-anchor="middle" dominant-baseline="middle" >A = softmax over last axis</text>
+<text x="385" y="255" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, h, T, T)</text>
+<line x1="195" y1="274" x2="195" y2="290" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="290" width="330" height="38" rx="6" class="box-purple" />
+<text x="195" y="309" class="t" text-anchor="middle" dominant-baseline="middle" >A V  (per head)</text>
+<text x="385" y="309" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, h, T, d_k)</text>
+<line x1="195" y1="328" x2="195" y2="344" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="344" width="330" height="38" rx="6" class="box" />
+<text x="195" y="363" class="t" text-anchor="middle" dominant-baseline="middle" >transpose + reshape: concatenate heads</text>
+<text x="385" y="363" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, T, h*d_k) = (B, T, d)</text>
+<line x1="195" y1="382" x2="195" y2="398" class="ln" marker-end="url(#w09b)" />
+<rect x="30" y="398" width="330" height="38" rx="6" class="box-teal" />
+<text x="195" y="417" class="t" text-anchor="middle" dominant-baseline="middle" >output projection W_O</text>
+<text x="385" y="417" class="t-mono" text-anchor="start" dominant-baseline="middle" >(B, T, d)</text>
+<text x="570" y="445" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >Example: d = 512, h = 8, d_k = 64</text>
+</svg>

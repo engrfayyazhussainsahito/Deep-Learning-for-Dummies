@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img"><defs><marker id="w05pl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect x="12" y="70" width="92" height="70" rx="6" class="box"/>
+<text x="58.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">Disk</text>
+<text x="58.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">JPEG files</text>
+<line x1="105" y1="105" x2="122" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="123" y="70" width="92" height="70" rx="6" class="box-blue"/>
+<text x="169.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">Decode</text>
+<text x="169.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">uint8 HxWx3</text>
+<line x1="216" y1="105" x2="233" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="234" y="70" width="92" height="70" rx="6" class="box-amber"/>
+<text x="280.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">Random aug</text>
+<text x="280.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">crop, flip,</text>
+<text x="280.0" y="124" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">color jitter</text>
+<line x1="327" y1="105" x2="344" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="345" y="70" width="92" height="70" rx="6" class="box-teal"/>
+<text x="391.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">ToTensor</text>
+<text x="391.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">float [0,1]</text>
+<text x="391.0" y="124" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">CxHxW</text>
+<line x1="438" y1="105" x2="455" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="456" y="70" width="92" height="70" rx="6" class="box-teal"/>
+<text x="502.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">Normalize</text>
+<text x="502.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">(x-mean)/std</text>
+<line x1="549" y1="105" x2="566" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="567" y="70" width="92" height="70" rx="6" class="box-purple"/>
+<text x="613.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">Batch</text>
+<text x="613.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">B x 3 x H x W</text>
+<line x1="660" y1="105" x2="677" y2="105" class="ln" marker-end="url(#w05pl)"/>
+<rect x="678" y="70" width="92" height="70" rx="6" class="box-green"/>
+<text x="724.0" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">GPU</text>
+<text x="724.0" y="108" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">forward/backward</text>
+<text x="380" y="30" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Image classification input pipeline</text>
+<rect x="130" y="52" width="300" height="106" rx="8" class="ln-dash" fill="none"/>
+<text x="280" y="180" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">CPU workers (DataLoader num_workers &gt; 0), different random draw per epoch</text>
+<text x="380" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">Train: random augmentation.  Eval: deterministic resize + center crop, same normalization.</text>
+</svg>

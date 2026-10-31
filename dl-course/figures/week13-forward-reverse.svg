@@ -1,0 +1,30 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w13a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w13b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker></defs>
+<text class="t-bold" x="380" y="22" text-anchor="middle">Diffusion as a Markov chain over progressively noisier data</text>
+<rect class="box-blue" x="30" y="90" width="90" height="70" rx="8"/><text class="t" x="75" y="125" text-anchor="middle" dominant-baseline="middle">x₀ (data)</text>
+<rect class="box" x="170" y="90" width="90" height="70" rx="8"/><text class="t" x="215" y="125" text-anchor="middle" dominant-baseline="middle">x₁</text>
+<rect class="box" x="310" y="90" width="90" height="70" rx="8"/><text class="t" x="355" y="125" text-anchor="middle" dominant-baseline="middle">x₂</text>
+<text class="t-bold" x="445" y="125" text-anchor="middle" dominant-baseline="middle">· · ·</text>
+<rect class="box" x="490" y="90" width="90" height="70" rx="8"/><text class="t" x="535" y="125" text-anchor="middle" dominant-baseline="middle">x_(T-1)</text>
+<rect class="box-red" x="640" y="90" width="90" height="70" rx="8"/><text class="t" x="685" y="125" text-anchor="middle" dominant-baseline="middle">x_T ≈ N(0,I)</text>
+<line class="ln-blue" x1="122" y1="108" x2="168" y2="108" marker-end="url(#w13a)"/>
+<line class="ln-blue" x1="262" y1="108" x2="308" y2="108" marker-end="url(#w13a)"/>
+<line class="ln-blue" x1="402" y1="108" x2="430" y2="108" marker-end="url(#w13a)"/>
+<line class="ln-blue" x1="462" y1="108" x2="488" y2="108" marker-end="url(#w13a)"/>
+<line class="ln-blue" x1="582" y1="108" x2="638" y2="108" marker-end="url(#w13a)"/>
+<line class="ln-accent" x1="168" y1="144" x2="122" y2="144" marker-end="url(#w13b)"/>
+<line class="ln-accent" x1="308" y1="144" x2="262" y2="144" marker-end="url(#w13b)"/>
+<line class="ln-accent" x1="430" y1="144" x2="402" y2="144" marker-end="url(#w13b)"/>
+<line class="ln-accent" x1="488" y1="144" x2="462" y2="144" marker-end="url(#w13b)"/>
+<line class="ln-accent" x1="638" y1="144" x2="582" y2="144" marker-end="url(#w13b)"/>
+<text class="t-sm" x="145" y="82" text-anchor="middle" style="fill:var(--c-blue)">q(x₁|x₀)</text>
+<text class="t-sm" x="285" y="82" text-anchor="middle" style="fill:var(--c-blue)">q(x₂|x₁)</text>
+<text class="t-sm" x="610" y="82" text-anchor="middle" style="fill:var(--c-blue)">q(x_T|x_(T-1))</text>
+<text class="t-sm t-accent" x="145" y="172" text-anchor="middle">p_θ(x₀|x₁)</text>
+<text class="t-sm t-accent" x="285" y="172" text-anchor="middle">p_θ(x₁|x₂)</text>
+<text class="t-sm t-accent" x="610" y="172" text-anchor="middle">p_θ(x_(T-1)|x_T)</text>
+<path class="ln-dash" d="M75,200 Q380,255 685,200" fill="none" marker-end="url(#w13a)"/>
+<text class="t" x="380" y="248" text-anchor="middle">closed form: q(x_t|x₀) = N(√ᾱ_t x₀, (1-ᾱ_t) I): jump to any t in one step</text>
+<text class="t-sm t-muted" x="380" y="280" text-anchor="middle">blue: fixed forward (noising) process, no parameters.   orange: learned reverse (denoising) process.</text>
+</svg>

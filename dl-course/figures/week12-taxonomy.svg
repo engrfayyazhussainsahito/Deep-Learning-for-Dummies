@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340"><defs><marker id="u1a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Taxonomy of deep generative models</text>
+<rect x="300" y="34" width="160" height="34" rx="6" class="box-accent"/>
+<text x="380.0" y="51.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Generative models</text>
+<rect x="110" y="100" width="200" height="40" rx="6" class="box-blue"/>
+<text x="210.0" y="112.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Explicit density</text>
+<text x="210.0" y="129.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">can evaluate p(x) or a bound</text>
+<rect x="450" y="100" width="200" height="40" rx="6" class="box-green"/>
+<text x="550.0" y="112.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Implicit density</text>
+<text x="550.0" y="129.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">sample only, no p(x)</text>
+<line x1="340" y1="68" x2="210" y2="100" class="ln" marker-end="url(#u1a)"/>
+<line x1="420" y1="68" x2="550" y2="100" class="ln" marker-end="url(#u1a)"/>
+<rect x="20" y="176" width="160" height="50" rx="6" class="box"/>
+<text x="100.0" y="193.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Tractable</text>
+<text x="100.0" y="210.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">AR models, flows</text>
+<rect x="200" y="176" width="160" height="50" rx="6" class="box"/>
+<text x="280.0" y="193.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Approximate</text>
+<text x="280.0" y="210.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">VAE (ELBO), EBMs</text>
+<line x1="170" y1="140" x2="100" y2="176" class="ln" marker-end="url(#u1a)"/>
+<line x1="250" y1="140" x2="280" y2="176" class="ln" marker-end="url(#u1a)"/>
+<rect x="400" y="176" width="140" height="50" rx="6" class="box"/>
+<text x="470.0" y="193.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Adversarial</text>
+<text x="470.0" y="210.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">GAN, WGAN, StyleGAN</text>
+<rect x="560" y="176" width="170" height="50" rx="6" class="box"/>
+<text x="645.0" y="193.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">Iterative / score</text>
+<text x="645.0" y="210.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">diffusion (Week 13)</text>
+<line x1="510" y1="140" x2="470" y2="176" class="ln" marker-end="url(#u1a)"/>
+<line x1="590" y1="140" x2="640" y2="176" class="ln" marker-end="url(#u1a)"/>
+<text x="380" y="262" class="t-sm" text-anchor="middle" dominant-baseline="middle">Trade-offs: sample quality, sampling speed, likelihood evaluation, mode coverage, training stability</text>
+<text x="380" y="284" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Diffusion models blur the boundary: they optimise a variational bound but are used as samplers.</text>
+</svg>

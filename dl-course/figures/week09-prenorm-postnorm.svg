@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470"><defs><marker id="w09c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="190" y="14" class="t-bold" text-anchor="middle" dominant-baseline="middle" >Post-norm (original 2017)</text>
+<rect x="120" y="40" width="140" height="30" rx="6" class="box-accent" />
+<text x="190" y="55" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x</text>
+<line x1="190" y1="70" x2="190" y2="94" class="ln" marker-end="url(#w09c)" />
+<rect x="120" y="94" width="140" height="34" rx="6" class="box-blue" />
+<text x="190" y="111" class="t" text-anchor="middle" dominant-baseline="middle" >MHA</text>
+<line x1="190" y1="128" x2="190" y2="152" class="ln" marker-end="url(#w09c)" />
+<circle cx="190" cy="164" r="12" class="box"/>
+<text x="190" y="164" class="t-bold" text-anchor="middle" dominant-baseline="middle" >+</text>
+<line x1="190" y1="176" x2="190" y2="200" class="ln" marker-end="url(#w09c)" />
+<rect x="120" y="200" width="140" height="34" rx="6" class="box-green" />
+<text x="190" y="217" class="t" text-anchor="middle" dominant-baseline="middle" >LN</text>
+<line x1="190" y1="234" x2="190" y2="258" class="ln" marker-end="url(#w09c)" />
+<rect x="120" y="258" width="140" height="34" rx="6" class="box-purple" />
+<text x="190" y="275" class="t" text-anchor="middle" dominant-baseline="middle" >FFN</text>
+<line x1="190" y1="292" x2="190" y2="316" class="ln" marker-end="url(#w09c)" />
+<circle cx="190" cy="328" r="12" class="box"/>
+<text x="190" y="328" class="t-bold" text-anchor="middle" dominant-baseline="middle" >+</text>
+<line x1="190" y1="340" x2="190" y2="364" class="ln" marker-end="url(#w09c)" />
+<rect x="120" y="364" width="140" height="34" rx="6" class="box-green" />
+<text x="190" y="381" class="t" text-anchor="middle" dominant-baseline="middle" >LN</text>
+<line x1="190" y1="398" x2="190" y2="422" class="ln" marker-end="url(#w09c)" />
+<rect x="120" y="422" width="140" height="30" rx="6" class="box-accent" />
+<text x="190" y="437" class="t-mono" text-anchor="middle" dominant-baseline="middle" >output</text>
+<path d="M190 78 H95 V164 H178" class="ln-dash" fill="none" marker-end="url(#w09c)" />
+<path d="M190 220 H95 V290 H178" class="ln-dash" fill="none" marker-end="url(#w09c)" />
+<text x="560" y="14" class="t-bold" text-anchor="middle" dominant-baseline="middle" >Pre-norm (GPT-2 and most modern LLMs)</text>
+<rect x="490" y="40" width="140" height="30" rx="6" class="box-accent" />
+<text x="560" y="55" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x</text>
+<line x1="560" y1="70" x2="560" y2="94" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="94" width="140" height="34" rx="6" class="box-green" />
+<text x="560" y="111" class="t" text-anchor="middle" dominant-baseline="middle" >LN</text>
+<line x1="560" y1="128" x2="560" y2="152" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="152" width="140" height="34" rx="6" class="box-blue" />
+<text x="560" y="169" class="t" text-anchor="middle" dominant-baseline="middle" >MHA</text>
+<line x1="560" y1="186" x2="560" y2="210" class="ln" marker-end="url(#w09c)" />
+<circle cx="560" cy="222" r="12" class="box"/>
+<text x="560" y="222" class="t-bold" text-anchor="middle" dominant-baseline="middle" >+</text>
+<line x1="560" y1="234" x2="560" y2="258" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="258" width="140" height="34" rx="6" class="box-green" />
+<text x="560" y="275" class="t" text-anchor="middle" dominant-baseline="middle" >LN</text>
+<line x1="560" y1="292" x2="560" y2="316" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="316" width="140" height="34" rx="6" class="box-purple" />
+<text x="560" y="333" class="t" text-anchor="middle" dominant-baseline="middle" >FFN</text>
+<line x1="560" y1="350" x2="560" y2="374" class="ln" marker-end="url(#w09c)" />
+<circle cx="560" cy="386" r="12" class="box"/>
+<text x="560" y="386" class="t-bold" text-anchor="middle" dominant-baseline="middle" >+</text>
+<line x1="560" y1="398" x2="560" y2="422" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="422" width="140" height="34" rx="6" class="box-accent" />
+<text x="560" y="439" class="t" text-anchor="middle" dominant-baseline="middle" >final LN</text>
+<line x1="560" y1="456" x2="560" y2="480" class="ln" marker-end="url(#w09c)" />
+<rect x="490" y="480" width="140" height="30" rx="6" class="box-accent" />
+<text x="560" y="495" class="t-mono" text-anchor="middle" dominant-baseline="middle" >output</text>
+</svg>

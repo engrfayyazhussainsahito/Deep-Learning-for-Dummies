@@ -1,0 +1,24 @@
+<svg viewBox="0 0 780 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker><marker id="w14b2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">One round of message passing at node v</text>
+<g class="ln-thin"><line x1="100" y1="80" x2="100" y2="140"/></g>
+<circle class="box-blue" cx="90" cy="70" r="22"/><text class="t-sm" x="90" y="70" text-anchor="middle" dominant-baseline="middle">h_u1</text>
+<circle class="box-green" cx="90" cy="160" r="22"/><text class="t-sm" x="90" y="160" text-anchor="middle" dominant-baseline="middle">h_u2</text>
+<circle class="box-purple" cx="90" cy="250" r="22"/><text class="t-sm" x="90" y="250" text-anchor="middle" dominant-baseline="middle">h_u3</text>
+<line class="ln-accent" x1="112" y1="76" x2="198" y2="150" marker-end="url(#w14b)"/>
+<line class="ln-accent" x1="112" y1="160" x2="198" y2="160" marker-end="url(#w14b)"/>
+<line class="ln-accent" x1="112" y1="244" x2="198" y2="172" marker-end="url(#w14b)"/>
+<text class="t-sm t-accent" x="150" y="108" text-anchor="middle">m_u1</text><text class="t-sm t-accent" x="155" y="150" text-anchor="middle">m_u2</text><text class="t-sm t-accent" x="150" y="222" text-anchor="middle">m_u3</text>
+<rect class="box-amber" x="200" y="120" width="150" height="80" rx="10"/><text class="t-bold" x="275" y="150" text-anchor="middle" dominant-baseline="middle">AGGREGATE</text><text class="t-sm" x="275" y="176" text-anchor="middle" dominant-baseline="middle">sum / mean / max</text>
+<text class="t-sm t-muted" x="275" y="215" text-anchor="middle">permutation invariant</text>
+<circle class="box-red" cx="275" cy="280" r="22"/><text class="t-sm" x="275" y="280" text-anchor="middle" dominant-baseline="middle">h_v</text>
+<line class="ln" x1="275" y1="258" x2="275" y2="222" marker-end="url(#w14b2)"/>
+<line class="ln" x1="352" y1="160" x2="418" y2="160" marker-end="url(#w14b2)"/>
+<text class="t-sm" x="385" y="145" text-anchor="middle">a_v</text>
+<rect class="box-purple" x="420" y="120" width="130" height="80" rx="10"/><text class="t-bold" x="485" y="150" text-anchor="middle" dominant-baseline="middle">UPDATE</text><text class="t-sm" x="485" y="176" text-anchor="middle" dominant-baseline="middle">MLP(h_v, a_v)</text>
+<line class="ln" x1="298" y1="280" x2="485" y2="280" /><line class="ln" x1="485" y1="280" x2="485" y2="222" marker-end="url(#w14b2)"/>
+<line class="ln" x1="552" y1="160" x2="618" y2="160" marker-end="url(#w14b2)"/>
+<circle class="box-red" cx="660" cy="160" r="32"/><text class="t" x="660" y="160" text-anchor="middle" dominant-baseline="middle">h_v'</text>
+<text class="t-sm t-muted" x="660" y="212" text-anchor="middle">new embedding of v</text>
+<text class="t-sm" x="390" y="305" text-anchor="middle">a_v = AGG({ MSG(h_u, h_v, e_uv) : u in N(v) }),   h_v' = UPDATE(h_v, a_v).   After k rounds, h_v sees the k-hop neighbourhood.</text>
+</svg>

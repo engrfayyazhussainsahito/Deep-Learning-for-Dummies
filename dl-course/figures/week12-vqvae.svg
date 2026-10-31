@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330"><defs><marker id="u6a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">VQ-VAE: discrete latents by nearest-codebook lookup</text>
+<rect x="14" y="110" width="70" height="70" rx="6" class="box-blue"/>
+<text x="49.0" y="137.0" class="t" text-anchor="middle" dominant-baseline="middle">x</text>
+<text x="49.0" y="154.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">3x64x64</text>
+<rect x="110" y="105" width="90" height="80" rx="6" class="box-purple"/>
+<text x="155.0" y="137.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Encoder</text>
+<text x="155.0" y="154.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">CNN, 8x down</text>
+<line x1="84" y1="145" x2="110" y2="145" class="ln" marker-end="url(#u6a)"/>
+<rect x="236" y="100" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="258" y="100" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="280" y="100" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="302" y="100" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="236" y="122" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="258" y="122" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="280" y="122" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="302" y="122" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="236" y="144" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="258" y="144" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="280" y="144" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="302" y="144" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="236" y="166" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="258" y="166" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="280" y="166" width="20" height="20" rx="2" class="box-teal"/>
+<rect x="302" y="166" width="20" height="20" rx="2" class="box-teal"/>
+<text x="280" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">z_e: 8x8x64</text>
+<line x1="200" y1="145" x2="234" y2="145" class="ln" marker-end="url(#u6a)"/>
+<rect x="370" y="60" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="73.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_0</text>
+<rect x="370" y="90" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="103.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_1</text>
+<rect x="370" y="120" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="133.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_2</text>
+<rect x="370" y="150" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="163.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_3</text>
+<rect x="370" y="180" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="193.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_4</text>
+<rect x="370" y="210" width="90" height="26" rx="6" class="box-amber"/>
+<text x="415.0" y="223.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">e_K-1</text>
+<text x="415" y="246" class="t-sm" text-anchor="middle" dominant-baseline="middle">codebook K x 64</text>
+<line x1="330" y1="142" x2="370" y2="142" class="ln" marker-end="url(#u6a)"/>
+<text x="350" y="128" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">argmin</text>
+<rect x="500" y="100" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="522" y="100" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="544" y="100" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="566" y="100" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="500" y="122" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="522" y="122" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="544" y="122" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="566" y="122" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="500" y="144" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="522" y="144" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="544" y="144" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="566" y="144" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="500" y="166" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="522" y="166" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="544" y="166" width="20" height="20" rx="2" class="box-amber"/>
+<rect x="566" y="166" width="20" height="20" rx="2" class="box-amber"/>
+<text x="544" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">z_q: 8x8 indices</text>
+<line x1="460" y1="142" x2="498" y2="142" class="ln" marker-end="url(#u6a)"/>
+<rect x="610" y="105" width="80" height="80" rx="6" class="box-green"/>
+<text x="650.0" y="137.0" class="t-bold" text-anchor="middle" dominant-baseline="middle">Decoder</text>
+<text x="650.0" y="154.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">x_hat</text>
+<line x1="590" y1="145" x2="610" y2="145" class="ln" marker-end="url(#u6a)"/>
+<text x="380" y="288" class="t-sm" text-anchor="middle" dominant-baseline="middle">Loss = recon + || sg[z_e] - e ||^2 + beta || z_e - sg[e] ||^2, with straight-through gradient z_e &lt;- z_q</text>
+<text x="380" y="310" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">sg = stop-gradient. A second model (e.g. an autoregressive prior) is trained over the discrete indices.</text>
+</svg>

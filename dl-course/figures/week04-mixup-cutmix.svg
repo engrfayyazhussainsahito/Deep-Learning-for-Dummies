@@ -1,0 +1,22 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="95" y="25" text-anchor="middle">Image A (cat)</text>
+<rect class="box-blue" x="35" y="40" width="120" height="120"/><circle class="fill-blue" cx="95" cy="100" r="35" style="opacity:.5"/>
+<text class="t-bold" x="95" y="195" text-anchor="middle">Image B (dog)</text>
+<rect class="box-amber" x="35" y="210" width="120" height="80" style="display:none"/>
+<rect class="box-amber" x="35" y="205" width="120" height="85" style="display:none"/>
+<rect class="box-amber" x="35" y="205" width="120" height="85"/><rect class="fill-amber" x="65" y="225" width="60" height="45" style="opacity:.55"/>
+<line class="ln" x1="165" y1="100" x2="270" y2="100" marker-end="url(#w04d)"/><line class="ln" x1="165" y1="248" x2="270" y2="248" marker-end="url(#w04d)"/>
+<text class="t-bold" x="400" y="25" text-anchor="middle">mixup</text>
+<rect class="box" x="280" y="40" width="240" height="115"/>
+<circle class="fill-blue" cx="360" cy="98" r="35" style="opacity:.35"/><rect class="fill-amber" x="400" y="73" width="60" height="45" style="opacity:.35"/>
+<text class="t-sm" x="400" y="178" text-anchor="middle">x = &#955;A + (1-&#955;)B, y = &#955;&#183;cat + (1-&#955;)&#183;dog</text>
+<text class="t-sm t-muted" x="400" y="196" text-anchor="middle">&#955; ~ Beta(&#945;, &#945;); every pixel is a blend</text>
+<text class="t-bold" x="400" y="225" text-anchor="middle">CutMix</text>
+<rect class="box" x="280" y="238" width="240" height="55"/>
+<rect class="box-blue" x="280" y="238" width="240" height="55" style="fill-opacity:.12"/>
+<rect class="box-amber" x="380" y="250" width="90" height="35" style="fill-opacity:.5"/>
+<text class="t-sm" x="640" y="255" text-anchor="middle">patch from B pasted into A</text>
+<text class="t-sm" x="640" y="275" text-anchor="middle">label weight = area fraction</text>
+<line class="ln-dash" x1="520" y1="100" x2="560" y2="100" style="display:none"/>
+</svg>

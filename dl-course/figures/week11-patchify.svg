@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300"><defs><marker id="v2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="360" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Patchify: a 4 x 4 grid of patches becomes a sequence of 16 tokens (raster order)</text>
+<rect x="30" y="40" width="48" height="48" rx="2" class="box-blue"/>
+<text x="54.0" y="64.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="80" y="40" width="48" height="48" rx="2" class="box-teal"/>
+<text x="104.0" y="64.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="130" y="40" width="48" height="48" rx="2" class="box-blue"/>
+<text x="154.0" y="64.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="180" y="40" width="48" height="48" rx="2" class="box-teal"/>
+<text x="204.0" y="64.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="30" y="90" width="48" height="48" rx="2" class="box-teal"/>
+<text x="54.0" y="114.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="80" y="90" width="48" height="48" rx="2" class="box-blue"/>
+<text x="104.0" y="114.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">5</text>
+<rect x="130" y="90" width="48" height="48" rx="2" class="box-teal"/>
+<text x="154.0" y="114.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">6</text>
+<rect x="180" y="90" width="48" height="48" rx="2" class="box-blue"/>
+<text x="204.0" y="114.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">7</text>
+<rect x="30" y="140" width="48" height="48" rx="2" class="box-blue"/>
+<text x="54.0" y="164.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">8</text>
+<rect x="80" y="140" width="48" height="48" rx="2" class="box-teal"/>
+<text x="104.0" y="164.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">9</text>
+<rect x="130" y="140" width="48" height="48" rx="2" class="box-blue"/>
+<text x="154.0" y="164.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">10</text>
+<rect x="180" y="140" width="48" height="48" rx="2" class="box-teal"/>
+<text x="204.0" y="164.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">11</text>
+<rect x="30" y="190" width="48" height="48" rx="2" class="box-teal"/>
+<text x="54.0" y="214.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">12</text>
+<rect x="80" y="190" width="48" height="48" rx="2" class="box-blue"/>
+<text x="104.0" y="214.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">13</text>
+<rect x="130" y="190" width="48" height="48" rx="2" class="box-teal"/>
+<text x="154.0" y="214.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">14</text>
+<rect x="180" y="190" width="48" height="48" rx="2" class="box-blue"/>
+<text x="204.0" y="214.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">15</text>
+<text x="130" y="254" class="t-sm" text-anchor="middle" dominant-baseline="middle">H/P x W/P grid = N patches</text>
+<text x="130" y="272" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">N = HW / P^2</text>
+<line x1="240" y1="140" x2="290" y2="140" class="ln-bold" marker-end="url(#v2a)"/>
+<text x="265" y="124" class="t-sm" text-anchor="middle" dominant-baseline="middle">reshape</text>
+<rect x="300" y="70" width="46" height="50" rx="2" class="box-blue"/>
+<text x="323.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">0</text>
+<rect x="350" y="70" width="46" height="50" rx="2" class="box-teal"/>
+<text x="373.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="400" y="70" width="46" height="50" rx="2" class="box-blue"/>
+<text x="423.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="450" y="70" width="46" height="50" rx="2" class="box-teal"/>
+<text x="473.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="500" y="70" width="46" height="50" rx="2" class="box-teal"/>
+<text x="523.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="550" y="70" width="46" height="50" rx="2" class="box-blue"/>
+<text x="573.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">5</text>
+<rect x="600" y="70" width="46" height="50" rx="2" class="box-teal"/>
+<text x="623.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">6</text>
+<rect x="650" y="70" width="46" height="50" rx="2" class="box-blue"/>
+<text x="673.0" y="95.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">7</text>
+<rect x="300" y="140" width="46" height="50" rx="2" class="box-blue"/>
+<text x="323.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">8</text>
+<rect x="350" y="140" width="46" height="50" rx="2" class="box-teal"/>
+<text x="373.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">9</text>
+<rect x="400" y="140" width="46" height="50" rx="2" class="box-blue"/>
+<text x="423.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">10</text>
+<rect x="450" y="140" width="46" height="50" rx="2" class="box-teal"/>
+<text x="473.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">11</text>
+<rect x="500" y="140" width="46" height="50" rx="2" class="box-teal"/>
+<text x="523.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">12</text>
+<rect x="550" y="140" width="46" height="50" rx="2" class="box-blue"/>
+<text x="573.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">13</text>
+<rect x="600" y="140" width="46" height="50" rx="2" class="box-teal"/>
+<text x="623.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">14</text>
+<rect x="650" y="140" width="46" height="50" rx="2" class="box-blue"/>
+<text x="673.0" y="165.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">15</text>
+<text x="500" y="50" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">row 0 | row 1 | row 2 | row 3  ->  tokens 0..15</text>
+<text x="500" y="226" class="t-sm" text-anchor="middle" dominant-baseline="middle">Neighbours in the same column (e.g. 0 and 4) are 4 tokens apart in the sequence:</text>
+<text x="500" y="246" class="t-sm" text-anchor="middle" dominant-baseline="middle">the model must learn 2-D geometry from the position embeddings.</text>
+</svg>

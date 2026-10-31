@@ -1,0 +1,23 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<line class="ln" x1="70" y1="290" x2="690" y2="290" marker-end="url(#w04a)"/>
+<line class="ln" x1="70" y1="290" x2="70" y2="30" marker-end="url(#w04a)"/>
+<text class="t" x="380" y="325" text-anchor="middle">model complexity (capacity)</text>
+<text class="t" x="22" y="160" text-anchor="middle" transform="rotate(-90 22 160)">error</text>
+<rect class="box-blue" x="70" y="40" width="190" height="250" style="opacity:.18"/>
+<rect class="box-red" x="500" y="40" width="190" height="250" style="opacity:.18"/>
+<text class="t-bold" x="165" y="60" text-anchor="middle">underfitting</text>
+<text class="t-sm t-muted" x="165" y="78" text-anchor="middle">high bias</text>
+<text class="t-bold" x="595" y="60" text-anchor="middle">overfitting</text>
+<text class="t-sm t-muted" x="595" y="78" text-anchor="middle">high variance</text>
+<path class="ln-blue" fill="none" d="M80,100 C160,170 260,230 380,250 C500,262 600,265 680,266" style="stroke-width:2.5"/>
+<path class="ln-green" fill="none" d="M80,285 C200,284 350,282 440,262 C520,240 600,170 680,90" style="stroke-width:2.5;stroke-dasharray:0"/>
+<path class="ln-red" fill="none" d="M80,115 C170,175 270,205 360,210 C450,215 560,175 680,70" style="stroke-width:3"/>
+<line class="ln-dash" x1="365" y1="40" x2="365" y2="290"/>
+<circle class="fill-red" cx="365" cy="210" r="5"/>
+<text class="t-sm" x="365" y="32" text-anchor="middle">sweet spot</text>
+<text class="t-sm" x="95" y="130" style="fill:var(--c-blue)">bias&#178;</text>
+<text class="t-sm" x="640" y="135" style="fill:var(--c-green)">variance</text>
+<text class="t-sm t-bold" x="560" y="175" style="fill:var(--c-red)">test error</text>
+<text class="t-sm t-muted" x="460" y="280">irreducible noise sets the floor</text>
+</svg>

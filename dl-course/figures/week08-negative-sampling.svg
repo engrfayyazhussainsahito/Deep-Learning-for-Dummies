@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" role="img"><defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Skip-gram with negative sampling: one positive pair, K sampled negatives</text>
+<rect x="30" y="150" width="110" height="44" rx="6" class="box-accent"/>
+<text x="85" y="166" class="t-bold" text-anchor="middle" dominant-baseline="middle">centre c</text>
+<text x="85" y="184" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">v_c = W_in[c]</text>
+<line x1="142" y1="172" x2="230" y2="172" class="ln" marker-end="url(#a2)"/>
+<text x="186" y="155" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">d-dim</text>
+<rect x="232" y="60" width="150" height="44" rx="6" class="box-green"/>
+<text x="307" y="76" class="t-bold" text-anchor="middle" dominant-baseline="middle">true context o</text>
+<text x="307" y="93" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">u = W_out[.]</text>
+<line x1="142" y1="172" x2="230" y2="82" class="ln" marker-end="url(#a2)"/>
+<line x1="384" y1="82" x2="440" y2="82" class="ln" marker-end="url(#a2)"/>
+<rect x="442" y="64" width="290" height="36" rx="6" class="box"/>
+<text x="587" y="82" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">sigma(u_o . v_c)  -> 1</text>
+<rect x="232" y="130" width="150" height="44" rx="6" class="box-red"/>
+<text x="307" y="146" class="t-bold" text-anchor="middle" dominant-baseline="middle">negative n1</text>
+<text x="307" y="163" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">u = W_out[.]</text>
+<line x1="142" y1="172" x2="230" y2="152" class="ln-thin" marker-end="url(#a2)"/>
+<line x1="384" y1="152" x2="440" y2="152" class="ln" marker-end="url(#a2)"/>
+<rect x="442" y="134" width="290" height="36" rx="6" class="box"/>
+<text x="587" y="152" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">sigma(-u_n1 . v_c) -> 1</text>
+<rect x="232" y="200" width="150" height="44" rx="6" class="box-red"/>
+<text x="307" y="216" class="t-bold" text-anchor="middle" dominant-baseline="middle">negative n2</text>
+<text x="307" y="233" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">u = W_out[.]</text>
+<line x1="142" y1="172" x2="230" y2="222" class="ln-thin" marker-end="url(#a2)"/>
+<line x1="384" y1="222" x2="440" y2="222" class="ln" marker-end="url(#a2)"/>
+<rect x="442" y="204" width="290" height="36" rx="6" class="box"/>
+<text x="587" y="222" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">sigma(-u_n2 . v_c) -> 1</text>
+<rect x="232" y="270" width="150" height="44" rx="6" class="box-red"/>
+<text x="307" y="286" class="t-bold" text-anchor="middle" dominant-baseline="middle">... K negatives</text>
+<text x="307" y="303" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">u = W_out[.]</text>
+<line x1="142" y1="172" x2="230" y2="292" class="ln-thin" marker-end="url(#a2)"/>
+<line x1="384" y1="292" x2="440" y2="292" class="ln" marker-end="url(#a2)"/>
+<rect x="442" y="274" width="290" height="36" rx="6" class="box"/>
+<text x="587" y="292" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">drawn from p(w) ~ f(w)^0.75</text>
+<text x="380" y="350" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">K+1 binary classifications replace one V-way softmax</text>
+
+</svg>

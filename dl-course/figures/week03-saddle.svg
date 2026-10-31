@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img"><defs><marker id="mw03saddle" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="190.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Local minimum: all curvatures > 0</text>
+<text x="570.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Saddle: curvature changes sign with direction</text>
+<ellipse cx="190" cy="165" rx="26" ry="15" class="ln-thin" fill="none"/>
+<ellipse cx="190" cy="165" rx="52" ry="30" class="ln-thin" fill="none"/>
+<ellipse cx="190" cy="165" rx="78" ry="45" class="ln-thin" fill="none"/>
+<ellipse cx="190" cy="165" rx="104" ry="60" class="ln-thin" fill="none"/>
+<circle cx="190.0" cy="165.0" r="5" class="fill-ink" />
+<text x="190.0" y="282.0" class="t" text-anchor="middle" dominant-baseline="middle" >Hessian eigenvalues: λ₁, λ₂ > 0</text>
+<text x="190.0" y="302.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >every direction goes uphill</text>
+<path d="M450.0,85.0 L454.1,90.3 L458.1,95.5 L462.2,100.4 L466.3,105.2 L470.3,109.8 L474.4,114.2 L478.5,118.5 L482.5,122.5 L486.6,126.4 L490.7,130.0 L494.7,133.5 L498.8,136.8 L502.9,140.0 L506.9,142.9 L511.0,145.7 L515.1,148.2 L519.2,150.6 L523.2,152.8 L527.3,154.9 L531.4,156.7 L535.4,158.4 L539.5,159.8 L543.6,161.1 L547.6,162.2 L551.7,163.1 L555.8,163.9 L559.8,164.4 L563.9,164.8 L568.0,165.0 L572.0,165.0 L576.1,164.8 L580.2,164.4 L584.2,163.9 L588.3,163.1 L592.4,162.2 L596.4,161.1 L600.5,159.8 L604.6,158.4 L608.6,156.7 L612.7,154.9 L616.8,152.8 L620.8,150.6 L624.9,148.2 L629.0,145.7 L633.1,142.9 L637.1,140.0 L641.2,136.8 L645.3,133.5 L649.3,130.0 L653.4,126.4 L657.5,122.5 L661.5,118.5 L665.6,114.2 L669.7,109.8 L673.7,105.2 L677.8,100.4 L681.9,95.5 L685.9,90.3 L690.0,85.0" class="ln-blue" fill="none"  />
+<path d="M450.0,245.0 L454.1,239.7 L458.1,234.5 L462.2,229.6 L466.3,224.8 L470.3,220.2 L474.4,215.8 L478.5,211.5 L482.5,207.5 L486.6,203.6 L490.7,200.0 L494.7,196.5 L498.8,193.2 L502.9,190.0 L506.9,187.1 L511.0,184.3 L515.1,181.8 L519.2,179.4 L523.2,177.2 L527.3,175.1 L531.4,173.3 L535.4,171.6 L539.5,170.2 L543.6,168.9 L547.6,167.8 L551.7,166.9 L555.8,166.1 L559.8,165.6 L563.9,165.2 L568.0,165.0 L572.0,165.0 L576.1,165.2 L580.2,165.6 L584.2,166.1 L588.3,166.9 L592.4,167.8 L596.4,168.9 L600.5,170.2 L604.6,171.6 L608.6,173.3 L612.7,175.1 L616.8,177.2 L620.8,179.4 L624.9,181.8 L629.0,184.3 L633.1,187.1 L637.1,190.0 L641.2,193.2 L645.3,196.5 L649.3,200.0 L653.4,203.6 L657.5,207.5 L661.5,211.5 L665.6,215.8 L669.7,220.2 L673.7,224.8 L677.8,229.6 L681.9,234.5 L685.9,239.7 L690.0,245.0" class="ln-red" fill="none"  />
+<circle cx="570.0" cy="165.0" r="5" class="fill-ink" />
+<text x="500.0" y="70.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" style="fill:var(--c-blue)">v₁: curves up (λ₁ > 0)</text>
+<text x="500.0" y="260.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" style="fill:var(--c-red)">v₂: curves down (λ₂ &lt; 0)</text>
+<text x="570.0" y="282.0" class="t" text-anchor="middle" dominant-baseline="middle" >gradient is zero at the center, but v₂ is a downhill escape</text>
+<text x="570.0" y="302.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >two cross-sections of the same surface through one point</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-blue" x="60" y="40" width="220" height="90" rx="12"/>
+<text class="t-bold" x="170" y="68" text-anchor="middle">Agent</text>
+<text class="t-sm" x="170" y="92" text-anchor="middle">policy π(a | s)</text>
+<text class="t-sm" x="170" y="110" text-anchor="middle">value function, model (optional)</text>
+<rect class="box-green" x="440" y="40" width="220" height="90" rx="12"/>
+<text class="t-bold" x="550" y="68" text-anchor="middle">Environment</text>
+<text class="t-sm" x="550" y="92" text-anchor="middle">dynamics p(s' | s, a)</text>
+<text class="t-sm" x="550" y="110" text-anchor="middle">reward r(s, a)</text>
+<path class="ln-bold" d="M280,70 L440,70" fill="none" marker-end="url(#w15a)"/>
+<text class="t" x="360" y="58" text-anchor="middle">action A_t</text>
+<path class="ln" d="M550,130 L550,200 L170,200 L170,130" fill="none" marker-end="url(#w15a)"/>
+<text class="t" x="360" y="190" text-anchor="middle">state S_{t+1}</text>
+<path class="ln-amber" d="M440,112 L280,112" fill="none" marker-end="url(#w15a)"/>
+<text class="t" x="360" y="130" text-anchor="middle">reward R_{t+1}</text>
+<text class="t-muted" x="360" y="240" text-anchor="middle">Goal: choose π to maximize E[ G_t ] with G_t = Σ_k γ^k R_{t+k+1}</text>
+<text class="t-sm t-muted" x="360" y="268" text-anchor="middle">Data = the agent's own experience; what it sees depends on what it does</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="360" y="20" text-anchor="middle">Sparse Mixture-of-Experts layer (top-2 of 4 experts, replaces the transformer FFN)</text>
+<rect class="box" x="20" y="130" width="90" height="50" rx="8"/><text class="t" x="65" y="148" text-anchor="middle">token x</text><text class="t-sm" x="65" y="166" text-anchor="middle">∈ R^d</text>
+<rect class="box-amber" x="150" y="40" width="130" height="50" rx="8"/><text class="t" x="215" y="58" text-anchor="middle">router W_r</text><text class="t-sm" x="215" y="76" text-anchor="middle">p = softmax(W_r x)</text>
+<rect class="box-blue" x="340" y="60" width="90" height="40" rx="6"/><text class="t" x="385" y="80" text-anchor="middle" dominant-baseline="middle">Expert 1</text>
+<rect class="box-blue" x="340" y="110" width="90" height="40" rx="6" style="opacity:.35"/><text class="t-muted" x="385" y="130" text-anchor="middle" dominant-baseline="middle">Expert 2</text>
+<rect class="box-blue" x="340" y="160" width="90" height="40" rx="6"/><text class="t" x="385" y="180" text-anchor="middle" dominant-baseline="middle">Expert 3</text>
+<rect class="box-blue" x="340" y="210" width="90" height="40" rx="6" style="opacity:.35"/><text class="t-muted" x="385" y="230" text-anchor="middle" dominant-baseline="middle">Expert 4</text>
+<rect class="box-green" x="500" y="120" width="130" height="60" rx="8"/><text class="t" x="565" y="143" text-anchor="middle">weighted sum</text><text class="t-sm" x="565" y="162" text-anchor="middle">y = g1 E1(x) + g3 E3(x)</text>
+<path class="ln" d="M110,150 L150,70 M110,150 L340,80 M110,150 L340,180" fill="none" marker-end="url(#w16f)"/>
+<path class="ln-amber" d="M280,65 L340,75 M280,70 L340,170" fill="none" marker-end="url(#w16f)"/>
+<path class="ln" d="M430,80 L500,140 M430,180 L500,160" fill="none" marker-end="url(#w16f)"/>
+<text class="t-sm t-muted" x="360" y="280" text-anchor="middle">Parameters scale with the number of experts E; FLOPs per token scale only with k (here 2 of 4).</text>
+<text class="t-sm t-muted" x="360" y="300" text-anchor="middle">Auxiliary loss L_bal = E · Σ_i f_i P_i pushes the router toward using all experts evenly.</text>
+</svg>

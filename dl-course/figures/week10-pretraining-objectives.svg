@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 480"><defs><marker id="w10a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="30" y="26" class="t-bold" text-anchor="start" dominant-baseline="middle">BERT: masked LM (encoder, bidirectional)</text>
+<rect x="30" y="44" width="92" height="30" rx="5" class="box-blue"/><text x="76.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="130" y="44" width="92" height="30" rx="5" class="box-amber"/><text x="176.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">[M]</text>
+<rect x="130" y="102" width="92" height="30" rx="5" class="box-red"/><text x="176.0" y="117.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">cat</text>
+<line x1="176" y1="74" x2="176" y2="100" class="ln" marker-end="url(#w10a)"/>
+<rect x="230" y="44" width="92" height="30" rx="5" class="box-blue"/><text x="276.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sat</text>
+<rect x="330" y="44" width="92" height="30" rx="5" class="box-blue"/><text x="376.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="430" y="44" width="92" height="30" rx="5" class="box-blue"/><text x="476.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="530" y="44" width="92" height="30" rx="5" class="box-amber"/><text x="576.0" y="59.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">[M]</text>
+<rect x="530" y="102" width="92" height="30" rx="5" class="box-red"/><text x="576.0" y="117.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">mat</text>
+<line x1="576" y1="74" x2="576" y2="100" class="ln" marker-end="url(#w10a)"/>
+<text x="30" y="148" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">15% of tokens chosen; predict only those from both sides</text>
+<text x="30" y="176" class="t-bold" text-anchor="start" dominant-baseline="middle">GPT: causal LM (decoder, left to right)</text>
+<rect x="30" y="194" width="92" height="30" rx="5" class="box-green"/><text x="76.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="30" y="252" width="92" height="30" rx="5" class="box-red"/><text x="76.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">cat</text>
+<line x1="76" y1="224" x2="76" y2="250" class="ln" marker-end="url(#w10a)"/>
+<rect x="130" y="194" width="92" height="30" rx="5" class="box-green"/><text x="176.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">cat</text>
+<rect x="130" y="252" width="92" height="30" rx="5" class="box-red"/><text x="176.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sat</text>
+<line x1="176" y1="224" x2="176" y2="250" class="ln" marker-end="url(#w10a)"/>
+<rect x="230" y="194" width="92" height="30" rx="5" class="box-green"/><text x="276.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sat</text>
+<rect x="230" y="252" width="92" height="30" rx="5" class="box-red"/><text x="276.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">on</text>
+<line x1="276" y1="224" x2="276" y2="250" class="ln" marker-end="url(#w10a)"/>
+<rect x="330" y="194" width="92" height="30" rx="5" class="box-green"/><text x="376.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="330" y="252" width="92" height="30" rx="5" class="box-red"/><text x="376.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the</text>
+<line x1="376" y1="224" x2="376" y2="250" class="ln" marker-end="url(#w10a)"/>
+<rect x="430" y="194" width="92" height="30" rx="5" class="box-green"/><text x="476.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="430" y="252" width="92" height="30" rx="5" class="box-red"/><text x="476.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">mat</text>
+<line x1="476" y1="224" x2="476" y2="250" class="ln" marker-end="url(#w10a)"/>
+<rect x="530" y="194" width="92" height="30" rx="5" class="box-green"/><text x="576.0" y="209.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">mat</text>
+<rect x="530" y="252" width="92" height="30" rx="5" class="box-red"/><text x="576.0" y="267.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">.</text>
+<line x1="576" y1="224" x2="576" y2="250" class="ln" marker-end="url(#w10a)"/>
+<text x="30" y="298" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">predict every next token; each position sees only its past</text>
+<text x="30" y="326" class="t-bold" text-anchor="start" dominant-baseline="middle">T5: span corruption (encoder-decoder)</text>
+<rect x="30" y="344" width="92" height="30" rx="5" class="box-purple"/><text x="76.0" y="359.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">The</text>
+<rect x="130" y="344" width="92" height="30" rx="5" class="box-amber"/><text x="176.0" y="359.0" class="t-sm" text-anchor="middle" dominant-baseline="middle"><X></text>
+<rect x="230" y="344" width="92" height="30" rx="5" class="box-purple"/><text x="276.0" y="359.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">on</text>
+<rect x="330" y="344" width="92" height="30" rx="5" class="box-purple"/><text x="376.0" y="359.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">the</text>
+<rect x="430" y="344" width="92" height="30" rx="5" class="box-amber"/><text x="476.0" y="359.0" class="t-sm" text-anchor="middle" dominant-baseline="middle"><Y></text>
+<rect x="30" y="402" width="230" height="30" rx="5" class="box-red"/><text x="145.0" y="417.0" class="t-sm" text-anchor="middle" dominant-baseline="middle"><X> cat sat <Y> mat</text>
+<line x1="145" y1="374" x2="145" y2="400" class="ln" marker-end="url(#w10a)"/>
+<text x="30" y="448" class="t-sm t-muted" text-anchor="start" dominant-baseline="middle">encoder input has sentinels; decoder emits: <X> cat sat <Y> mat</text>
+</svg>

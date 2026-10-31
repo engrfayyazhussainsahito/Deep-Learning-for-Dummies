@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" role="img"><defs><marker id="a6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Matrix factorization as embedding learning: a rating is a dot product</text>
+<rect x="30" y="70" width="170" height="220" rx="6" class="box"/>
+<text x="115" y="50" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">ratings R (users x items)</text>
+<rect x="48" y="90" width="26" height="30" rx="3" class="box-amber"/>
+<text x="61" y="105" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="78" y="90" width="26" height="30" rx="3" class="box-amber"/>
+<text x="91" y="105" class="t-sm" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="108" y="90" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="138" y="90" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="168" y="90" width="26" height="30" rx="3" class="box-amber"/>
+<text x="181" y="105" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="48" y="126" width="26" height="30" rx="3" class="box-amber"/>
+<text x="61" y="141" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="78" y="126" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="108" y="126" width="26" height="30" rx="3" class="box-amber"/>
+<text x="121" y="141" class="t-sm" text-anchor="middle" dominant-baseline="middle">5</text>
+<rect x="138" y="126" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="168" y="126" width="26" height="30" rx="3" class="box-amber"/>
+<text x="181" y="141" class="t-sm" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="48" y="162" width="26" height="30" rx="3" class="box-amber"/>
+<text x="61" y="177" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="78" y="162" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="108" y="162" width="26" height="30" rx="3" class="box-amber"/>
+<text x="121" y="177" class="t-sm" text-anchor="middle" dominant-baseline="middle">3</text>
+<rect x="138" y="162" width="26" height="30" rx="3" class="box-amber"/>
+<text x="151" y="177" class="t-sm" text-anchor="middle" dominant-baseline="middle">1</text>
+<rect x="168" y="162" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="48" y="198" width="26" height="30" rx="3" class="box-amber"/>
+<text x="61" y="213" class="t-sm" text-anchor="middle" dominant-baseline="middle">4</text>
+<rect x="78" y="198" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="108" y="198" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="138" y="198" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="168" y="198" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="48" y="234" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="78" y="234" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="108" y="234" width="26" height="30" rx="3" class="fill-soft"/>
+<rect x="138" y="234" width="26" height="30" rx="3" class="box-amber"/>
+<text x="151" y="249" class="t-sm" text-anchor="middle" dominant-baseline="middle">2</text>
+<rect x="168" y="234" width="26" height="30" rx="3" class="fill-soft"/>
+<text x="115" y="306" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">most entries unobserved</text>
+<text x="235" y="180" class="t-lg" text-anchor="middle" dominant-baseline="middle">~</text>
+<rect x="260" y="70" width="80" height="220" rx="6" class="box-blue"/>
+<text x="300" y="50" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">U (users x d)</text>
+<text x="300" y="106" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">p_u1</text>
+<text x="300" y="142" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">p_u2</text>
+<text x="300" y="178" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">p_u3</text>
+<text x="300" y="214" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">p_u4</text>
+<text x="300" y="250" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">p_u5</text>
+<text x="360" y="180" class="t-lg" text-anchor="middle" dominant-baseline="middle">x</text>
+<rect x="385" y="100" width="220" height="60" rx="6" class="box-green"/>
+<text x="495" y="86" class="t-sm t-bold" text-anchor="middle" dominant-baseline="middle">V^T (d x items)</text>
+<text x="407" y="130" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">q_1</text>
+<text x="447" y="130" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">q_2</text>
+<text x="487" y="130" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">q_3</text>
+<text x="527" y="130" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">q_4</text>
+<text x="567" y="130" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">q_5</text>
+<text x="495" y="215" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">predicted rating  r_hat(u,i) = p_u . q_i + b_u + b_i</text>
+<text x="495" y="240" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">train on observed entries only</text>
+<text x="495" y="262" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">loss = sum (r_ui - r_hat)^2 + lambda(|p|^2 + |q|^2)</text>
+<text x="380" y="350" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Rows of U and V are the entity embeddings. word2vec also factorizes a matrix.</text>
+
+</svg>

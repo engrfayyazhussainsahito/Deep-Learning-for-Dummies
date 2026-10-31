@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380"><defs><marker id="w09a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="55" y="98" class="t-sm" text-anchor="middle" dominant-baseline="middle" >X  (T x d_model)</text>
+<rect x="20" y="112" width="70" height="28" rx="6" class="box-accent" />
+<text x="55" y="126" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x1</text>
+<rect x="20" y="144" width="70" height="28" rx="6" class="box-accent" />
+<text x="55" y="158" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x2</text>
+<rect x="20" y="176" width="70" height="28" rx="6" class="box-accent" />
+<text x="55" y="190" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x3</text>
+<rect x="20" y="208" width="70" height="28" rx="6" class="box-accent" />
+<text x="55" y="222" class="t-mono" text-anchor="middle" dominant-baseline="middle" >x4</text>
+<rect x="160" y="40" width="110" height="80" rx="6" class="box-blue" />
+<text x="215" y="70" class="t-bold" text-anchor="middle" dominant-baseline="middle" >Q = X W_Q</text>
+<text x="215" y="94" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >T x d_k</text>
+<line x1="90" y1="184" x2="160" y2="80" class="ln" marker-end="url(#w09a)" />
+<rect x="160" y="150" width="110" height="80" rx="6" class="box-green" />
+<text x="215" y="180" class="t-bold" text-anchor="middle" dominant-baseline="middle" >K = X W_K</text>
+<text x="215" y="204" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >T x d_k</text>
+<line x1="90" y1="184" x2="160" y2="190" class="ln" marker-end="url(#w09a)" />
+<rect x="160" y="260" width="110" height="80" rx="6" class="box-purple" />
+<text x="215" y="290" class="t-bold" text-anchor="middle" dominant-baseline="middle" >V = X W_V</text>
+<text x="215" y="314" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >T x d_v</text>
+<line x1="90" y1="184" x2="160" y2="300" class="ln" marker-end="url(#w09a)" />
+<text x="395" y="40" class="t-sm" text-anchor="middle" dominant-baseline="middle" >S = Q K^T / sqrt(d_k)</text>
+<rect x="340" y="52" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="370" y="52" width="30" height="30" class="box" rx="2"/>
+<rect x="400" y="52" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="430" y="52" width="30" height="30" class="box" rx="2"/>
+<rect x="340" y="82" width="30" height="30" class="box" rx="2"/>
+<rect x="370" y="82" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="400" y="82" width="30" height="30" class="box" rx="2"/>
+<rect x="430" y="82" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="340" y="112" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="370" y="112" width="30" height="30" class="box" rx="2"/>
+<rect x="400" y="112" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="430" y="112" width="30" height="30" class="box" rx="2"/>
+<rect x="340" y="142" width="30" height="30" class="box" rx="2"/>
+<rect x="370" y="142" width="30" height="30" class="box-amber" rx="2"/>
+<rect x="400" y="142" width="30" height="30" class="box" rx="2"/>
+<rect x="430" y="142" width="30" height="30" class="box-amber" rx="2"/>
+<text x="400" y="190" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >T x T scores</text>
+<line x1="270" y1="80" x2="338" y2="95" class="ln" marker-end="url(#w09a)" />
+<line x1="270" y1="190" x2="338" y2="140" class="ln" marker-end="url(#w09a)" />
+<line x1="462" y1="112" x2="512" y2="112" class="ln-accent" marker-end="url(#w09a)" />
+<text x="487" y="95" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle" >softmax</text>
+<text x="487" y="130" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >per row</text>
+<text x="575" y="40" class="t-sm" text-anchor="middle" dominant-baseline="middle" >A = softmax(S)</text>
+<rect x="520" y="52" width="30" height="30" rx="2" class="box-red" />
+<rect x="550" y="52" width="30" height="30" rx="2" class="box" />
+<rect x="580" y="52" width="30" height="30" rx="2" class="box" />
+<rect x="610" y="52" width="30" height="30" rx="2" class="box" />
+<rect x="520" y="82" width="30" height="30" rx="2" class="box" />
+<rect x="550" y="82" width="30" height="30" rx="2" class="box-red" />
+<rect x="580" y="82" width="30" height="30" rx="2" class="box-amber" />
+<rect x="610" y="82" width="30" height="30" rx="2" class="box" />
+<rect x="520" y="112" width="30" height="30" rx="2" class="box-amber" />
+<rect x="550" y="112" width="30" height="30" rx="2" class="box" />
+<rect x="580" y="112" width="30" height="30" rx="2" class="box-red" />
+<rect x="610" y="112" width="30" height="30" rx="2" class="box-amber" />
+<rect x="520" y="142" width="30" height="30" rx="2" class="box" />
+<rect x="550" y="142" width="30" height="30" rx="2" class="box" />
+<rect x="580" y="142" width="30" height="30" rx="2" class="box" />
+<rect x="610" y="142" width="30" height="30" rx="2" class="box-red" />
+<text x="580" y="190" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >rows sum to 1</text>
+<line x1="580" y1="176" x2="640" y2="236" class="ln" marker-end="url(#w09a)" />
+<line x1="270" y1="300" x2="640" y2="290" class="ln" marker-end="url(#w09a)" />
+<rect x="650" y="230" width="90" height="80" rx="6" class="box-teal" />
+<text x="695" y="262" class="t-bold" text-anchor="middle" dominant-baseline="middle" >O = A V</text>
+<text x="695" y="286" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >T x d_v</text>
+<text x="380" y="350" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >Row i of O is a convex combination of the value vectors, with weights from row i of A.</text>
+</svg>

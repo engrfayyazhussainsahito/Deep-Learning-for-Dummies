@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img"><defs><marker id="w05bp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="20" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Backward pass of a convolution layer (1D, k = 3)</text>
+<rect x="30" y="60" width="150" height="46" class="box-blue"/><text x="105" y="83" class="t" text-anchor="middle" dominant-baseline="middle">input x  (N)</text>
+<rect x="305" y="60" width="150" height="46" class="box-purple"/><text x="380" y="83" class="t" text-anchor="middle" dominant-baseline="middle">kernel w  (k)</text>
+<rect x="580" y="60" width="150" height="46" class="box-green"/><text x="655" y="83" class="t" text-anchor="middle" dominant-baseline="middle">output y  (N-k+1)</text>
+<line x1="182" y1="83" x2="578" y2="83" class="ln-dash"/>
+<text x="380" y="46" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">forward: y[i] = sum_j w[j] x[i+j] + b</text>
+<line x1="655" y1="150" x2="655" y2="110" class="ln-accent" marker-end="url(#w05bp)"/>
+<text x="655" y="170" class="t-sm" text-anchor="middle" dominant-baseline="middle">upstream gradient dL/dy</text>
+<rect x="30" y="205" width="330" height="125" class="box-blue"/>
+<text x="195" y="228" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Gradient w.r.t. input</text>
+<text x="195" y="256" class="t t-mono" text-anchor="middle" dominant-baseline="middle">dL/dx[m] = sum_j w[j] dL/dy[m-j]</text>
+<text x="195" y="284" class="t-sm" text-anchor="middle" dominant-baseline="middle">a true convolution of dL/dy with w (flipped kernel),</text>
+<text x="195" y="304" class="t-sm" text-anchor="middle" dominant-baseline="middle">zero-padded by k-1 ("full" convolution)</text>
+<rect x="400" y="205" width="330" height="125" class="box-purple"/>
+<text x="565" y="228" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Gradient w.r.t. kernel and bias</text>
+<text x="565" y="256" class="t t-mono" text-anchor="middle" dominant-baseline="middle">dL/dw[j] = sum_i x[i+j] dL/dy[i]</text>
+<text x="565" y="284" class="t-sm" text-anchor="middle" dominant-baseline="middle">a cross-correlation of x with dL/dy;</text>
+<text x="565" y="304" class="t-sm" text-anchor="middle" dominant-baseline="middle">dL/db = sum_i dL/dy[i]</text>
+<line x1="600" y1="180" x2="195" y2="203" class="ln-blue" marker-end="url(#w05bp)"/>
+<line x1="640" y1="180" x2="565" y2="203" class="ln-purple" marker-end="url(#w05bp)"/>
+<text x="380" y="350" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Weight sharing means every output position adds its contribution to the same dL/dw[j].</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w15c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-green" x="20" y="30" width="120" height="70" rx="10"/>
+<text class="t-bold" x="80" y="58" text-anchor="middle">Environment</text><text class="t-sm" x="80" y="78" text-anchor="middle">Atari / CartPole</text>
+<rect class="box-blue" x="20" y="160" width="120" height="80" rx="10"/>
+<text class="t-bold" x="80" y="188" text-anchor="middle">Online Q(s,a;θ)</text><text class="t-sm" x="80" y="208" text-anchor="middle">ε-greedy actor</text><text class="t-sm t-muted" x="80" y="226" text-anchor="middle">|A| outputs</text>
+<path class="ln-bold" d="M60,160 L60,100" fill="none" marker-end="url(#w15c)"/>
+<text class="t-sm" x="52" y="132" text-anchor="end">a_t</text>
+<path class="ln-bold" d="M100,100 L100,160" fill="none" marker-end="url(#w15c)"/>
+<text class="t-sm" x="108" y="132" text-anchor="start">s_t</text>
+<rect class="box-amber" x="230" y="60" width="200" height="180" rx="10"/>
+<text class="t-bold" x="330" y="84" text-anchor="middle">Replay buffer D</text>
+<rect class="box" x="246" y="100" width="168" height="24" rx="4"/><text class="t-mono" x="330" y="112" text-anchor="middle" dominant-baseline="middle">(s, a, r, s', done)</text>
+<rect class="box" x="246" y="130" width="168" height="24" rx="4"/><text class="t-mono" x="330" y="142" text-anchor="middle" dominant-baseline="middle">(s, a, r, s', done)</text>
+<rect class="box" x="246" y="160" width="168" height="24" rx="4"/><text class="t-mono" x="330" y="172" text-anchor="middle" dominant-baseline="middle">(s, a, r, s', done)</text>
+<text class="t-sm t-muted" x="330" y="208" text-anchor="middle">FIFO, N ≈ 10⁶ transitions</text>
+<text class="t-sm t-muted" x="330" y="226" text-anchor="middle">uniform (or prioritized) sampling</text>
+<path class="ln-bold" d="M140,66 L230,66 " fill="none" marker-end="url(#w15c)"/>
+<text class="t-sm" x="185" y="56" text-anchor="middle">store</text>
+<rect class="box-purple" x="520" y="30" width="220" height="80" rx="10"/>
+<text class="t-bold" x="630" y="56" text-anchor="middle">Target net Q(·;θ⁻)</text><text class="t-sm" x="630" y="78" text-anchor="middle">y = r + γ(1−done) max Q⁻(s',a')</text><text class="t-sm t-muted" x="630" y="96" text-anchor="middle">frozen; θ⁻ ← θ every C steps</text>
+<rect class="box-red" x="520" y="160" width="220" height="80" rx="10"/>
+<text class="t-bold" x="630" y="186" text-anchor="middle">Loss and update</text><text class="t-sm" x="630" y="208" text-anchor="middle">Huber( y − Q(s,a;θ) )</text><text class="t-sm t-muted" x="630" y="226" text-anchor="middle">gradient flows to θ only</text>
+<path class="ln-bold" d="M430,100 L520,70" fill="none" marker-end="url(#w15c)"/>
+<path class="ln-bold" d="M430,170 L520,190" fill="none" marker-end="url(#w15c)"/>
+<text class="t-sm" x="470" y="124" text-anchor="middle">minibatch</text>
+<path class="ln-bold" d="M630,110 L630,160" fill="none" marker-end="url(#w15c)"/>
+<path class="ln-dash" d="M520,225 L140,225" fill="none" marker-end="url(#w15c)"/>
+<text class="t-sm" x="330" y="262" text-anchor="middle">gradient step on θ</text>
+<text class="t-sm t-muted" x="380" y="330" text-anchor="middle">The three stabilizers: random replay (decorrelation) · frozen targets (stationary regression) · Huber loss and clipping (bounded gradients)</text>
+</svg>

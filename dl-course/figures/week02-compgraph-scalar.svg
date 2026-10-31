@@ -1,0 +1,29 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w02a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w02b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-accent)"/></marker></defs>
+<text class="t-bold t-sm" x="20" y="22">One neuron with squared loss: forward values (black) and backward gradients (orange)</text>
+<rect class="box" x="20" y="50" width="70" height="38" rx="6"/><text class="t-mono" x="55" y="69" text-anchor="middle" dominant-baseline="middle">x = 1.5</text>
+<rect class="box-green" x="20" y="120" width="70" height="38" rx="6"/><text class="t-mono" x="55" y="139" text-anchor="middle" dominant-baseline="middle">w = 0.8</text>
+<rect class="box-green" x="20" y="200" width="70" height="38" rx="6"/><text class="t-mono" x="55" y="219" text-anchor="middle" dominant-baseline="middle">b = -0.3</text>
+<rect class="box" x="20" y="290" width="70" height="38" rx="6"/><text class="t-mono" x="55" y="309" text-anchor="middle" dominant-baseline="middle">t = 1</text>
+<circle class="box-blue" cx="195" cy="104" r="26"/><text class="t-mono" x="195" y="104" text-anchor="middle" dominant-baseline="middle">x*w</text>
+<circle class="box-blue" cx="315" cy="170" r="26"/><text class="t-mono" x="315" y="170" text-anchor="middle" dominant-baseline="middle">+</text>
+<circle class="box-purple" cx="435" cy="170" r="26"/><text class="t-mono" x="435" y="170" text-anchor="middle" dominant-baseline="middle">sigma</text>
+<circle class="box-amber" cx="565" cy="205" r="30"/><text class="t-mono" x="565" y="205" text-anchor="middle" dominant-baseline="middle">(a-t)^2/2</text>
+<rect class="box-red" x="672" y="186" width="68" height="38" rx="6"/><text class="t-mono" x="706" y="205" text-anchor="middle" dominant-baseline="middle">L</text>
+<g class="ln" fill="none">
+<line x1="90" y1="69" x2="172" y2="93" marker-end="url(#w02a)"/><line x1="90" y1="139" x2="172" y2="115" marker-end="url(#w02a)"/>
+<line x1="220" y1="115" x2="293" y2="159" marker-end="url(#w02a)"/><line x1="90" y1="219" x2="291" y2="177" marker-end="url(#w02a)"/>
+<line x1="341" y1="170" x2="407" y2="170" marker-end="url(#w02a)"/><line x1="461" y1="177" x2="537" y2="198" marker-end="url(#w02a)"/>
+<line x1="90" y1="309" x2="545" y2="228" marker-end="url(#w02a)"/><line x1="595" y1="205" x2="670" y2="205" marker-end="url(#w02a)"/></g>
+<g class="t-sm" text-anchor="middle">
+<text x="195" y="66">p = 1.2</text><text x="315" y="132">z = 0.9</text><text x="435" y="132">a = 0.7109</text><text x="565" y="166">0.0418</text>
+</g>
+<g class="t-accent t-sm" text-anchor="middle">
+<text x="195" y="148">dL/dp = -0.0594</text><text x="315" y="216">dL/dz = -0.0594</text><text x="435" y="216">dL/da = -0.2891</text><text x="706" y="246">dL/dL = 1</text>
+<text x="55" y="42">dL/dx = -0.0475</text><text x="55" y="178">dL/dw = -0.0891</text><text x="55" y="258">dL/db = -0.0594</text>
+</g>
+<path class="ln-accent ln-dash" fill="none" d="M700,248 C680,330 560,330 440,262" marker-end="url(#w02b)"/>
+<text class="t-sm t-muted" x="420" y="345" text-anchor="middle">backward sweep: multiply by each local derivative, sum where paths merge</text>
+<text class="t-sm t-muted" x="500" y="266">da/dz = a(1-a) = 0.2055</text>
+</svg>

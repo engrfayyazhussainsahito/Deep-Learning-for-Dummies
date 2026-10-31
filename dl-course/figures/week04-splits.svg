@@ -1,0 +1,19 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w04e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect class="box-blue" x="30" y="30" width="420" height="50"/><text class="t-bold" x="240" y="55" text-anchor="middle" dominant-baseline="middle">Train (e.g. 80%)</text>
+<rect class="box-amber" x="450" y="30" width="150" height="50"/><text class="t-bold" x="525" y="55" text-anchor="middle" dominant-baseline="middle">Validation (10%)</text>
+<rect class="box-red" x="600" y="30" width="130" height="50"/><text class="t-bold" x="665" y="55" text-anchor="middle" dominant-baseline="middle">Test (10%)</text>
+<text class="t-sm" x="240" y="105" text-anchor="middle">fit weights by gradient descent</text>
+<text class="t-sm" x="525" y="105" text-anchor="middle">tune hyperparameters, early stop,</text>
+<text class="t-sm" x="525" y="122" text-anchor="middle">choose the model</text>
+<text class="t-sm" x="665" y="105" text-anchor="middle">touch once, at the end</text>
+<line class="ln" x1="240" y1="125" x2="240" y2="175" marker-end="url(#w04e)"/>
+<rect class="box-blue" x="130" y="180" width="220" height="44"/><text class="t" x="240" y="202" text-anchor="middle" dominant-baseline="middle">train a candidate config</text>
+<line class="ln" x1="350" y1="202" x2="430" y2="202" marker-end="url(#w04e)"/>
+<rect class="box-amber" x="435" y="180" width="200" height="44"/><text class="t" x="535" y="202" text-anchor="middle" dominant-baseline="middle">score on validation</text>
+<path class="ln-dash" fill="none" d="M535,224 L535,262 L240,262 L240,228" marker-end="url(#w04e)"/>
+<text class="t-sm t-muted" x="390" y="280" text-anchor="middle">repeat over many configs (validation set slowly "leaks" into your choices)</text>
+<line class="ln-red" x1="665" y1="125" x2="665" y2="175" marker-end="url(#w04e)" style="stroke-dasharray:4 3"/>
+<rect class="box-red" x="590" y="180" width="150" height="44"/><text class="t" x="665" y="202" text-anchor="middle" dominant-baseline="middle">final number, once</text>
+<text class="t-sm t-muted" x="665" y="250" text-anchor="middle">peek twice and it is</text><text class="t-sm t-muted" x="665" y="266" text-anchor="middle">no longer a test set</text>
+</svg>

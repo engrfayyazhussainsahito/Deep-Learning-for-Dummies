@@ -1,0 +1,20 @@
+<svg viewBox="0 0 760 310" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w01i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="20" y="24">Cross-entropy = entropy + KL (bits needed per symbol)</text>
+<!-- bars -->
+<rect class="box-blue" x="40" y="60" width="300" height="42" rx="3"/>
+<text class="t" x="190" y="81" text-anchor="middle" dominant-baseline="middle">H(p): irreducible cost</text>
+<rect class="box-blue" x="40" y="130" width="300" height="42" rx="3"/>
+<rect class="box-red" x="340" y="130" width="150" height="42" rx="3"/>
+<text class="t" x="190" y="151" text-anchor="middle" dominant-baseline="middle">H(p)</text>
+<text class="t" x="415" y="151" text-anchor="middle" dominant-baseline="middle">KL(p || q)</text>
+<text class="t-sm t-muted" x="500" y="81" dominant-baseline="middle">the best any code can do for samples from p</text>
+<text class="t-sm t-muted" x="500" y="151" dominant-baseline="middle">← H(p, q): cost of using a code built for q</text>
+<line class="ln-thin" x1="40" y1="190" x2="490" y2="190" marker-end="url(#w01i)"/>
+<line class="ln-thin" x1="40" y1="190" x2="490" y2="190" marker-start="url(#w01i)"/>
+<text class="t-mono t-sm" x="265" y="208" text-anchor="middle">H(p, q) = -Σ p(x) log q(x)</text>
+<line class="ln-dash" x1="20" y1="226" x2="740" y2="226"/>
+<text class="t-bold t-sm" x="20" y="250">Consequences for training</text>
+<text class="t t-sm" x="20" y="272">1. H(p) does not depend on the model, so minimizing cross-entropy and minimizing KL(p||q) are the same problem.</text>
+<text class="t t-sm" x="20" y="292">2. KL ≥ 0 and = 0 only if p = q, so cross-entropy is never smaller than the entropy of the data.</text>
+</svg>

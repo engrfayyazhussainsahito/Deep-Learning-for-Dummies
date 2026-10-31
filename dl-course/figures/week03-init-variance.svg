@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img"><defs><marker id="mw03initvar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Signal propagation through one layer: why the variance of the weights matters</text>
+<rect x="30.0" y="70.0" width="170.0" height="90.0" rx="8" class="box-blue" />
+<text x="115.0" y="95.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >input x</text>
+<text x="115.0" y="118.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >n_in components</text>
+<text x="115.0" y="138.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >Var(xⱼ) = q</text>
+<rect x="300.0" y="70.0" width="170.0" height="90.0" rx="8" class="box-amber" />
+<text x="385.0" y="95.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >pre-activation z</text>
+<text x="385.0" y="118.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >zᵢ = Σⱼ Wᵢⱼ xⱼ</text>
+<text x="385.0" y="138.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >Var(zᵢ) = n_in·σ²_W·q</text>
+<rect x="570.0" y="70.0" width="160.0" height="90.0" rx="8" class="box-green" />
+<text x="650.0" y="95.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >activation a</text>
+<text x="650.0" y="118.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >a = φ(z)</text>
+<text x="650.0" y="138.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >Var(a) = c_φ·Var(z)</text>
+<line x1="200.0" y1="115.0" x2="300.0" y2="115.0" class="ln" marker-end="url(#mw03initvar)" />
+<text x="250.0" y="100.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >W: Var = σ²_W</text>
+<line x1="470.0" y1="115.0" x2="570.0" y2="115.0" class="ln" marker-end="url(#mw03initvar)" />
+<rect x="30.0" y="200.0" width="700.0" height="130.0" rx="8" class="box" />
+<text x="380.0" y="220.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Require Var(a) = Var(x) at every layer:</text>
+<text x="380.0" y="248.0" class="t t-mono" text-anchor="middle" dominant-baseline="middle" >forward:  n_in · σ²_W · c_φ = 1</text>
+<text x="380.0" y="272.0" class="t t-mono" text-anchor="middle" dominant-baseline="middle" >backward: n_out · σ²_W · c_φ = 1</text>
+<text x="380.0" y="300.0" class="t-sm" text-anchor="middle" dominant-baseline="middle" >linear/tanh (c_φ ≈ 1): σ² = 2/(n_in + n_out)   |   ReLU (c_φ = ½): σ² = 2/n_in</text>
+</svg>

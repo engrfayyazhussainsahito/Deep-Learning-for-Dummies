@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340"><defs><marker id="v4a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">SimCLR: two augmentations, shared encoder, contrast in projection space</text>
+<rect x="20" y="130" width="80" height="70" rx="6" class="box-blue"/>
+<text x="60.0" y="165.0" class="t" text-anchor="middle" dominant-baseline="middle">image x</text>
+<rect x="150" y="60" width="90" height="40" rx="6" class="box-amber"/>
+<text x="195.0" y="72.0" class="t" text-anchor="middle" dominant-baseline="middle">view x_i</text>
+<text x="195.0" y="89.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">aug t ~ T</text>
+<rect x="150" y="230" width="90" height="40" rx="6" class="box-amber"/>
+<text x="195.0" y="242.0" class="t" text-anchor="middle" dominant-baseline="middle">view x_j</text>
+<text x="195.0" y="259.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">aug t' ~ T</text>
+<line x1="100" y1="150" x2="150" y2="85" class="ln" marker-end="url(#v4a)"/>
+<line x1="100" y1="180" x2="150" y2="250" class="ln" marker-end="url(#v4a)"/>
+<rect x="280" y="60" width="80" height="40" rx="6" class="box-green"/>
+<text x="320.0" y="72.0" class="t" text-anchor="middle" dominant-baseline="middle">f(.)</text>
+<text x="320.0" y="89.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">ResNet</text>
+<rect x="280" y="230" width="80" height="40" rx="6" class="box-green"/>
+<text x="320.0" y="242.0" class="t" text-anchor="middle" dominant-baseline="middle">f(.)</text>
+<text x="320.0" y="259.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">shared</text>
+<line x1="240" y1="80" x2="280" y2="80" class="ln" marker-end="url(#v4a)"/>
+<line x1="240" y1="250" x2="280" y2="250" class="ln" marker-end="url(#v4a)"/>
+<rect x="400" y="60" width="80" height="40" rx="6" class="box-purple"/>
+<text x="440.0" y="72.0" class="t" text-anchor="middle" dominant-baseline="middle">g(.)</text>
+<text x="440.0" y="89.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">MLP head</text>
+<rect x="400" y="230" width="80" height="40" rx="6" class="box-purple"/>
+<text x="440.0" y="242.0" class="t" text-anchor="middle" dominant-baseline="middle">g(.)</text>
+<text x="440.0" y="259.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">shared</text>
+<line x1="360" y1="80" x2="400" y2="80" class="ln" marker-end="url(#v4a)"/>
+<line x1="360" y1="250" x2="400" y2="250" class="ln" marker-end="url(#v4a)"/>
+<text x="320" y="115" class="t-sm" text-anchor="middle" dominant-baseline="middle">h_i</text>
+<text x="320" y="285" class="t-sm" text-anchor="middle" dominant-baseline="middle">h_j</text>
+<rect x="520" y="60" width="60" height="40" rx="6" class="box-red"/>
+<text x="550.0" y="80.0" class="t" text-anchor="middle" dominant-baseline="middle">z_i</text>
+<rect x="520" y="230" width="60" height="40" rx="6" class="box-red"/>
+<text x="550.0" y="250.0" class="t" text-anchor="middle" dominant-baseline="middle">z_j</text>
+<line x1="480" y1="80" x2="520" y2="80" class="ln" marker-end="url(#v4a)"/>
+<line x1="480" y1="250" x2="520" y2="250" class="ln" marker-end="url(#v4a)"/>
+<line x1="550" y1="100" x2="550" y2="230" class="ln-accent" marker-end="url(#v4a)"/>
+<line x1="550" y1="230" x2="550" y2="100" class="ln-accent" marker-end="url(#v4a)"/>
+<text x="640" y="165" class="t-accent" text-anchor="middle" dominant-baseline="middle">pull together</text>
+<text x="640" y="183" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">(positive pair)</text>
+<text x="640" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">push away from the other</text>
+<text x="640" y="233" class="t-sm" text-anchor="middle" dominant-baseline="middle">2(N-1) = 2N-2 views</text>
+<text x="380" y="312" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">After pretraining, discard g and keep h = f(x) for downstream use.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330"><defs><marker id="v5a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">BYOL / DINO: student predicts a slowly moving teacher (no negatives)</text>
+<rect x="20" y="125" width="70" height="60" rx="6" class="box-blue"/>
+<text x="55.0" y="155.0" class="t" text-anchor="middle" dominant-baseline="middle">image</text>
+<rect x="130" y="50" width="90" height="44" rx="6" class="box-amber"/>
+<text x="175.0" y="72.0" class="t" text-anchor="middle" dominant-baseline="middle">view 1</text>
+<rect x="130" y="216" width="90" height="44" rx="6" class="box-amber"/>
+<text x="175.0" y="238.0" class="t" text-anchor="middle" dominant-baseline="middle">view 2 </text>
+<line x1="90" y1="145" x2="130" y2="75" class="ln" marker-end="url(#v5a)"/>
+<line x1="90" y1="165" x2="130" y2="240" class="ln" marker-end="url(#v5a)"/>
+<rect x="270" y="40" width="150" height="70" rx="6" class="box-accent"/>
+<text x="345.0" y="67.0" class="t" text-anchor="middle" dominant-baseline="middle">Student</text>
+<text x="345.0" y="84.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">encoder + projector</text>
+<rect x="270" y="206" width="150" height="70" rx="6" class="box-green"/>
+<text x="345.0" y="233.0" class="t" text-anchor="middle" dominant-baseline="middle">Teacher</text>
+<text x="345.0" y="250.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">encoder + projector</text>
+<line x1="220" y1="72" x2="270" y2="72" class="ln" marker-end="url(#v5a)"/>
+<line x1="220" y1="238" x2="270" y2="238" class="ln" marker-end="url(#v5a)"/>
+<rect x="470" y="50" width="70" height="50" rx="6" class="box-purple"/>
+<text x="505.0" y="67.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">predictor</text>
+<text x="505.0" y="84.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">(BYOL)</text>
+<line x1="420" y1="75" x2="470" y2="75" class="ln" marker-end="url(#v5a)"/>
+<rect x="470" y="216" width="70" height="50" rx="6" class="box-red"/>
+<text x="505.0" y="233.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">center</text>
+<text x="505.0" y="250.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">+ sharpen</text>
+<line x1="420" y1="241" x2="470" y2="241" class="ln" marker-end="url(#v5a)"/>
+<rect x="590" y="125" width="90" height="60" rx="6" class="box-teal"/>
+<text x="635.0" y="147.0" class="t" text-anchor="middle" dominant-baseline="middle">loss</text>
+<text x="635.0" y="164.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">cosine / CE</text>
+<line x1="540" y1="75" x2="600" y2="125" class="ln" marker-end="url(#v5a)"/>
+<line x1="540" y1="241" x2="600" y2="185" class="ln" marker-end="url(#v5a)"/>
+<text x="640" y="222" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">stop-gradient</text>
+<path d="M345,110 C345,150 345,170 345,206" class="ln-dash" fill="none" marker-end="url(#v5a)"/>
+<text x="505" y="160" class="t-sm" text-anchor="middle" dominant-baseline="middle">EMA: theta_t &lt;- m theta_t + (1-m) theta_s</text>
+<text x="380" y="310" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Collapse is avoided by asymmetry: predictor (BYOL), centering + sharpening (DINO), EMA teacher, stop-grad.</text>
+</svg>

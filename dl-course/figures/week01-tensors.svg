@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<!-- scalar -->
+<text class="t-bold t-sm" x="45" y="24" text-anchor="middle">rank 0</text>
+<rect class="box-blue" x="30" y="50" width="30" height="30" rx="3"/>
+<text class="t-mono t-sm" x="45" y="105" text-anchor="middle">()</text>
+<text class="t-sm t-muted" x="45" y="125" text-anchor="middle">loss, lr</text>
+<!-- vector -->
+<text class="t-bold t-sm" x="150" y="24" text-anchor="middle">rank 1</text>
+<g><rect class="box-green" x="105" y="50" width="30" height="30"/><rect class="box-green" x="135" y="50" width="30" height="30"/><rect class="box-green" x="165" y="50" width="30" height="30"/><rect class="box-green" x="195" y="50" width="30" height="30"/></g>
+<text class="t-mono t-sm" x="165" y="105" text-anchor="middle">(4,)</text>
+<text class="t-sm t-muted" x="165" y="125" text-anchor="middle">bias, one embedding</text>
+<!-- matrix -->
+<text class="t-bold t-sm" x="335" y="24" text-anchor="middle">rank 2</text>
+<g class="box-purple">
+<rect x="270" y="40" width="30" height="30"/><rect x="300" y="40" width="30" height="30"/><rect x="330" y="40" width="30" height="30"/><rect x="360" y="40" width="30" height="30"/>
+<rect x="270" y="70" width="30" height="30"/><rect x="300" y="70" width="30" height="30"/><rect x="330" y="70" width="30" height="30"/><rect x="360" y="70" width="30" height="30"/>
+<rect x="270" y="100" width="30" height="30"/><rect x="300" y="100" width="30" height="30"/><rect x="330" y="100" width="30" height="30"/><rect x="360" y="100" width="30" height="30"/></g>
+<text class="t-mono t-sm" x="330" y="153" text-anchor="middle">(3, 4)</text>
+<text class="t-sm t-muted" x="330" y="173" text-anchor="middle">weights, batch of vectors</text>
+<!-- rank 3 -->
+<text class="t-bold t-sm" x="545" y="24" text-anchor="middle">rank 3</text>
+<g class="box-amber">
+<rect x="500" y="62" width="70" height="52"/><rect x="510" y="52" width="70" height="52"/><rect x="520" y="42" width="70" height="52"/></g>
+<line class="ln-thin" x1="500" y1="114" x2="520" y2="94"/><line class="ln-thin" x1="570" y1="114" x2="590" y2="94"/><line class="ln-thin" x1="570" y1="62" x2="590" y2="42"/>
+<text class="t-mono t-sm" x="545" y="153" text-anchor="middle">(B, T, D)</text>
+<text class="t-sm t-muted" x="545" y="173" text-anchor="middle">batch of sequences</text>
+<!-- rank 4 -->
+<text class="t-bold t-sm" x="690" y="24" text-anchor="middle">rank 4</text>
+<g class="box-red"><rect x="650" y="66" width="46" height="40"/><rect x="658" y="58" width="46" height="40"/><rect x="666" y="50" width="46" height="40"/></g>
+<g class="box-red"><rect x="716" y="66" width="10" height="40" style="opacity:.0"/></g>
+<text class="t-mono t-sm" x="690" y="153" text-anchor="middle">(B, C, H, W)</text>
+<text class="t-sm t-muted" x="690" y="173" text-anchor="middle">batch of images</text>
+<line class="ln-dash" x1="20" y1="195" x2="740" y2="195"/>
+<text class="t-bold" x="20" y="222">Axis conventions in PyTorch</text>
+<rect class="box" x="20" y="238" width="720" height="78" rx="6"/>
+<text class="t t-mono" x="36" y="262">images:     (batch, channels, height, width)   -- "NCHW"</text>
+<text class="t t-mono" x="36" y="284">sequences:  (batch, time, features)            -- batch_first=True style</text>
+<text class="t t-mono" x="36" y="306">tabular:    (batch, features)                  -- the axis 0 is always "which example"</text>
+</svg>

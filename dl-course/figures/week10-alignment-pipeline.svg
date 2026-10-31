@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400"><defs><marker id="w10d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<rect x="20" y="40" width="170" height="200" rx="8" class="box-blue"/>
+<text x="105" y="62" class="t-bold" text-anchor="middle" dominant-baseline="middle">1. Supervised fine-tuning</text>
+<text x="105" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">demonstrations</text>
+<text x="105" y="126" class="t-sm" text-anchor="middle" dominant-baseline="middle">(prompt, ideal answer)</text>
+<text x="105" y="152" class="t-sm" text-anchor="middle" dominant-baseline="middle">cross-entropy on</text>
+<text x="105" y="178" class="t-sm" text-anchor="middle" dominant-baseline="middle">answer tokens</text>
+<text x="105" y="204" class="t-sm" text-anchor="middle" dominant-baseline="middle">-> pi_SFT</text>
+<rect x="200" y="40" width="170" height="200" rx="8" class="box-purple"/>
+<text x="285" y="62" class="t-bold" text-anchor="middle" dominant-baseline="middle">2. Reward model</text>
+<text x="285" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">comparisons</text>
+<text x="285" y="126" class="t-sm" text-anchor="middle" dominant-baseline="middle">(x, y_w preferred, y_l)</text>
+<text x="285" y="152" class="t-sm" text-anchor="middle" dominant-baseline="middle">Bradley-Terry loss</text>
+<text x="285" y="178" class="t-sm" text-anchor="middle" dominant-baseline="middle">-> r_phi(x, y)</text>
+<rect x="380" y="40" width="170" height="200" rx="8" class="box-green"/>
+<text x="465" y="62" class="t-bold" text-anchor="middle" dominant-baseline="middle">3a. RLHF (PPO)</text>
+<text x="465" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">sample y ~ pi_theta</text>
+<text x="465" y="126" class="t-sm" text-anchor="middle" dominant-baseline="middle">maximize r_phi(x,y)</text>
+<text x="465" y="152" class="t-sm" text-anchor="middle" dominant-baseline="middle">- beta KL(pi_theta || pi_ref)</text>
+<text x="465" y="178" class="t-sm" text-anchor="middle" dominant-baseline="middle">-> aligned policy</text>
+<rect x="560" y="40" width="170" height="200" rx="8" class="box-amber"/>
+<text x="645" y="62" class="t-bold" text-anchor="middle" dominant-baseline="middle">3b. DPO (no RL, no reward model)</text>
+<text x="645" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">same comparisons</text>
+<text x="645" y="126" class="t-sm" text-anchor="middle" dominant-baseline="middle">classification-style loss</text>
+<text x="645" y="152" class="t-sm" text-anchor="middle" dominant-baseline="middle">on log-ratios vs pi_ref</text>
+<text x="645" y="178" class="t-sm" text-anchor="middle" dominant-baseline="middle">-> aligned policy</text>
+<text x="380" y="22" class="t-bold" text-anchor="middle" dominant-baseline="middle">Post-training pipeline for chat models</text>
+<line x1="190" y1="140" x2="198" y2="140" class="ln" marker-end="url(#w10d)"/>
+<line x1="370" y1="140" x2="378" y2="140" class="ln" marker-end="url(#w10d)"/>
+<rect x="20" y="270" width="710" height="110" rx="8" class="box"/>
+<text x="375" y="292" class="t-bold" text-anchor="middle" dominant-baseline="middle">Where the data comes from</text>
+<text x="375" y="318" class="t-sm" text-anchor="middle" dominant-baseline="middle">Stage 1: human-written or curated demonstrations.  Stage 2/3b: humans (or models) rank two or more sampled answers per prompt.</text>
+<text x="375" y="342" class="t-sm" text-anchor="middle" dominant-baseline="middle">The reference policy pi_ref is the SFT model; the KL term (PPO) or log-ratio (DPO) keeps the policy near it.</text>
+<text x="375" y="366" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Stage 3a and 3b are alternatives to each other; both start from the SFT checkpoint.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380"><defs><marker id="a10b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="360" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">LoRA: freeze W, learn a low-rank update  W + (alpha/r) B A</text>
+<rect x="40" y="150" width="70" height="50" rx="6" class="box-accent"/>
+<text x="75.0" y="175.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">x</text>
+<text x="75" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">d_in</text>
+<line x1="110" y1="175" x2="180" y2="175" class="ln" marker-end="url(#a10b)"/>
+<rect x="180" y="100" width="170" height="150" rx="6" class="box"/>
+<text x="265.0" y="167.5" class="t" text-anchor="middle" dominant-baseline="middle">W  (d_out x d_in)</text>
+<text x="265.0" y="182.5" class="t" text-anchor="middle" dominant-baseline="middle">frozen, pretrained</text>
+<text x="265" y="265" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">no gradient</text>
+<line x1="110" y1="175" x2="150" y2="175" class="ln"/>
+<path d="M130,175 L130,60 L180,60" class="ln" fill="none" marker-end="url(#a10b)"/>
+<rect x="180" y="34" width="70" height="52" rx="6" class="box-purple"/>
+<text x="215.0" y="52.5" class="t" text-anchor="middle" dominant-baseline="middle">A</text>
+<text x="215.0" y="67.5" class="t" text-anchor="middle" dominant-baseline="middle">r x d_in</text>
+<text x="215" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">init: Gaussian</text>
+<line x1="250" y1="60" x2="290" y2="60" class="ln" marker-end="url(#a10b)"/>
+<rect x="290" y="34" width="70" height="52" rx="6" class="box-purple"/>
+<text x="325.0" y="52.5" class="t" text-anchor="middle" dominant-baseline="middle">B</text>
+<text x="325.0" y="67.5" class="t" text-anchor="middle" dominant-baseline="middle">d_out x r</text>
+<text x="325" y="100" class="t-sm" text-anchor="middle" dominant-baseline="middle">init: zero</text>
+<path d="M360,60 L420,60 L420,150" class="ln-purple" fill="none" marker-end="url(#a10b)"/>
+<text x="480" y="60" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">scaled by alpha / r</text>
+<path d="M350,175 L420,175" class="ln" fill="none"/>
+<circle cx="420" cy="175" r="14" class="box"/>
+<text x="420" y="175" class="t-bold" text-anchor="middle" dominant-baseline="middle">+</text>
+<line x1="434" y1="175" x2="500" y2="175" class="ln" marker-end="url(#a10b)"/>
+<rect x="500" y="150" width="70" height="50" rx="6" class="box-green"/>
+<text x="535.0" y="175.0" class="t-mono" text-anchor="middle" dominant-baseline="middle">h</text>
+<text x="535" y="215" class="t-sm" text-anchor="middle" dominant-baseline="middle">d_out</text>
+<text x="360" y="320" class="t" text-anchor="middle" dominant-baseline="middle">Trainable parameters: r (d_in + d_out)   vs   d_in d_out for full fine-tuning.</text>
+<text x="360" y="345" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Because B = 0 at the start, the adapted model begins exactly equal to the pretrained one.</text>
+</svg>

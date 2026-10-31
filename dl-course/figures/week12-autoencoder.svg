@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300"><defs><marker id="u2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="16" class="t-bold" text-anchor="middle" dominant-baseline="middle">Autoencoder: squeeze through a bottleneck, reconstruct</text>
+<rect x="40" y="64.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="86.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="108.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="130.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="152.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="174.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="196.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="40" y="218.0" width="30" height="18" rx="3" class="box-blue"/>
+<rect x="150" y="97.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="150" y="119.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="150" y="141.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="150" y="163.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="150" y="185.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="260" y="113.0" width="30" height="22" rx="3" class="box-red"/>
+<rect x="260" y="139.0" width="30" height="22" rx="3" class="box-red"/>
+<rect x="260" y="165.0" width="30" height="22" rx="3" class="box-red"/>
+<rect x="370" y="97.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="370" y="119.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="370" y="141.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="370" y="163.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="370" y="185.0" width="30" height="18" rx="3" class="box-purple"/>
+<rect x="480" y="64.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="86.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="108.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="130.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="152.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="174.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="196.0" width="30" height="18" rx="3" class="box-green"/>
+<rect x="480" y="218.0" width="30" height="18" rx="3" class="box-green"/>
+<line x1="70" y1="150" x2="150" y2="150" class="ln" marker-end="url(#u2a)"/>
+<line x1="180" y1="150" x2="260" y2="150" class="ln" marker-end="url(#u2a)"/>
+<line x1="290" y1="150" x2="370" y2="150" class="ln" marker-end="url(#u2a)"/>
+<line x1="400" y1="150" x2="480" y2="150" class="ln" marker-end="url(#u2a)"/>
+<text x="55" y="230" class="t-bold" text-anchor="middle" dominant-baseline="middle">x</text>
+<text x="165" y="230" class="t-sm" text-anchor="middle" dominant-baseline="middle">hidden</text>
+<text x="275" y="230" class="t-bold" text-anchor="middle" dominant-baseline="middle">z</text>
+<text x="385" y="230" class="t-sm" text-anchor="middle" dominant-baseline="middle">hidden</text>
+<text x="495" y="230" class="t-bold" text-anchor="middle" dominant-baseline="middle">x_hat</text>
+<text x="105" y="262" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">encoder</text>
+<text x="435" y="262" class="t-sm t-accent" text-anchor="middle" dominant-baseline="middle">decoder</text>
+<text x="275" y="262" class="t-sm" text-anchor="middle" dominant-baseline="middle">bottleneck k &lt; d</text>
+<text x="640" y="120" class="t-bold" text-anchor="middle" dominant-baseline="middle">loss</text>
+<text x="640" y="142" class="t-sm" text-anchor="middle" dominant-baseline="middle">|| x - x_hat ||^2</text>
+<text x="640" y="164" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">or cross-entropy</text>
+</svg>

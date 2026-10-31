@@ -1,0 +1,40 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="360" y="24" text-anchor="middle">A threat model has four parts</text>
+<rect class="box-blue" x="20" y="44" width="165" height="120" rx="8"/>
+<text class="t-bold" x="102" y="64" text-anchor="middle">1. Goal</text>
+<text class="t-sm" x="102" y="88" text-anchor="middle">untargeted: any error</text>
+<text class="t-sm" x="102" y="108" text-anchor="middle">targeted: class t</text>
+<text class="t-sm" x="102" y="128" text-anchor="middle">confidence / evasion</text>
+<text class="t-sm" x="102" y="148" text-anchor="middle">jailbreak, backdoor</text>
+<rect class="box-green" x="195" y="44" width="165" height="120" rx="8"/>
+<text class="t-bold" x="277" y="64" text-anchor="middle">2. Capability</text>
+<text class="t-sm" x="277" y="88" text-anchor="middle">L-inf, L2, L1, L0 balls</text>
+<text class="t-sm" x="277" y="108" text-anchor="middle">patches, rotations</text>
+<text class="t-sm" x="277" y="128" text-anchor="middle">paraphrase, token edits</text>
+<text class="t-sm" x="277" y="148" text-anchor="middle">budget eps, query limit</text>
+<rect class="box-purple" x="370" y="44" width="165" height="120" rx="8"/>
+<text class="t-bold" x="452" y="64" text-anchor="middle">3. Knowledge</text>
+<text class="t-sm" x="452" y="88" text-anchor="middle">white-box: weights, grads</text>
+<text class="t-sm" x="452" y="108" text-anchor="middle">score-based: probabilities</text>
+<text class="t-sm" x="452" y="128" text-anchor="middle">label-only queries</text>
+<text class="t-sm" x="452" y="148" text-anchor="middle">transfer: surrogate model</text>
+<rect class="box-amber" x="545" y="44" width="155" height="120" rx="8"/>
+<text class="t-bold" x="622" y="64" text-anchor="middle">4. Setting</text>
+<text class="t-sm" x="622" y="88" text-anchor="middle">digital vs physical</text>
+<text class="t-sm" x="622" y="108" text-anchor="middle">test time (evasion)</text>
+<text class="t-sm" x="622" y="128" text-anchor="middle">train time (poisoning)</text>
+<text class="t-sm" x="622" y="148" text-anchor="middle">adaptive attacker?</text>
+<text class="t-bold" x="20" y="196">Same radius, different sets</text>
+<rect class="box-blue" x="60" y="215" width="90" height="90"/>
+<circle class="box-red" cx="105" cy="260" r="45" style="fill-opacity:.15"/>
+<circle class="fill-ink" cx="105" cy="260" r="3"/>
+<text class="t-sm" x="105" y="322" text-anchor="middle">L-inf box (corners) vs L2 ball</text>
+<line class="ln" x1="105" y1="260" x2="150" y2="215" marker-end="url(#w17a)"/>
+<text class="t-sm" x="170" y="226">corner is sqrt(d) times</text>
+<text class="t-sm" x="170" y="244">longer in L2 than eps</text>
+<text class="t-sm t-muted" x="330" y="236">Defense claims must state all four.</text>
+<text class="t-sm t-muted" x="330" y="258">"Robust" without a threat model</text>
+<text class="t-sm t-muted" x="330" y="280">means nothing: a model robust to</text>
+<text class="t-sm t-muted" x="330" y="302">L-inf 8/255 may fail under L2, rotations or a patch.</text>
+</svg>

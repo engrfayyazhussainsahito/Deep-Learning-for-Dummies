@@ -1,0 +1,20 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w02e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold t-sm" x="20" y="22">Why a wide ReLU layer can fit any 1D curve: hinges add slope changes</text>
+<!-- left: hinge functions -->
+<line class="ln" x1="30" y1="230" x2="350" y2="230"/><line class="ln" x1="40" y1="60" x2="40" y2="240"/>
+<path class="ln-blue" fill="none" d="M40,230 L120,230 L250,150"/>
+<path class="ln-green" fill="none" d="M40,230 L190,230 L330,90"/>
+<text class="t-sm" x="85" y="250">kink 1</text><text class="t-sm" x="165" y="250">kink 2</text>
+<text class="t-sm" x="262" y="148" style="fill:var(--c-blue)">relu(x - k1)</text><text class="t-sm" x="248" y="92" style="fill:var(--c-green)">relu(x - k2)</text>
+<text class="t-sm t-muted" x="20" y="290">Each hidden unit relu(w x + b) is a hinge: flat, then a ramp from its kink.</text>
+<text class="t-sm t-muted" x="20" y="308">Output weight c_i scales the ramp, so it changes the slope by c_i w_i at the kink.</text>
+<!-- right: target and piecewise-linear fit -->
+<line class="ln" x1="420" y1="230" x2="740" y2="230"/><line class="ln" x1="430" y1="60" x2="430" y2="240"/>
+<path class="ln-dash" fill="none" d="M430,200 C470,60 520,60 560,150 C600,235 640,235 680,140 C700,100 720,90 735,95"/>
+<path class="ln-accent" fill="none" d="M430,205 L470,130 L500,100 L540,110 L565,155 L600,205 L640,215 L670,170 L700,115 L735,98"/>
+<g class="fill-ink"><circle cx="470" cy="130" r="3.5"/><circle cx="500" cy="100" r="3.5"/><circle cx="540" cy="110" r="3.5"/><circle cx="565" cy="155" r="3.5"/><circle cx="600" cy="205" r="3.5"/><circle cx="640" cy="215" r="3.5"/><circle cx="670" cy="170" r="3.5"/><circle cx="700" cy="115" r="3.5"/></g>
+<text class="t-sm" x="580" y="52" text-anchor="middle">N hinges = N+1 linear pieces</text>
+<text class="t-sm t-muted" x="420" y="290">Dashed: target f(x). Solid: sum of hinges (kinks as dots).</text>
+<text class="t-sm t-muted" x="420" y="308">More hinges, smaller error: about 1/N^2 for smooth f.</text>
+</svg>

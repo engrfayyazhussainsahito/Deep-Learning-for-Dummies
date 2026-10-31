@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img"><defs><marker id="w7d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">LSTM cell: the cell state c is a conveyor belt edited by gates</text>
+<line x1="40" y1="70" x2="720" y2="70" class="ln-bold" marker-end="url(#w7d)"/>
+<text x="30" y="52" class="t-mono" text-anchor="start" dominant-baseline="middle">c_{t-1}</text>
+<text x="730" y="52" class="t-mono" text-anchor="end" dominant-baseline="middle">c_t</text>
+<circle cx="170" cy="70" r="15" class="box-red"/>
+<text x="170" y="70" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<circle cx="330" cy="70" r="15" class="box-green"/>
+<text x="330" y="70" class="t-sm" text-anchor="middle" dominant-baseline="middle">+</text>
+<circle cx="330" cy="170" r="15" class="box-red"/>
+<text x="330" y="170" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<path d="M600,70 L600,110 " class="ln" fill="none"/>
+<rect x="570" y="112" width="60" height="28" rx="6" class="box-purple"/>
+<text x="600.0" y="126.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh</text>
+<path d="M600,70 L600,111" class="ln" fill="none" marker-end="url(#w7d)"/>
+<line x1="600" y1="140" x2="600" y2="185" class="ln"/>
+<line x1="575" y1="200" x2="640" y2="200" class="ln"/>
+<circle cx="600" cy="200" r="15" class="box-red"/>
+<text x="600" y="200" class="t-sm" text-anchor="middle" dominant-baseline="middle">x</text>
+<line x1="600" y1="140" x2="600" y2="183" class="ln" marker-end="url(#w7d)"/>
+<line x1="615" y1="200" x2="690" y2="200" class="ln" marker-end="url(#w7d)"/>
+<text x="715" y="200" class="t-mono" text-anchor="middle" dominant-baseline="middle">h_t</text>
+<line x1="40" y1="360" x2="640" y2="360" class="ln"/>
+<text x="30" y="376" class="t-mono" text-anchor="start" dominant-baseline="middle">h_{t-1}, x_t</text>
+<rect x="110" y="280" width="60" height="36" rx="6" class="box-blue"/>
+<text x="140.0" y="298.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sigma</text>
+<line x1="140" y1="360" x2="140" y2="318" class="ln" marker-end="url(#w7d)"/>
+<text x="176" y="298" class="t-mono" text-anchor="start" dominant-baseline="middle">f_t</text>
+<rect x="215" y="280" width="60" height="36" rx="6" class="box-green"/>
+<text x="245.0" y="298.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sigma</text>
+<line x1="245" y1="360" x2="245" y2="318" class="ln" marker-end="url(#w7d)"/>
+<text x="281" y="298" class="t-mono" text-anchor="start" dominant-baseline="middle">i_t</text>
+<rect x="320" y="280" width="60" height="36" rx="6" class="box-purple"/>
+<text x="350.0" y="298.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">tanh</text>
+<line x1="350" y1="360" x2="350" y2="318" class="ln" marker-end="url(#w7d)"/>
+<text x="386" y="298" class="t-mono" text-anchor="start" dominant-baseline="middle">g_t</text>
+<rect x="440" y="280" width="60" height="36" rx="6" class="box-amber"/>
+<text x="470.0" y="298.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">sigma</text>
+<line x1="470" y1="360" x2="470" y2="318" class="ln" marker-end="url(#w7d)"/>
+<text x="506" y="298" class="t-mono" text-anchor="start" dominant-baseline="middle">o_t</text>
+<path d="M140,278 L140,230 L170,230 L170,87" class="ln" fill="none" marker-end="url(#w7d)"/>
+<path d="M245,278 L245,170 L313,170" class="ln" fill="none" marker-end="url(#w7d)"/>
+<path d="M350,278 L350,230 L330,230 L330,187" class="ln" fill="none" marker-end="url(#w7d)"/>
+<line x1="330" y1="155" x2="330" y2="87" class="ln" marker-end="url(#w7d)"/>
+<path d="M470,278 L470,230 L600,230 L600,217" class="ln" fill="none" marker-end="url(#w7d)"/>
+<text x="100" y="100" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">forget old</text>
+<text x="420" y="130" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">write new</text>
+<text x="535" y="222" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">read out</text>
+<text x="380" y="404" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">f,i,o = sigmoid(W[h_{t-1},x_t]+b),  g = tanh(...),  c_t = f*c_{t-1} + i*g,  h_t = o*tanh(c_t)</text>
+</svg>

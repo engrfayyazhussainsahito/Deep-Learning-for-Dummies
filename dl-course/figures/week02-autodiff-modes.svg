@@ -1,0 +1,22 @@
+<svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg">
+<text class="t-bold t-sm" x="20" y="22">The Jacobian J of f: R^n -> R^m, and what each AD mode extracts from it</text>
+<rect class="box" x="40" y="70" width="150" height="120" rx="4"/><text class="t" x="115" y="130" text-anchor="middle" dominant-baseline="middle">J (m x n)</text>
+<rect class="box-blue" x="75" y="70" width="30" height="120" rx="2"/>
+<text class="t-sm" x="115" y="212" text-anchor="middle">Forward mode: one column per pass</text>
+<text class="t-sm t-mono" x="115" y="232" text-anchor="middle">J v  (JVP)</text>
+<text class="t-sm t-muted" x="115" y="252" text-anchor="middle">cost ~ n passes for full J</text>
+<text class="t-sm t-muted" x="115" y="270" text-anchor="middle">best when n is small</text>
+<rect class="box" x="300" y="70" width="150" height="120" rx="4"/><text class="t" x="375" y="130" text-anchor="middle" dominant-baseline="middle">J (m x n)</text>
+<rect class="box-accent" x="300" y="100" width="150" height="26" rx="2"/>
+<text class="t-sm" x="375" y="212" text-anchor="middle">Reverse mode: one row per pass</text>
+<text class="t-sm t-mono" x="375" y="232" text-anchor="middle">v^T J  (VJP)</text>
+<text class="t-sm t-muted" x="375" y="252" text-anchor="middle">cost ~ m passes for full J</text>
+<text class="t-sm t-muted" x="375" y="270" text-anchor="middle">best when m is small</text>
+<rect class="box-green" x="560" y="70" width="170" height="50" rx="6"/><text class="t" x="645" y="90" text-anchor="middle" dominant-baseline="middle">Training a network</text><text class="t-sm" x="645" y="108" text-anchor="middle">n = millions, m = 1</text>
+<text class="t-sm" x="645" y="150" text-anchor="middle">1 reverse pass = whole gradient</text>
+<text class="t-sm" x="645" y="172" text-anchor="middle">(forward mode: n passes)</text>
+<text class="t-sm t-muted" x="645" y="212" text-anchor="middle">Price of reverse mode:</text>
+<text class="t-sm t-muted" x="645" y="232" text-anchor="middle">store intermediate values</text>
+<text class="t-sm t-muted" x="645" y="252" text-anchor="middle">(memory ~ depth)</text>
+<text class="t-sm t-muted" x="20" y="320">Both modes cost a small constant factor (about 2 to 4x) over evaluating f once, per pass.</text>
+</svg>

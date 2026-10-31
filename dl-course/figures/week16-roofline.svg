@@ -1,0 +1,20 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w16b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<path class="ln" d="M70,300 L70,30" fill="none" marker-end="url(#w16b)"/>
+<path class="ln" d="M70,300 L690,300" fill="none" marker-end="url(#w16b)"/>
+<text class="t" x="380" y="335" text-anchor="middle">arithmetic intensity I (FLOP per byte moved), log scale</text>
+<text class="t" x="20" y="165" text-anchor="middle" transform="rotate(-90 20 165)">attainable FLOP/s, log scale</text>
+<path class="ln-accent" d="M70,285 L400,70 L670,70" fill="none" style="stroke-width:3"/>
+<text class="t-sm t-accent" x="200" y="190" transform="rotate(-33 200 190)" text-anchor="middle">slope = memory bandwidth B</text>
+<text class="t-sm t-accent" x="560" y="58" text-anchor="middle">compute roof P_peak</text>
+<path class="ln-dash" d="M400,70 L400,300" fill="none"/>
+<text class="t-sm" x="400" y="316" text-anchor="middle">ridge I* = P_peak / B</text>
+<circle class="fill-red" cx="180" cy="213" r="6"/>
+<text class="t-sm" x="190" y="232">elementwise op, softmax, LayerNorm</text>
+<circle class="fill-amber" cx="300" cy="140" r="6"/>
+<text class="t-sm" x="312" y="152">small-batch decode</text>
+<circle class="fill-green" cx="560" cy="70" r="6"/>
+<text class="t-sm" x="560" y="92" text-anchor="middle">large matmul, conv</text>
+<text class="t-bold" x="130" y="60" text-anchor="middle">memory-bound</text>
+<text class="t-bold" x="560" y="130" text-anchor="middle">compute-bound</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 740 330" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w18c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-lg t-bold" x="370" y="22" text-anchor="middle">Anatomy of a results slide</text>
+<rect class="box" x="20" y="38" width="440" height="270" rx="8"/>
+<text class="t-bold" x="40" y="66">Fine-tuning recipe B beats A by 1.4 points on CIFAR-100</text>
+<rect class="box-blue" x="40" y="82" width="260" height="170" rx="4"/>
+<line class="ln" x1="60" y1="235" x2="290" y2="235"/><line class="ln" x1="60" y1="100" x2="60" y2="235"/>
+<circle class="fill-accent" cx="110" cy="150" r="4"/><circle class="fill-accent" cx="120" cy="142" r="4"/><circle class="fill-accent" cx="104" cy="158" r="4"/>
+<line class="ln-accent" x1="95" y1="150" x2="130" y2="150"/>
+<circle class="fill-blue" cx="210" cy="128" r="4"/><circle class="fill-blue" cx="220" cy="120" r="4"/><circle class="fill-blue" cx="204" cy="136" r="4"/>
+<line class="ln-blue" x1="195" y1="128" x2="230" y2="128"/>
+<text class="t-sm" x="112" y="252" text-anchor="middle">A</text><text class="t-sm" x="212" y="252" text-anchor="middle">B</text>
+<text class="t-sm t-muted" x="48" y="168" transform="rotate(-90 48 168)" text-anchor="middle">top-1 acc. (%)</text>
+<rect class="box-amber" x="316" y="82" width="130" height="80" rx="4"/>
+<text class="t-sm" x="381" y="104" text-anchor="middle">Setup (one line)</text><text class="t-sm" x="381" y="124" text-anchor="middle">ViT-S, 5 seeds,</text><text class="t-sm" x="381" y="142" text-anchor="middle">same budget</text>
+<rect class="box-green" x="316" y="172" width="130" height="80" rx="4"/>
+<text class="t-sm" x="381" y="196" text-anchor="middle">Takeaway</text><text class="t-sm" x="381" y="216" text-anchor="middle">+1.4 +- 0.3,</text><text class="t-sm" x="381" y="234" text-anchor="middle">gap above noise</text>
+<text class="t-sm t-muted" x="40" y="290">Source: our runs, mean and 95% CI over 5 seeds</text>
+<g class="t-sm"><text x="490" y="62" class="t-bold">1. Headline as a claim</text><text x="490" y="80" class="t-muted">a sentence, not a topic label</text>
+<text x="490" y="120" class="t-bold">2. One figure, labeled axes</text><text x="490" y="138" class="t-muted">units, legend, readable at the back</text>
+<text x="490" y="178" class="t-bold">3. Uncertainty shown</text><text x="490" y="196" class="t-muted">all seeds as dots plus CI</text>
+<text x="490" y="236" class="t-bold">4. Setup and takeaway</text><text x="490" y="254" class="t-muted">what was compared, what it means</text>
+<text x="490" y="294" class="t-bold">5. Source line</text><text x="490" y="312" class="t-muted">dataset, split, how many runs</text></g>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 780 340" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w14s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text class="t-bold" x="390" y="22" text-anchor="middle">Equivariance and invariance as commuting diagrams</text>
+<text class="t-bold" x="190" y="52" text-anchor="middle">Equivariant: f(g·x) = g·f(x)</text>
+<rect class="box-blue" x="40" y="80" width="100" height="44" rx="8"/><text class="t" x="90" y="102" text-anchor="middle" dominant-baseline="middle">x</text>
+<rect class="box-blue" x="240" y="80" width="100" height="44" rx="8"/><text class="t" x="290" y="102" text-anchor="middle" dominant-baseline="middle">f(x)</text>
+<rect class="box-amber" x="40" y="200" width="100" height="44" rx="8"/><text class="t" x="90" y="222" text-anchor="middle" dominant-baseline="middle">g·x</text>
+<rect class="box-amber" x="240" y="200" width="100" height="44" rx="8"/><text class="t" x="290" y="222" text-anchor="middle" dominant-baseline="middle">f(g·x)=g·f(x)</text>
+<line class="ln" x1="142" y1="102" x2="238" y2="102" marker-end="url(#w14s)"/><line class="ln" x1="142" y1="222" x2="238" y2="222" marker-end="url(#w14s)"/>
+<line class="ln" x1="90" y1="126" x2="90" y2="198" marker-end="url(#w14s)"/><line class="ln" x1="290" y1="126" x2="290" y2="198" marker-end="url(#w14s)"/>
+<text class="t-sm" x="190" y="94" text-anchor="middle">f</text><text class="t-sm" x="190" y="214" text-anchor="middle">f</text><text class="t-sm" x="70" y="165" text-anchor="end">g</text><text class="t-sm" x="310" y="165">g</text>
+<text class="t-bold" x="590" y="52" text-anchor="middle">Invariant: f(g·x) = f(x)</text>
+<rect class="box-blue" x="440" y="80" width="100" height="44" rx="8"/><text class="t" x="490" y="102" text-anchor="middle" dominant-baseline="middle">x</text>
+<rect class="box-green" x="640" y="80" width="100" height="44" rx="8"/><text class="t" x="690" y="102" text-anchor="middle" dominant-baseline="middle">f(x)</text>
+<rect class="box-amber" x="440" y="200" width="100" height="44" rx="8"/><text class="t" x="490" y="222" text-anchor="middle" dominant-baseline="middle">g·x</text>
+<rect class="box-green" x="640" y="200" width="100" height="44" rx="8"/><text class="t" x="690" y="222" text-anchor="middle" dominant-baseline="middle">f(g·x) = f(x)</text>
+<line class="ln" x1="542" y1="102" x2="638" y2="102" marker-end="url(#w14s)"/><line class="ln" x1="542" y1="222" x2="638" y2="222" marker-end="url(#w14s)"/>
+<line class="ln" x1="490" y1="126" x2="490" y2="198" marker-end="url(#w14s)"/><line class="ln-dash" x1="690" y1="126" x2="690" y2="198"/>
+<text class="t-sm" x="470" y="165" text-anchor="end">g</text><text class="t-sm" x="710" y="165">identity</text>
+<text class="t-sm t-muted" x="390" y="288" text-anchor="middle">Examples: translation (CNN feature maps), node permutation (GNN layers, node outputs), rotation (3-D vector features).</text>
+<text class="t-sm t-muted" x="390" y="310" text-anchor="middle">Invariance: global pooling of a CNN, a GNN readout, the energy of a molecule. Invariant = equivariant with trivial action on the output.</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 375" role="img"><defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Embedding geometry: relations as roughly constant offsets</text>
+<line x1="150" y1="290" x2="150" y2="190" class="ln-blue" marker-end="url(#a3)"/>
+<line x1="400" y1="260" x2="400" y2="160" class="ln-blue" marker-end="url(#a3)"/>
+<line x1="150" y1="290" x2="400" y2="260" class="ln-dash"/>
+<line x1="150" y1="190" x2="400" y2="160" class="ln-dash"/>
+<line x1="560" y1="330" x2="560" y2="230" class="ln-green" marker-end="url(#a3)"/>
+<line x1="690" y1="300" x2="690" y2="200" class="ln-green" marker-end="url(#a3)"/>
+<circle cx="150" cy="290" r="6" class="fill-blue"/>
+<text x="116" y="308" class="t-mono" text-anchor="middle" dominant-baseline="middle">man</text>
+<circle cx="150" cy="190" r="6" class="fill-blue"/>
+<text x="116" y="172" class="t-mono" text-anchor="middle" dominant-baseline="middle">woman</text>
+<circle cx="400" cy="260" r="6" class="fill-blue"/>
+<text x="400" y="278" class="t-mono" text-anchor="middle" dominant-baseline="middle">king</text>
+<circle cx="400" cy="160" r="6" class="fill-blue"/>
+<text x="400" y="142" class="t-mono" text-anchor="middle" dominant-baseline="middle">queen</text>
+<circle cx="560" cy="330" r="6" class="fill-green"/>
+<text x="560" y="348" class="t-mono" text-anchor="middle" dominant-baseline="middle">paris</text>
+<circle cx="560" cy="230" r="6" class="fill-green"/>
+<text x="560" y="212" class="t-mono" text-anchor="middle" dominant-baseline="middle">france</text>
+<circle cx="690" cy="300" r="6" class="fill-green"/>
+<text x="690" y="318" class="t-mono" text-anchor="middle" dominant-baseline="middle">rome</text>
+<circle cx="690" cy="200" r="6" class="fill-green"/>
+<text x="690" y="182" class="t-mono" text-anchor="middle" dominant-baseline="middle">italy</text>
+<text x="275" y="120" class="t t-accent" text-anchor="middle" dominant-baseline="middle">woman - man  ~  queen - king</text>
+<text x="275" y="142" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">so  king - man + woman  lands near  queen</text>
+<text x="625" y="150" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">capital-of: another offset</text>
+<rect x="60" y="50" width="640" height="30" rx="6" class="box"/>
+<text x="380" y="65" class="t-sm t-mono" text-anchor="middle" dominant-baseline="middle">query = v_king - v_man + v_woman; answer = argmax cos(v_w, query)</text>
+<text x="380" y="358" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Illustrative 2D sketch. Real embeddings have hundreds of dimensions and the offsets are only approximately parallel.</text>
+
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="w17e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker>
+<marker id="w17f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-red)"/></marker></defs>
+<rect class="box" x="15" y="90" width="80" height="80" rx="4"/><text class="t" x="55" y="130" text-anchor="middle">image</text><text class="t-sm t-muted" x="55" y="184" text-anchor="middle">3x224x224</text>
+<line class="ln" x1="95" y1="130" x2="125" y2="130" marker-end="url(#w17e)"/>
+<rect class="box-blue" x="128" y="85" width="90" height="90" rx="4"/><text class="t" x="173" y="122" text-anchor="middle">CNN</text><text class="t-sm" x="173" y="142" text-anchor="middle">layers</text>
+<line class="ln" x1="218" y1="130" x2="248" y2="130" marker-end="url(#w17e)"/>
+<g><rect class="box-green" x="254" y="100" width="60" height="60"/><rect class="box-green" x="262" y="92" width="60" height="60" style="fill-opacity:.5"/><rect class="box-green" x="270" y="84" width="60" height="60" style="fill-opacity:.35"/></g>
+<text class="t-bold" x="300" y="68" text-anchor="middle">A^k</text><text class="t-sm t-muted" x="300" y="180" text-anchor="middle">512 x 7 x 7</text>
+<line class="ln" x1="335" y1="122" x2="380" y2="122" marker-end="url(#w17e)"/>
+<rect class="box-purple" x="384" y="95" width="80" height="55" rx="4"/><text class="t" x="424" y="118" text-anchor="middle">head</text><text class="t-sm" x="424" y="136" text-anchor="middle">pool + FC</text>
+<line class="ln" x1="464" y1="122" x2="500" y2="122" marker-end="url(#w17e)"/>
+<rect class="box-amber" x="504" y="100" width="70" height="44" rx="4"/><text class="t" x="539" y="122" text-anchor="middle">y^c</text><text class="t-sm t-muted" x="539" y="158" text-anchor="middle">logit, before softmax</text>
+<path class="ln-red" d="M504,138 C470,215 400,230 320,175" fill="none" marker-end="url(#w17f)"/>
+<text class="t-sm" x="400" y="238" text-anchor="middle" style="fill:var(--c-red)">backward: dy^c / dA^k_ij</text>
+<text class="t-bold" x="20" y="280">alpha_k = average over (i, j) of dy^c / dA^k_ij      map = ReLU( sum_k alpha_k A^k )      upsample to 224 x 224</text>
+<text class="t-sm t-muted" x="20" y="302">The averaged gradient says how much channel k matters for class c; the weighted sum says where that evidence lives in the image.</text>
+</svg>

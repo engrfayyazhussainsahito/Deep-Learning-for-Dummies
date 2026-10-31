@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img"><defs><marker id="mw03adamflo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380.0" y="18.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >One Adam step for a single parameter tensor</text>
+<rect x="20.0" y="150.0" width="110.0" height="60.0" rx="8" class="box-red" />
+<text x="75.0" y="172.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >gradient gₜ</text>
+<text x="75.0" y="190.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >∇L(θₜ₋₁)</text>
+<rect x="190.0" y="60.0" width="170.0" height="60.0" rx="8" class="box-blue" />
+<text x="275.0" y="82.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >m ← β₁m + (1−β₁)g</text>
+<text x="275.0" y="100.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >1st moment (mean)</text>
+<rect x="190.0" y="240.0" width="170.0" height="60.0" rx="8" class="box-purple" />
+<text x="275.0" y="262.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >v ← β₂v + (1−β₂)g²</text>
+<text x="275.0" y="280.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >2nd moment (uncentered var)</text>
+<rect x="420.0" y="60.0" width="130.0" height="60.0" rx="8" class="box-blue" />
+<text x="485.0" y="82.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >m̂ = m/(1−β₁ᵗ)</text>
+<text x="485.0" y="100.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >bias correction</text>
+<rect x="420.0" y="240.0" width="130.0" height="60.0" rx="8" class="box-purple" />
+<text x="485.0" y="262.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >v̂ = v/(1−β₂ᵗ)</text>
+<text x="485.0" y="280.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >bias correction</text>
+<rect x="600.0" y="150.0" width="140.0" height="60.0" rx="8" class="box-green" />
+<text x="670.0" y="172.0" class="t t-bold" text-anchor="middle" dominant-baseline="middle" >Δθ = −η m̂/(√v̂+ε)</text>
+<text x="670.0" y="190.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >per-coordinate step</text>
+<line x1="130.0" y1="170.0" x2="190.0" y2="100.0" class="ln" marker-end="url(#mw03adamflo)" />
+<line x1="130.0" y1="190.0" x2="190.0" y2="260.0" class="ln" marker-end="url(#mw03adamflo)" />
+<line x1="360.0" y1="90.0" x2="420.0" y2="90.0" class="ln" marker-end="url(#mw03adamflo)" />
+<line x1="360.0" y1="270.0" x2="420.0" y2="270.0" class="ln" marker-end="url(#mw03adamflo)" />
+<line x1="550.0" y1="90.0" x2="600.0" y2="170.0" class="ln" marker-end="url(#mw03adamflo)" />
+<line x1="550.0" y1="270.0" x2="600.0" y2="190.0" class="ln" marker-end="url(#mw03adamflo)" />
+<text x="380.0" y="340.0" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle" >Typical defaults: β₁ = 0.9, β₂ = 0.999, ε = 1e-8, η = 1e-3. AdamW adds −ηλθ outside this pipeline.</text>
+</svg>

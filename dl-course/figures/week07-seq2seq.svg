@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img"><defs><marker id="w7g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" style="fill:var(--c-muted)"/></marker></defs>
+<text x="380" y="18" class="t t-bold" text-anchor="middle" dominant-baseline="middle">Encoder-decoder (seq2seq): the encoder summary h_T initialises the decoder</text>
+<rect x="20" y="160" width="60" height="36" rx="6" class="box-blue"/>
+<text x="50.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">enc</text>
+<line x1="50" y1="260" x2="50" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="50" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">je</text>
+<line x1="80" y1="178" x2="105" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="105" y="160" width="60" height="36" rx="6" class="box-blue"/>
+<text x="135.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">enc</text>
+<line x1="135" y1="260" x2="135" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="135" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">suis</text>
+<line x1="165" y1="178" x2="190" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="190" y="160" width="60" height="36" rx="6" class="box-blue"/>
+<text x="220.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">enc</text>
+<line x1="220" y1="260" x2="220" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="220" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">etudiant</text>
+<line x1="250" y1="178" x2="275" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="275" y="160" width="60" height="36" rx="6" class="box-blue"/>
+<text x="305.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">enc</text>
+<line x1="305" y1="260" x2="305" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="305" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;eos></text>
+<rect x="403" y="160" width="54" height="36" rx="6" class="box-green"/>
+<text x="430.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">dec</text>
+<line x1="430" y1="260" x2="430" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="430" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">&lt;sos></text>
+<line x1="430" y1="158" x2="430" y2="110" class="ln" marker-end="url(#w7g)"/>
+<text x="430" y="98" class="t-mono t-bold" text-anchor="middle" dominant-baseline="middle">I</text>
+<line x1="457" y1="178" x2="468" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="468" y="160" width="54" height="36" rx="6" class="box-green"/>
+<text x="495.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">dec</text>
+<line x1="495" y1="260" x2="495" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="495" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">I</text>
+<line x1="495" y1="158" x2="495" y2="110" class="ln" marker-end="url(#w7g)"/>
+<text x="495" y="98" class="t-mono t-bold" text-anchor="middle" dominant-baseline="middle">am</text>
+<line x1="522" y1="178" x2="533" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="533" y="160" width="54" height="36" rx="6" class="box-green"/>
+<text x="560.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">dec</text>
+<line x1="560" y1="260" x2="560" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="560" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">am</text>
+<line x1="560" y1="158" x2="560" y2="110" class="ln" marker-end="url(#w7g)"/>
+<text x="560" y="98" class="t-mono t-bold" text-anchor="middle" dominant-baseline="middle">a</text>
+<line x1="587" y1="178" x2="598" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="598" y="160" width="54" height="36" rx="6" class="box-green"/>
+<text x="625.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">dec</text>
+<line x1="625" y1="260" x2="625" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="625" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">a</text>
+<line x1="625" y1="158" x2="625" y2="110" class="ln" marker-end="url(#w7g)"/>
+<text x="625" y="98" class="t-mono t-bold" text-anchor="middle" dominant-baseline="middle">student</text>
+<line x1="652" y1="178" x2="663" y2="178" class="ln" marker-end="url(#w7g)"/>
+<rect x="663" y="160" width="54" height="36" rx="6" class="box-green"/>
+<text x="690.0" y="178.0" class="t-sm" text-anchor="middle" dominant-baseline="middle">dec</text>
+<line x1="690" y1="260" x2="690" y2="198" class="ln" marker-end="url(#w7g)"/>
+<text x="690" y="276" class="t-mono" text-anchor="middle" dominant-baseline="middle">student</text>
+<line x1="690" y1="158" x2="690" y2="110" class="ln" marker-end="url(#w7g)"/>
+<text x="690" y="98" class="t-mono t-bold" text-anchor="middle" dominant-baseline="middle">&lt;eos></text>
+<path d="M335,178 L403,178" class="ln-bold" fill="none" marker-end="url(#w7g)"/>
+<text x="372.5" y="150" class="t-mono t-accent" text-anchor="middle" dominant-baseline="middle">h_T</text>
+<text x="190" y="310" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Source (French)</text>
+<text x="560" y="310" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">Target (English), teacher forcing feeds the gold token</text>
+<text x="560" y="335" class="t-sm t-muted" text-anchor="middle" dominant-baseline="middle">At test time the decoder input is its own previous prediction</text>
+</svg>
